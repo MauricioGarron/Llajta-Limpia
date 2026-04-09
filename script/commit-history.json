@@ -1,11 +1,11 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "beadb3e5eedddd49efa0691f34bd31d0c0f79b50",
     "author": "FullMaury",
     "commit": {
       "date": "2026-04-09T13:02:04.000Z",
       "message": "hola mundo",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/beadb3e5eedddd49efa0691f34bd31d0c0f79b50"
     },
     "stats": {
       "total": 1,
@@ -15,6 +15,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-09T14:26:42.000Z",
+      "message": "feat: Crear rutas por zona",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 194,
+      "additions": 160,
+      "deletions": 34,
+      "date": "2026-04-09"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

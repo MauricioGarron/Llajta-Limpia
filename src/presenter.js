@@ -1,15 +1,52 @@
-import sumar from "./sumador";
+import {
+  crearRuta,
+  obtenerZonas,
+  obtenerRutasPorZona
+} from "./rutas.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const form = document.querySelector("#ruta-form");
+const zonaInput = document.querySelector("#zona");
+const rutaInput = document.querySelector("#ruta");
 
+const filtroZona = document.querySelector("#filtro-zona");
+const resultadoDiv = document.querySelector("#resultado-div");
+
+// GUARDAR
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  try {
+    crearRuta(zonaInput.value, rutaInput.value);
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+    actualizarSelect();
+
+    resultadoDiv.innerHTML = "Ruta guardada";
+
+    zonaInput.value = "";
+    rutaInput.value = "";
+  } catch (e) {
+    resultadoDiv.innerHTML = e.message;
+  }
+});
+
+// ACTUALIZAR SELECT
+function actualizarSelect() {
+  const zonas = obtenerZonas();
+
+  filtroZona.innerHTML = `<option value="">Selecciona zona</option>`;
+
+  zonas.forEach(z => {
+    filtroZona.innerHTML += `<option value="${z}">${z}</option>`;
+  });
+}
+
+// MOSTRAR
+filtroZona.addEventListener("change", () => {
+  const zona = filtroZona.value;
+
+  const rutas = obtenerRutasPorZona(zona);
+
+  resultadoDiv.innerHTML = rutas.length
+    ? rutas.map(r => `<p>${r.ruta}</p>`).join("")
+    : "No hay rutas";
 });
