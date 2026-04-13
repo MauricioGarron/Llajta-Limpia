@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b1b2dab9593a9e59ef1f166780483a205e853485",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-13T13:29:50.000Z",
       "message": "feat: guardar horarios en lista y obtener por ruta (TDD iteración 2)",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b1b2dab9593a9e59ef1f166780483a205e853485"
     },
     "stats": {
       "total": 36,
@@ -71,6 +71,25 @@
       "date": "2026-04-13"
     },
     "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-13T13:30:49.000Z",
+      "message": "feat: validación de datos en crearHorario (TDD iteración 3)",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 8,
+      "deletions": 11,
+      "date": "2026-04-13"
+    },
+    "coverage": 81.25,
     "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"

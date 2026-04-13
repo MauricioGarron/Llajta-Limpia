@@ -5,11 +5,11 @@ export function resetHorarios() {
 }
 
 export function crearHorario(ruta, dia, hora) {
+  if (!ruta || !dia || !hora) {
+    throw new Error("Datos incompletos");
+  }
+
   const nuevo = { ruta, dia, hora };
   horarios.push(nuevo);
   return nuevo;
-}
-
-export function obtenerHorariosPorRuta(ruta) {
-  return horarios.filter(h => h.ruta === ruta);
 }

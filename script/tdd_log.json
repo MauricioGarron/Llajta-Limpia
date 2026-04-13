@@ -138,9 +138,31 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b1b2dab9593a9e59ef1f166780483a205e853485",
     "commitName": "feat: guardar horarios en lista y obtener por ruta (TDD iteración 2)",
     "commitTimestamp": 1776086990837,
     "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776087014460,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776087033579,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validación de datos en crearHorario (TDD iteración 3)",
+    "commitTimestamp": 1776087049416,
+    "testId": 4
   }
 ]

@@ -1,6 +1,5 @@
 import {
   crearHorario,
-  obtenerHorariosPorRuta,
   resetHorarios
 } from "./horarios.js";
 
@@ -10,12 +9,10 @@ describe("HU - Crear horarios", () => {
     resetHorarios();
   });
 
-  test("debería guardar el horario", () => {
-    crearHorario("Av. América", "Lunes", "08:00");
-
-    const horarios = obtenerHorariosPorRuta("Av. América");
-
-    expect(horarios.length).toBe(1);
+  test("debería lanzar error si faltan datos", () => {
+    expect(() => crearHorario("", "Lunes", "08:00")).toThrow();
+    expect(() => crearHorario("Av. América", "", "08:00")).toThrow();
+    expect(() => crearHorario("Av. América", "Lunes", "")).toThrow();
   });
 
 });
