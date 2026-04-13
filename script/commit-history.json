@@ -76,12 +76,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "50c31473fb8aabd98cdaf50a8e12ebcc99ffc8fa",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-13T13:30:49.000Z",
       "message": "feat: validación de datos en crearHorario (TDD iteración 3)",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/50c31473fb8aabd98cdaf50a8e12ebcc99ffc8fa"
     },
     "stats": {
       "total": 19,
@@ -90,6 +90,25 @@
       "date": "2026-04-13"
     },
     "coverage": 81.25,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-13T13:31:40.000Z",
+      "message": "feat: evitar horarios duplicados (TDD iteración 4)",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 14,
+      "deletions": 4,
+      "date": "2026-04-13"
+    },
+    "coverage": 95,
     "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"

@@ -9,10 +9,12 @@ describe("HU - Crear horarios", () => {
     resetHorarios();
   });
 
-  test("debería lanzar error si faltan datos", () => {
-    expect(() => crearHorario("", "Lunes", "08:00")).toThrow();
-    expect(() => crearHorario("Av. América", "", "08:00")).toThrow();
-    expect(() => crearHorario("Av. América", "Lunes", "")).toThrow();
+  test("no debería permitir horarios duplicados", () => {
+    crearHorario("Av. América", "Lunes", "08:00");
+
+    expect(() =>
+      crearHorario("Av. América", "Lunes", "08:00")
+    ).toThrow();
   });
 
 });

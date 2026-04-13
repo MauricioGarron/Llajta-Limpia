@@ -160,9 +160,31 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "50c31473fb8aabd98cdaf50a8e12ebcc99ffc8fa",
     "commitName": "feat: validación de datos en crearHorario (TDD iteración 3)",
     "commitTimestamp": 1776087049416,
     "testId": 4
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776087067625,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776087078558,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: evitar horarios duplicados (TDD iteración 4)",
+    "commitTimestamp": 1776087100952,
+    "testId": 5
   }
 ]
