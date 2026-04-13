@@ -38,9 +38,87 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "04fb7fcf08787803bcf164a65f87458530718685",
     "commitName": "feat: Crear rutas por zona",
     "commitTimestamp": 1775744803163,
     "testId": 1
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086660689,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086677511,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086691212,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086706395,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086720718,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086731724,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086755940,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086906939,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086918250,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: crear función básica crearHorario (TDD iteración 1)",
+    "commitTimestamp": 1776086938660,
+    "testId": 2
   }
 ]

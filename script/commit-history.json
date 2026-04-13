@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "04fb7fcf08787803bcf164a65f87458530718685",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-09T14:26:42.000Z",
       "message": "feat: Crear rutas por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/04fb7fcf08787803bcf164a65f87458530718685"
     },
     "stats": {
       "total": 194,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-13T13:28:56.000Z",
+      "message": "feat: crear función básica crearHorario (TDD iteración 1)",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 13983,
+      "additions": 4248,
+      "deletions": 9735,
+      "date": "2026-04-13"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }
