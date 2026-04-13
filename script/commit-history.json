@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "07a0578f9468524428a21b82587bfba7bb312cb0",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-13T13:31:40.000Z",
       "message": "feat: evitar horarios duplicados (TDD iteración 4)",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/07a0578f9468524428a21b82587bfba7bb312cb0"
     },
     "stats": {
       "total": 18,
@@ -109,6 +109,25 @@
       "date": "2026-04-13"
     },
     "coverage": 95,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-13T13:40:55.000Z",
+      "message": "feat: interfaz completa para rutas y horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 104,
+      "deletions": 34,
+      "date": "2026-04-13"
+    },
+    "coverage": 86.36,
     "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"

@@ -182,9 +182,15 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "07a0578f9468524428a21b82587bfba7bb312cb0",
     "commitName": "feat: evitar horarios duplicados (TDD iteración 4)",
     "commitTimestamp": 1776087100952,
     "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: interfaz completa para rutas y horarios",
+    "commitTimestamp": 1776087655485,
+    "testId": 6
   }
 ]
