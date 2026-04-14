@@ -188,9 +188,63 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "009b3f72342a5b7d5813e3493909b84ea4180a38",
     "commitName": "feat: interfaz completa para rutas y horarios",
     "commitTimestamp": 1776087655485,
     "testId": 6
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1776174467880,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1776174487421,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1776174978676,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776175012566,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1776175116223,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1776175131151,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: deberia crear un reporte correctamente",
+    "commitTimestamp": 1776175247313,
+    "testId": 7
   }
 ]

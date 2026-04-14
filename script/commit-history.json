@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "009b3f72342a5b7d5813e3493909b84ea4180a38",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-13T13:40:55.000Z",
       "message": "feat: interfaz completa para rutas y horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/009b3f72342a5b7d5813e3493909b84ea4180a38"
     },
     "stats": {
       "total": 138,
@@ -129,6 +129,25 @@
     },
     "coverage": 86.36,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-04-14T14:00:45.000Z",
+      "message": "feat: deberia crear un reporte correctamente",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 84,
+      "additions": 48,
+      "deletions": 36,
+      "date": "2026-04-14"
+    },
+    "coverage": 86.21,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

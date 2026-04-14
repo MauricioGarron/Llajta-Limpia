@@ -1,53 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <title>Rutas y Horarios</title>
+    <title>Crear Ruta</title>
   </head>
   <body>
-    <h1>Crear Ruta por Zona</h1>
+    <h1>Crear Ruta de Recolección</h1>
 
     <form id="ruta-form">
+      <label>Nombre de la ruta:</label>
+      <input type="text" id="nombre-ruta" />
+
       <label>Zona:</label>
       <input type="text" id="zona" />
 
-      <label>Ruta:</label>
-      <input type="text" id="ruta" />
+      <label>Puntos:</label>
+      <textarea id="puntos"></textarea>
 
-      <input type="submit" value="Guardar" />
+      <input type="submit" value="Crear Ruta" />
     </form>
 
-    <h2>Ver rutas</h2>
+    <div id="mensaje"></div>
 
-    <select id="filtro-zona">
-      <option value="">Selecciona zona</option>
-    </select>
-
-    <div id="resultado-div"></div>
-
-    <hr />
-
-    <h1>Crear Horario</h1>
-
-    <form id="horario-form">
-      <label>Ruta:</label>
-      <input type="text" id="horario-ruta" />
-
-      <label>Día:</label>
-      <input type="text" id="dia" />
-
-      <label>Hora:</label>
-      <input type="text" id="hora" />
-
-      <input type="submit" value="Guardar Horario" />
-    </form>
-
-    <h2>Ver horarios por ruta</h2>
-
-    <input type="text" id="buscar-ruta" placeholder="Ingrese ruta" />
-    <button id="btn-buscar">Buscar</button>
-
-    <div id="horarios-div"></div>
+    <h2>Lista de rutas</h2>
+    <ul id="lista-rutas"></ul>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
