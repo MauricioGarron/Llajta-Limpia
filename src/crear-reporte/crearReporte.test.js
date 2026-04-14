@@ -17,5 +17,9 @@ describe("HU - Crear reporte de basura", () => {
       descripcion: "Basura acumulada"
     });
   });
+  test("debería lanzar error si faltan datos", () => {
+    expect(() => crearReporte("", "Basura")).toThrow();
+    expect(() => crearReporte("Zona sur", "")).toThrow();
+  });
 
 });

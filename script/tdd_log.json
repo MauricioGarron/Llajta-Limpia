@@ -242,9 +242,23 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f48334aae15c286862e8562e4032704e9601a5fd",
     "commitName": "feat: deberia crear un reporte correctamente",
     "commitTimestamp": 1776175247313,
     "testId": 7
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1776175323599,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: deberia lanzar error si faltan datos",
+    "commitTimestamp": 1776175359019,
+    "testId": 8
   }
 ]

@@ -133,12 +133,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f48334aae15c286862e8562e4032704e9601a5fd",
     "author": "FullMaury",
     "commit": {
       "date": "2026-04-14T14:00:45.000Z",
       "message": "feat: deberia crear un reporte correctamente",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/f48334aae15c286862e8562e4032704e9601a5fd"
     },
     "stats": {
       "total": 84,
@@ -148,6 +148,25 @@
     },
     "coverage": 86.21,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-04-14T14:02:37.000Z",
+      "message": "feat: deberia lanzar error si faltan datos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-04-14"
+    },
+    "coverage": 89.66,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }
