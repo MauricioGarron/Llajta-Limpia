@@ -38,9 +38,159 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "04fb7fcf08787803bcf164a65f87458530718685",
     "commitName": "feat: Crear rutas por zona",
     "commitTimestamp": 1775744803163,
     "testId": 1
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086660689,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086677511,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086691212,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086706395,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086720718,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086731724,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086755940,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086906939,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086918250,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "0d3deeb39cd53fb2d421771c810fa5ac34867c1e",
+    "commitName": "feat: crear función básica crearHorario (TDD iteración 1)",
+    "commitTimestamp": 1776086938660,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776086958288,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776086969209,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "b1b2dab9593a9e59ef1f166780483a205e853485",
+    "commitName": "feat: guardar horarios en lista y obtener por ruta (TDD iteración 2)",
+    "commitTimestamp": 1776086990837,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776087014460,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776087033579,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "50c31473fb8aabd98cdaf50a8e12ebcc99ffc8fa",
+    "commitName": "feat: validación de datos en crearHorario (TDD iteración 3)",
+    "commitTimestamp": 1776087049416,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776087067625,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776087078558,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "07a0578f9468524428a21b82587bfba7bb312cb0",
+    "commitName": "feat: evitar horarios duplicados (TDD iteración 4)",
+    "commitTimestamp": 1776087100952,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: interfaz completa para rutas y horarios",
+    "commitTimestamp": 1776087655485,
+    "testId": 6
   }
 ]
