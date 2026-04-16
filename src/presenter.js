@@ -1,5 +1,6 @@
 import {
   crearRuta,
+  eliminarRuta,
   obtenerZonas,
   obtenerRutasPorZona
 } from "./rutas.js";
@@ -9,7 +10,6 @@ import {
   obtenerHorariosPorRuta
 } from "./horarios.js";
 
-
 // --------------------
 // RUTAS
 // --------------------
@@ -18,7 +18,8 @@ const formRuta = document.querySelector("#ruta-form");
 const selectZona = document.querySelector("#filtro-zona");
 const resultadoDiv = document.querySelector("#resultado-div");
 
-formRuta.addEventListener("submit", (e) => {
+// Crear ruta
+formRuta.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const zona = document.querySelector("#zona").value;
@@ -27,12 +28,14 @@ formRuta.addEventListener("submit", (e) => {
   try {
     crearRuta(zona, ruta);
     actualizarZonas();
+    renderRutas(zona);
     alert("Ruta creada");
   } catch (error) {
     alert(error.message);
   }
 });
 
+// Actualizar zonas
 function actualizarZonas() {
   const zonas = obtenerZonas();
 
@@ -43,17 +46,42 @@ function actualizarZonas() {
   });
 }
 
-selectZona.addEventListener("change", () => {
+// Cambiar zona
+selectZona.addEventListener("change", function () {
   const zona = selectZona.value;
+  renderRutas(zona);
+});
+
+// Render rutas
+function renderRutas(zona) {
   const rutas = obtenerRutasPorZona(zona);
 
   resultadoDiv.innerHTML = "";
 
-  rutas.forEach(r => {
-    resultadoDiv.innerHTML += `<p>${r.ruta}</p>`;
-  });
-});
+  if (rutas.length === 0) {
+    resultadoDiv.innerHTML = "<p>No hay rutas</p>";
+    return;
+  }
 
+  rutas.forEach(r => {
+    resultadoDiv.innerHTML += `
+      <p>
+        ${r.ruta}
+        <button onclick="eliminarRutaUI('${r.zona}', '${r.ruta}')">
+          Eliminar
+        </button>
+      </p>
+    `;
+  });
+}
+
+// Eliminar ruta
+window.eliminarRutaUI = function (zona, ruta) {
+  if (confirm("¿Seguro que deseas eliminar esta ruta?")) {
+    eliminarRuta(zona, ruta);
+    renderRutas(zona);
+  }
+};
 
 // --------------------
 // HORARIOS
@@ -62,7 +90,8 @@ selectZona.addEventListener("change", () => {
 const formHorario = document.querySelector("#horario-form");
 const horariosDiv = document.querySelector("#horarios-div");
 
-formHorario.addEventListener("submit", (e) => {
+// Crear horario
+formHorario.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const ruta = document.querySelector("#horario-ruta").value;
@@ -77,9 +106,10 @@ formHorario.addEventListener("submit", (e) => {
   }
 });
 
+// Buscar horarios
 const btnBuscar = document.querySelector("#btn-buscar");
 
-btnBuscar.addEventListener("click", () => {
+btnBuscar.addEventListener("click", function () {
   const ruta = document.querySelector("#buscar-ruta").value;
 
   const horarios = obtenerHorariosPorRuta(ruta);

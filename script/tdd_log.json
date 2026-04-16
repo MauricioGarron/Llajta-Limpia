@@ -188,9 +188,51 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "009b3f72342a5b7d5813e3493909b84ea4180a38",
     "commitName": "feat: interfaz completa para rutas y horarios",
     "commitTimestamp": 1776087655485,
     "testId": 6
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1776345775633,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1776345787338,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "fad8ff36c870759f9172a8fa4b45aad58815868b",
+    "commitName": "feat: implementar eliminar ruta básica",
+    "commitTimestamp": 1776345832908,
+    "testId": 7
+  },
+  {
+    "commitId": "b94604adaffbd85a72e8c82783572d11210bf135",
+    "commitName": "feat: agregar validación en eliminar ruta",
+    "commitTimestamp": 1776346093257,
+    "testId": 8
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1776346098836,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: integrar presenter e index para eliminacion de rutas",
+    "commitTimestamp": 1776346599249,
+    "testId": 9
   }
 ]
