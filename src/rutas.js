@@ -12,8 +12,11 @@ export function crearRuta(zona, ruta) {
   rutas.push({ zona, ruta });
 }
 
-// 🔥 implementación mínima
 export function eliminarRuta(zona, ruta) {
+  if (!zona || !ruta) {
+    throw new Error("Datos incompletos");
+  }
+
   rutas = rutas.filter(r => !(r.zona === zona && r.ruta === ruta));
 }
 

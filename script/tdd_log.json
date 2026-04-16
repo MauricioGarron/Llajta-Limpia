@@ -210,9 +210,15 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fad8ff36c870759f9172a8fa4b45aad58815868b",
     "commitName": "feat: implementar eliminar ruta básica",
     "commitTimestamp": 1776345832908,
     "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar validación en eliminar ruta",
+    "commitTimestamp": 1776346093257,
+    "testId": 8
   }
 ]
