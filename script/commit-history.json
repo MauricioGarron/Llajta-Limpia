@@ -114,12 +114,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "009b3f72342a5b7d5813e3493909b84ea4180a38",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-13T13:40:55.000Z",
       "message": "feat: interfaz completa para rutas y horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/009b3f72342a5b7d5813e3493909b84ea4180a38"
     },
     "stats": {
       "total": 138,
@@ -129,6 +129,25 @@
     },
     "coverage": 86.36,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-16T13:23:52.000Z",
+      "message": "feat: implementar eliminar ruta básica",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 11,
+      "deletions": 21,
+      "date": "2026-04-16"
+    },
+    "coverage": 75,
+    "test_count": 3,
     "failed_tests": 0,
     "conclusion": "success"
   }

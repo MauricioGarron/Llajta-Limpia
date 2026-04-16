@@ -12,6 +12,11 @@ export function crearRuta(zona, ruta) {
   rutas.push({ zona, ruta });
 }
 
+// 🔥 implementación mínima
+export function eliminarRuta(zona, ruta) {
+  rutas = rutas.filter(r => !(r.zona === zona && r.ruta === ruta));
+}
+
 export function obtenerZonas() {
   return [...new Set(rutas.map(r => r.zona))];
 }
