@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b94604adaffbd85a72e8c82783572d11210bf135",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-16T13:28:12.000Z",
       "message": "feat: agregar validación en eliminar ruta",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b94604adaffbd85a72e8c82783572d11210bf135"
     },
     "stats": {
       "total": 5,
       "additions": 4,
       "deletions": 1,
+      "date": "2026-04-16"
+    },
+    "coverage": 73.08,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-04-16T13:36:38.000Z",
+      "message": "feat: integrar presenter e index para eliminacion de rutas",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 48,
+      "deletions": 14,
       "date": "2026-04-16"
     },
     "coverage": 73.08,

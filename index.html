@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <title>Rutas y Horarios</title>
   </head>
+
   <body>
+
     <h1>Crear Ruta por Zona</h1>
 
     <form id="ruta-form">
       <label>Zona:</label>
-      <input type="text" id="zona" />
+      <input type="text" id="zona" required />
 
       <label>Ruta:</label>
-      <input type="text" id="ruta" />
+      <input type="text" id="ruta" required />
 
-      <input type="submit" value="Guardar" />
+      <button type="submit">Guardar Ruta</button>
     </form>
 
     <h2>Ver rutas</h2>
@@ -31,15 +33,15 @@
 
     <form id="horario-form">
       <label>Ruta:</label>
-      <input type="text" id="horario-ruta" />
+      <input type="text" id="horario-ruta" required />
 
       <label>Día:</label>
-      <input type="text" id="dia" />
+      <input type="text" id="dia" required />
 
       <label>Hora:</label>
-      <input type="text" id="hora" />
+      <input type="text" id="hora" required />
 
-      <input type="submit" value="Guardar Horario" />
+      <button type="submit">Guardar Horario</button>
     </form>
 
     <h2>Ver horarios por ruta</h2>
@@ -49,6 +51,8 @@
 
     <div id="horarios-div"></div>
 
+    <!-- IMPORTANTE -->
     <script type="module" src="./src/presenter.js"></script>
+
   </body>
 </html>
