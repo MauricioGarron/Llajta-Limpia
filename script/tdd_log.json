@@ -370,9 +370,39 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "698e2cfeb477a48a401200c8ddf9d69d68273d11",
     "commitName": "feat: mensaje si no hay reportes / 2da iteracion TDD",
     "commitTimestamp": 1776628798087,
     "testId": 15
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1776628854360,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1776628868424,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1776628900238,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar informacion basica / 3era iteracion TDD",
+    "commitTimestamp": 1776628925822,
+    "testId": 16
   }
 ]

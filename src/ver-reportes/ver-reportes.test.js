@@ -23,4 +23,14 @@ describe("HU - Ver reportes", () => {
     expect(resultado.mensaje).toBe("No hay reportes registrados.");
     expect(resultado.reportes.length).toBe(0);
   });
+  test("cada reporte debería mostrar información básica", () => {
+  crearReporte("norte", "Av. América", "Basura en la esquina");
+
+  const resultado = verReportes();
+  const reporte = resultado.reportes[0];
+
+  expect(reporte.zona).toBe("norte");
+  expect(reporte.direccion).toBe("Av. América");
+  expect(reporte.descripcion).toBe("Basura en la esquina");
+});
 });
