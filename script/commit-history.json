@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe7608b1eaf29dfb24cd4b7805b6c1f1d143676a",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-16T13:36:38.000Z",
       "message": "feat: integrar presenter e index para eliminacion de rutas",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/fe7608b1eaf29dfb24cd4b7805b6c1f1d143676a"
     },
     "stats": {
       "total": 62,
@@ -186,6 +186,25 @@
     },
     "coverage": 73.08,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T17:55:07.000Z",
+      "message": "test: crear-reporte/1er ciclo TDD",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 52,
+      "deletions": 1,
+      "date": "2026-04-19"
+    },
+    "coverage": 74.07,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

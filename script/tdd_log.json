@@ -230,9 +230,31 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "fe7608b1eaf29dfb24cd4b7805b6c1f1d143676a",
     "commitName": "feat: integrar presenter e index para eliminacion de rutas",
     "commitTimestamp": 1776346599249,
     "testId": 9
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1776621251572,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1776621269606,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: crear-reporte/1er ciclo TDD",
+    "commitTimestamp": 1776621308320,
+    "testId": 10
   }
 ]
