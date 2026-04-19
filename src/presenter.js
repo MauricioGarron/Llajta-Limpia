@@ -5,11 +5,11 @@ import {
   obtenerRutasPorZona
 } from "./rutas.js";
 
-import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
-
 import {
   crearReporte
 } from "./crear-reporte/crear-reporte.js";
+
+import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
 
 import {
   crearHorario,

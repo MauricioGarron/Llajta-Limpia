@@ -342,17 +342,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "392852ea1ad71b2f64f4ce8009511fc749f868aa",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-19T20:08:43.000Z",
       "message": "feat: visualizar cantidad de likes x reporte / 5ta iteracion TDD",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/392852ea1ad71b2f64f4ce8009511fc749f868aa"
     },
     "stats": {
       "total": 10,
       "additions": 10,
       "deletions": 0,
+      "date": "2026-04-19"
+    },
+    "coverage": 82.5,
+    "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T20:20:48.000Z",
+      "message": "feat: interfaz para ver reportes",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 14,
+      "deletions": 3,
       "date": "2026-04-19"
     },
     "coverage": 82.5,

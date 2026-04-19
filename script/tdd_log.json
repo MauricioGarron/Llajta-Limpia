@@ -460,9 +460,23 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "392852ea1ad71b2f64f4ce8009511fc749f868aa",
     "commitName": "feat: visualizar cantidad de likes x reporte / 5ta iteracion TDD",
     "commitTimestamp": 1776629324236,
     "testId": 18
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629996407,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: interfaz para ver reportes",
+    "commitTimestamp": 1776630048886,
+    "testId": 19
   }
 ]
