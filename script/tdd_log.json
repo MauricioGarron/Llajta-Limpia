@@ -274,9 +274,31 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8cf320fc22c069bf7ecc754553718b971014422e",
     "commitName": "feat: 2do ciclo TDD faltan datos",
     "commitTimestamp": 1776621673135,
     "testId": 11
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 3,
+    "numTotalTests": 6,
+    "timestamp": 1776621798390,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1776621823350,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: 3era implementacion TDD / guardar reporte",
+    "commitTimestamp": 1776621900394,
+    "testId": 12
   }
 ]

@@ -1,4 +1,10 @@
 import { crearReporte } from "./crear-reporte.js";
+import { obtenerReportes, resetReportes } from "./crear-reporte.js";
+
+beforeEach(() => {
+  resetReportes();
+});
+
 
 describe("HU - Crear reporte de basura", () => {
   test("debería enviar el reporte cuando el formulario está completo", () => {
@@ -17,5 +23,17 @@ describe("HU - Crear reporte de basura", () => {
   expect(() => crearReporte("", "Av. América", "Basura")).toThrow();
   expect(() => crearReporte("norte", "", "Basura")).toThrow();
   expect(() => crearReporte("norte", "Av. América", "")).toThrow();
+});
+test("debería guardar el reporte enviado", () => {
+  crearReporte(
+    "sur",
+    "Av. Panamericana",
+    "Contenedor lleno"
+  );
+
+  const reportes = obtenerReportes();
+
+  expect(reportes.length).toBe(1);
+  expect(reportes[0].zona).toBe("sur");
 });
 });
