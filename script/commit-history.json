@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6aabf5626f979155eb2d556ec55ab7bb36354042",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-19T17:55:07.000Z",
       "message": "test: crear-reporte/1er ciclo TDD",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/6aabf5626f979155eb2d556ec55ab7bb36354042"
     },
     "stats": {
       "total": 53,
@@ -205,6 +205,25 @@
     },
     "coverage": 74.07,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T18:01:12.000Z",
+      "message": "feat: 2do ciclo TDD faltan datos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-19"
+    },
+    "coverage": 75.86,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -252,9 +252,31 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6aabf5626f979155eb2d556ec55ab7bb36354042",
     "commitName": "test: crear-reporte/1er ciclo TDD",
     "commitTimestamp": 1776621308320,
     "testId": 10
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1776621505726,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1776621523913,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: 2do ciclo TDD faltan datos",
+    "commitTimestamp": 1776621673135,
+    "testId": 11
   }
 ]

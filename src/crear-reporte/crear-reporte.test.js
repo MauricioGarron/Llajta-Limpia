@@ -13,4 +13,9 @@ describe("HU - Crear reporte de basura", () => {
     expect(reporte.descripcion).toBe("Basura acumulada");
     expect(reporte.estado).toBe("enviado");
   });
+  test("debería pedir completar la información si faltan datos", () => {
+  expect(() => crearReporte("", "Av. América", "Basura")).toThrow();
+  expect(() => crearReporte("norte", "", "Basura")).toThrow();
+  expect(() => crearReporte("norte", "Av. América", "")).toThrow();
+});
 });
