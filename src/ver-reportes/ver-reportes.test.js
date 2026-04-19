@@ -10,10 +10,17 @@ describe("HU - Ver reportes", () => {
     crearReporte("norte", "Av. América", "Basura en la esquina");
     crearReporte("sur", "Av. Panamericana", "Contenedor lleno");
 
-    const reportes = verReportes();
+    const resultado = verReportes();
 
-    expect(reportes.length).toBe(2);
-    expect(reportes[0].zona).toBe("norte");
-    expect(reportes[1].zona).toBe("sur");
+    expect(resultado.reportes.length).toBe(2);
+    expect(resultado.reportes[0].zona).toBe("norte");
+    expect(resultado.reportes[1].zona).toBe("sur");
+  });
+
+  test("debería mostrar mensaje informativo si no hay reportes", () => {
+    const resultado = verReportes();
+
+    expect(resultado.mensaje).toBe("No hay reportes registrados.");
+    expect(resultado.reportes.length).toBe(0);
   });
 });

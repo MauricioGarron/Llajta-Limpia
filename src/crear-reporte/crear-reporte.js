@@ -13,7 +13,8 @@ export function crearReporte(zona, direccion, descripcion) {
     zona,
     direccion,
     descripcion,
-    estado: "enviado"
+    estado: "enviado",
+    likes: 0
   };
 
   reportes.push(reporte);
