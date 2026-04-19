@@ -296,9 +296,15 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "203ffa3eb9a56868ce522d87add5bd9a7b5c1abf",
     "commitName": "feat: 3era implementacion TDD / guardar reporte",
     "commitTimestamp": 1776621900394,
     "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: interfaz para crear reporte de basura",
+    "commitTimestamp": 1776622044504,
+    "testId": 13
   }
 ]

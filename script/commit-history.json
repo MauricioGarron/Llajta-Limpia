@@ -228,17 +228,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "203ffa3eb9a56868ce522d87add5bd9a7b5c1abf",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-19T18:04:59.000Z",
       "message": "feat: 3era implementacion TDD / guardar reporte",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/203ffa3eb9a56868ce522d87add5bd9a7b5c1abf"
     },
     "stats": {
       "total": 35,
       "additions": 33,
       "deletions": 2,
+      "date": "2026-04-19"
+    },
+    "coverage": 79.41,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T18:07:23.000Z",
+      "message": "feat: interfaz para crear reporte de basura",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 23,
+      "deletions": 3,
       "date": "2026-04-19"
     },
     "coverage": 79.41,
