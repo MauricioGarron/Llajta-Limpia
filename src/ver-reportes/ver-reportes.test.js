@@ -43,4 +43,14 @@ test('debería permitir dar "like" a un reporte', () => {
 
   expect(resultado.reportes[0].likes).toBe(1);
 });
+test('debería visualizar la cantidad de "likes" de un reporte', () => {
+  crearReporte("norte", "Av. América", "Basura en la esquina");
+
+  darLikeReporte(0);
+  darLikeReporte(0);
+
+  const resultado = verReportes();
+
+  expect(resultado.reportes[0].likes).toBe(2);
+});
 });

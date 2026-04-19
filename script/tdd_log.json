@@ -430,9 +430,39 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4fb2ff45b33b92b278c25d15c81439de46e1338f",
     "commitName": "feat: dar like al reporte / 4ta iteracion TDD",
     "commitTimestamp": 1776629138095,
     "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629248138,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1776629260516,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629277494,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: visualizar cantidad de likes x reporte / 5ta iteracion TDD",
+    "commitTimestamp": 1776629324236,
+    "testId": 18
   }
 ]
