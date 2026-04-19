@@ -302,9 +302,31 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ee7ae9b4616cdc558f809c145941d1c22c94ec51",
     "commitName": "feat: interfaz para crear reporte de basura",
     "commitTimestamp": 1776622044504,
     "testId": 13
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1776628079150,
+    "success": false,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1776628089791,
+    "success": true,
+    "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar lista de reportes exigentes / 1era iteracion TDD",
+    "commitTimestamp": 1776628129224,
+    "testId": 14
   }
 ]
