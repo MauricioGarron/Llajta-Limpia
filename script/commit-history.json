@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe7608b1eaf29dfb24cd4b7805b6c1f1d143676a",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-04-16T13:36:38.000Z",
       "message": "feat: integrar presenter e index para eliminacion de rutas",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/fe7608b1eaf29dfb24cd4b7805b6c1f1d143676a"
     },
     "stats": {
       "total": 62,
@@ -186,6 +186,82 @@
     },
     "coverage": 73.08,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6aabf5626f979155eb2d556ec55ab7bb36354042",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T17:55:07.000Z",
+      "message": "test: crear-reporte/1er ciclo TDD",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/6aabf5626f979155eb2d556ec55ab7bb36354042"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 52,
+      "deletions": 1,
+      "date": "2026-04-19"
+    },
+    "coverage": 74.07,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8cf320fc22c069bf7ecc754553718b971014422e",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T18:01:12.000Z",
+      "message": "feat: 2do ciclo TDD faltan datos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/8cf320fc22c069bf7ecc754553718b971014422e"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2026-04-19"
+    },
+    "coverage": 75.86,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "203ffa3eb9a56868ce522d87add5bd9a7b5c1abf",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T18:04:59.000Z",
+      "message": "feat: 3era implementacion TDD / guardar reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/203ffa3eb9a56868ce522d87add5bd9a7b5c1abf"
+    },
+    "stats": {
+      "total": 35,
+      "additions": 33,
+      "deletions": 2,
+      "date": "2026-04-19"
+    },
+    "coverage": 79.41,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-19T18:07:23.000Z",
+      "message": "feat: interfaz para crear reporte de basura",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 23,
+      "deletions": 3,
+      "date": "2026-04-19"
+    },
+    "coverage": 79.41,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

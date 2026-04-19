@@ -7,7 +7,8 @@
 
   <body>
 
-    <h1>Crear Ruta por Zona</h1>
+    <h1>Llajta Limpia</h1>
+    <h2>Crear Ruta por Zona</h2>
 
     <form id="ruta-form">
       <label>Zona:</label>
@@ -29,7 +30,7 @@
 
     <hr />
 
-    <h1>Crear Horario</h1>
+    <h2>Crear Horario</h2>
 
     <form id="horario-form">
       <label>Ruta:</label>
@@ -50,8 +51,27 @@
     <button id="btn-buscar">Buscar</button>
 
     <div id="horarios-div"></div>
+    <hr />
 
-    <!-- IMPORTANTE -->
+<h2>Crear reporte de basura</h2>
+
+<form id="reporte-form">
+  <label>Zona:</label>
+  <input type="text" id="reporte-zona" required />
+
+  <label>Dirección:</label>
+  <input type="text" id="reporte-direccion" required />
+
+  <label>Descripción:</label>
+  <input type="text" id="reporte-descripcion" required />
+
+  <button type="submit">Enviar reporte</button>
+</form>
+
+<div id="mensaje-reporte"></div>
+
+
+    
     <script type="module" src="./src/presenter.js"></script>
 
   </body>

@@ -21,7 +21,7 @@ describe("HU6 - Crear ruta por zona", () => {
     expect(rutas[0].ruta).toBe("Av. América");
   });
 
-  // 🔥 NUEVO TEST
+  
   test("debería eliminar una ruta", () => {
     crearRuta("norte", "Av. América");
 

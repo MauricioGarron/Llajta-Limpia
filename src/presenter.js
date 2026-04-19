@@ -6,6 +6,10 @@ import {
 } from "./rutas.js";
 
 import {
+  crearReporte
+} from "./crear-reporte/crear-reporte.js";
+
+import {
   crearHorario,
   obtenerHorariosPorRuta
 } from "./horarios.js";
@@ -124,4 +128,27 @@ btnBuscar.addEventListener("click", function () {
   horarios.forEach(h => {
     horariosDiv.innerHTML += `<p>${h.dia} - ${h.hora}</p>`;
   });
+});
+
+// --------------------
+// REPORTES
+// --------------------
+
+const formReporte = document.querySelector("#reporte-form");
+const mensajeReporte = document.querySelector("#mensaje-reporte");
+
+formReporte.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const zona = document.querySelector("#reporte-zona").value;
+  const direccion = document.querySelector("#reporte-direccion").value;
+  const descripcion = document.querySelector("#reporte-descripcion").value;
+
+  try {
+    crearReporte(zona, direccion, descripcion);
+    mensajeReporte.textContent = "Reporte enviado exitosamente.";
+    formReporte.reset();
+  } catch (error) {
+    mensajeReporte.textContent = error.message;
+  }
 });
