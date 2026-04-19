@@ -15,3 +15,8 @@ export function verReportes() {
     reportes: reportes
   };
 }
+
+export function darLikeReporte(indice) {
+  const reportes = obtenerReportes();
+  reportes[indice].likes += 1;
+}

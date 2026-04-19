@@ -1,5 +1,6 @@
 import { crearReporte, resetReportes } from "../crear-reporte/crear-reporte.js";
 import { verReportes } from "./ver-reportes.js";
+import { darLikeReporte } from "./ver-reportes.js";
 
 describe("HU - Ver reportes", () => {
   beforeEach(() => {
@@ -32,5 +33,14 @@ describe("HU - Ver reportes", () => {
   expect(reporte.zona).toBe("norte");
   expect(reporte.direccion).toBe("Av. América");
   expect(reporte.descripcion).toBe("Basura en la esquina");
+});
+test('debería permitir dar "like" a un reporte', () => {
+  crearReporte("norte", "Av. América", "Basura en la esquina");
+
+  darLikeReporte(0);
+
+  const resultado = verReportes();
+
+  expect(resultado.reportes[0].likes).toBe(1);
 });
 });

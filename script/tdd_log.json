@@ -400,9 +400,39 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "66d1f399d732c13cc8b0e791a9decad30aab9eb5",
     "commitName": "feat: mostrar informacion basica / 3era iteracion TDD",
     "commitTimestamp": 1776628925822,
     "testId": 16
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1776629040969,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1776629076090,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1776629109309,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: dar like al reporte / 4ta iteracion TDD",
+    "commitTimestamp": 1776629138095,
+    "testId": 17
   }
 ]
