@@ -9,6 +9,8 @@ import {
   crearReporte
 } from "./crear-reporte/crear-reporte.js";
 
+import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
+
 import {
   crearHorario,
   obtenerHorariosPorRuta
@@ -151,4 +153,41 @@ formReporte.addEventListener("submit", function (e) {
   } catch (error) {
     mensajeReporte.textContent = error.message;
   }
+});
+
+
+const botonVerReportes = document.querySelector("#ver-reportes");
+const listaReportes = document.querySelector("#lista-reportes");
+const mensajeListaReportes = document.querySelector("#mensaje-lista-reportes");
+
+function renderReportes() {
+  const resultado = verReportes();
+
+  listaReportes.innerHTML = "";
+  mensajeListaReportes.textContent = resultado.mensaje;
+
+  resultado.reportes.forEach((reporte, indice) => {
+    const item = document.createElement("li");
+    item.innerHTML = `
+      <strong>Zona:</strong> ${reporte.zona} <br>
+      <strong>Dirección:</strong> ${reporte.direccion} <br>
+      <strong>Descripción:</strong> ${reporte.descripcion} <br>
+      <strong>Likes:</strong> <span id="likes-${indice}">${reporte.likes}</span>
+      <button class="like-btn" data-indice="${indice}">Like</button>
+    `;
+    listaReportes.appendChild(item);
+  });
+
+  const botonesLike = document.querySelectorAll(".like-btn");
+  botonesLike.forEach((boton) => {
+    boton.addEventListener("click", () => {
+      const indice = boton.dataset.indice;
+      darLikeReporte(indice);
+      renderReportes();
+    });
+  });
+}
+
+botonVerReportes.addEventListener("click", () => {
+  renderReportes();
 });

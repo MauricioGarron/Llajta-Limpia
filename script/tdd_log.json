@@ -302,9 +302,181 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ee7ae9b4616cdc558f809c145941d1c22c94ec51",
     "commitName": "feat: interfaz para crear reporte de basura",
     "commitTimestamp": 1776622044504,
     "testId": 13
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1776628079150,
+    "success": false,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1776628089791,
+    "success": true,
+    "testId": 14
+  },
+  {
+    "commitId": "1540a7429b6bfec7b624f654ee55e3aa28c4d9cb",
+    "commitName": "feat: mostrar lista de reportes exigentes / 1era iteracion TDD",
+    "commitTimestamp": 1776628129224,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1776628163242,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1776628189440,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1776628460735,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 2,
+    "numTotalTests": 8,
+    "timestamp": 1776628683336,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1776628693476,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "698e2cfeb477a48a401200c8ddf9d69d68273d11",
+    "commitName": "feat: mensaje si no hay reportes / 2da iteracion TDD",
+    "commitTimestamp": 1776628798087,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1776628854360,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1776628868424,
+    "success": false,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1776628900238,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "66d1f399d732c13cc8b0e791a9decad30aab9eb5",
+    "commitName": "feat: mostrar informacion basica / 3era iteracion TDD",
+    "commitTimestamp": 1776628925822,
+    "testId": 16
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1776629040969,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1776629076090,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1776629109309,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "commitId": "4fb2ff45b33b92b278c25d15c81439de46e1338f",
+    "commitName": "feat: dar like al reporte / 4ta iteracion TDD",
+    "commitTimestamp": 1776629138095,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629248138,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 1,
+    "numTotalTests": 11,
+    "timestamp": 1776629260516,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629277494,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "392852ea1ad71b2f64f4ce8009511fc749f868aa",
+    "commitName": "feat: visualizar cantidad de likes x reporte / 5ta iteracion TDD",
+    "commitTimestamp": 1776629324236,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776629996407,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: interfaz para ver reportes",
+    "commitTimestamp": 1776630048886,
+    "testId": 19
   }
 ]
