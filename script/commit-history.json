@@ -418,16 +418,35 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "045b8375668373c42248f143ea551107d5d24cc2",
     "author": "Griz-8",
     "commit": {
       "date": "2026-04-20T16:55:40.000Z",
       "message": "feat: implementar ver horarios por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/045b8375668373c42248f143ea551107d5d24cc2"
     },
     "stats": {
       "total": 47,
       "additions": 46,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 84,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Griz-8",
+    "commit": {
+      "date": "2026-04-20T17:15:58.000Z",
+      "message": "feat: ver horarios por zona index-presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 38,
       "deletions": 1,
       "date": "2026-04-20"
     },

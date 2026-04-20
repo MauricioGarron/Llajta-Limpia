@@ -13,7 +13,8 @@ import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
 
 import {
   crearHorario,
-  obtenerHorariosPorRuta
+  obtenerHorariosPorRuta,
+  obtenerHorariosPorZona
 } from "./horarios.js";
 
 // --------------------
@@ -46,9 +47,12 @@ function actualizarZonas() {
   const zonas = obtenerZonas();
 
   selectZona.innerHTML = '<option value="">Selecciona zona</option>';
+  
+  selectZonaHorarios.innerHTML = '<option value="">Selecciona zona</option>';
 
   zonas.forEach(z => {
     selectZona.innerHTML += `<option value="${z}">${z}</option>`;
+    selectZonaHorarios.innerHTML += `<option value="${z}">${z}</option>`;
   });
 }
 
@@ -129,6 +133,32 @@ btnBuscar.addEventListener("click", function () {
 
   horarios.forEach(h => {
     horariosDiv.innerHTML += `<p>${h.dia} - ${h.hora}</p>`;
+  });
+});
+
+// Mostrar horarios por zona
+
+const selectZonaHorarios = document.querySelector("#filtro-zona-horarios");
+const horariosZonaDiv = document.querySelector("#horarios-zona-div");
+
+selectZonaHorarios.addEventListener("change", function () {
+  const zona = selectZonaHorarios.value; // ✔️ primero declarar
+
+  console.log("Zona:", zona);
+  console.log("Rutas:", obtenerRutasPorZona(zona));
+  console.log("Horarios:", obtenerHorariosPorZona(zona));
+
+  const horarios = obtenerHorariosPorZona(zona);
+
+  horariosZonaDiv.innerHTML = "";
+
+  if (horarios.length === 0) {
+    horariosZonaDiv.innerHTML = "<p>No hay horarios</p>";
+    return;
+  }
+
+  horarios.forEach(h => {
+    horariosZonaDiv.innerHTML += `<p>${h.ruta} - ${h.dia} - ${h.hora}</p>`;
   });
 });
 

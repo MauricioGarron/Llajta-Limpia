@@ -556,9 +556,23 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "045b8375668373c42248f143ea551107d5d24cc2",
     "commitName": "feat: implementar ver horarios por zona",
     "commitTimestamp": 1776704142104,
     "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776705309378,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ver horarios por zona index-presenter",
+    "commitTimestamp": 1776705359789,
+    "testId": 23
   }
 ]
