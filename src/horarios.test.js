@@ -1,7 +1,13 @@
 import {
   crearHorario,
+  obtenerHorariosPorZona,
   resetHorarios
 } from "./horarios.js";
+
+import {
+  crearRuta,
+  resetRutas
+} from "./rutas.js";
 
 describe("HU - Crear horarios", () => {
 
@@ -15,6 +21,33 @@ describe("HU - Crear horarios", () => {
     expect(() =>
       crearHorario("Av. América", "Lunes", "08:00")
     ).toThrow();
+  });
+
+});
+
+describe("HU8 - Ver horarios por zona", () => {
+
+  beforeEach(() => {
+    resetHorarios();
+    resetRutas();
+  });
+
+  test("debería obtener horarios de todas las rutas de una zona", () => {
+    crearRuta("norte", "Ruta 1");
+    crearRuta("norte", "Ruta 2");
+
+    crearHorario("Ruta 1", "Lunes", "08:00");
+    crearHorario("Ruta 2", "Martes", "09:00");
+
+    const horarios = obtenerHorariosPorZona("norte");
+
+    expect(horarios.length).toBe(2);
+  });
+
+  test("debería devolver vacío si la zona no existe", () => {
+    const horarios = obtenerHorariosPorZona("sur");
+
+    expect(horarios).toEqual([]);
   });
 
 });
