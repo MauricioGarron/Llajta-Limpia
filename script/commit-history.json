@@ -570,17 +570,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "73cb956ce0553e6b824b7e7b3dc763090b0543f6",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T17:03:35.000Z",
       "message": "feat: implementacion del presenter",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/73cb956ce0553e6b824b7e7b3dc763090b0543f6"
     },
     "stats": {
       "total": 0,
       "additions": 0,
       "deletions": 0,
+      "date": "2026-04-20"
+    },
+    "coverage": 89.36,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T17:05:27.000Z",
+      "message": "chore: preparar rama para rebase",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 0,
+      "deletions": 3,
       "date": "2026-04-20"
     },
     "coverage": 89.36,

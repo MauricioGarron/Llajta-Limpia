@@ -550,9 +550,15 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "73cb956ce0553e6b824b7e7b3dc763090b0543f6",
     "commitName": "feat: implementacion del presenter",
     "commitTimestamp": 1776704616011,
     "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: preparar rama para rebase",
+    "commitTimestamp": 1776704727824,
+    "testId": 30
   }
 ]
