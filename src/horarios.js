@@ -27,10 +27,8 @@ export function obtenerHorariosPorRuta(ruta) {
   return horarios.filter(h => h.ruta === ruta);
 }
 
-export function eliminarHorario(ruta, dia, hora, confirmado) {
-  if (confirmado) {
-    horarios = horarios.filter(
-      h => !(h.ruta === ruta && h.dia === dia && h.hora === hora)
-    );
-  }
+export function eliminarHorario(ruta, dia, hora) {
+  horarios = horarios.filter(
+    h => !(h.ruta === ruta && h.dia === dia && h.hora === hora)
+  );
 }

@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7789bb8e1e520cfe7233f09ad15d2208025ab183",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T15:24:59.000Z",
       "message": "feat: implementar lógica para eliminar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/7789bb8e1e520cfe7233f09ad15d2208025ab183"
     },
     "stats": {
       "total": 19,
@@ -394,6 +394,25 @@
       "date": "2026-04-20"
     },
     "coverage": 86.05,
+    "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T15:45:03.000Z",
+      "message": "feat: implementar eliminación básica de horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 12,
+      "deletions": 14,
+      "date": "2026-04-20"
+    },
+    "coverage": 85.71,
     "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"

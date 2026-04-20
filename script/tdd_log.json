@@ -520,9 +520,39 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7789bb8e1e520cfe7233f09ad15d2208025ab183",
     "commitName": "feat: implementar lógica para eliminar horarios",
     "commitTimestamp": 1776698700102,
     "testId": 20
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1776699756959,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1776699827537,
+    "success": false,
+    "testId": 21
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1776699891252,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar eliminación básica de horarios",
+    "commitTimestamp": 1776699903937,
+    "testId": 21
   }
 ]

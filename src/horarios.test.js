@@ -1,8 +1,8 @@
 import {
   crearHorario,
   resetHorarios,
-  obtenerHorariosPorRuta,
-  eliminarHorario
+  eliminarHorario,
+  obtenerHorariosPorRuta
 } from "./horarios.js";
 
 describe("HU - Crear horarios", () => {
@@ -19,11 +19,11 @@ describe("HU - Crear horarios", () => {
     ).toThrow();
   });
 
-  test("debería eliminar un horario si se confirma la acción", () => {
-    crearHorario("Av. Heroínas", "Miércoles", "09:00");
-    eliminarHorario("Av. Heroínas", "Miércoles", "09:00", true);
-    const lista = obtenerHorariosPorRuta("Av. Heroínas");
-    expect(lista).toHaveLength(0);
-  });
+  test("debería borrar un horario existente de la lista", () => {
+    crearHorario("Zona Sud", "Lunes", "07:00");
+    eliminarHorario("Zona Sud", "Lunes", "07:00");
+    const resultados = obtenerHorariosPorRuta("Zona Sud");
+    expect(resultados).toHaveLength(0);
+});
 
 });
