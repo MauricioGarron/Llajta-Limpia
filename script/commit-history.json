@@ -456,17 +456,55 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4226223f366ad550dbb96b686cc79735da22513e",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T16:58:55.000Z",
       "message": "feat: implementar eliminación básica de horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/4226223f366ad550dbb96b686cc79735da22513e"
     },
     "stats": {
       "total": 32,
       "additions": 20,
       "deletions": 12,
+      "date": "2026-04-20"
+    },
+    "coverage": 89.36,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4226223f366ad550dbb96b686cc79735da22513e",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T17:00:44.000Z",
+      "message": "feat: implementacion del presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/4226223f366ad550dbb96b686cc79735da22513e"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 24,
+      "deletions": 4,
+      "date": "2026-04-20"
+    },
+    "coverage": 89.36,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T17:01:21.000Z",
+      "message": "feat: implementacion del presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 24,
+      "deletions": 4,
       "date": "2026-04-20"
     },
     "coverage": 89.36,
