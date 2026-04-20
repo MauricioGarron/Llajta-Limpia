@@ -502,9 +502,77 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "53c2328a00211c5e1fe3ff014a4f550346296d1d",
     "commitName": "feat: ver rutas por zona",
     "commitTimestamp": 1776700060528,
     "testId": 21
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1776700955197,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 2,
+    "numTotalTests": 17,
+    "timestamp": 1776703657451,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 2,
+    "numTotalTests": 17,
+    "timestamp": 1776703670435,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 2,
+    "numTotalTests": 17,
+    "timestamp": 1776703737206,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 2,
+    "numTotalTests": 17,
+    "timestamp": 1776703775296,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776703977011,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "045b8375668373c42248f143ea551107d5d24cc2",
+    "commitName": "feat: implementar ver horarios por zona",
+    "commitTimestamp": 1776704142104,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776705309378,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ver horarios por zona index-presenter",
+    "commitTimestamp": 1776705359789,
+    "testId": 23
   }
 ]

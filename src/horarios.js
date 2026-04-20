@@ -26,3 +26,15 @@ export function crearHorario(ruta, dia, hora) {
 export function obtenerHorariosPorRuta(ruta) {
   return horarios.filter(h => h.ruta === ruta);
 }
+
+import { obtenerRutasPorZona } from "./rutas.js";
+
+export function obtenerHorariosPorZona(zona) {
+  if (!zona) return [];
+
+  const rutas = obtenerRutasPorZona(zona);
+
+  const nombresRutas = rutas.map(r => r.ruta);
+
+  return horarios.filter(h => nombresRutas.includes(h.ruta));
+}
