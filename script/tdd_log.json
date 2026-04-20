@@ -474,9 +474,55 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f3c989f4bac7aba1c521a13563f9cc584e86c4eb",
     "commitName": "feat: interfaz para ver reportes",
     "commitTimestamp": 1776630048886,
     "testId": 19
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776640524877,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776698255570,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1776698281226,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1776698347892,
+    "success": false,
+    "testId": 20
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1776698595808,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar lógica para eliminar horarios",
+    "commitTimestamp": 1776698700102,
+    "testId": 20
   }
 ]

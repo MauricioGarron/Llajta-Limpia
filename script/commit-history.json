@@ -361,12 +361,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3c989f4bac7aba1c521a13563f9cc584e86c4eb",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-19T20:20:48.000Z",
       "message": "feat: interfaz para ver reportes",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/f3c989f4bac7aba1c521a13563f9cc584e86c4eb"
     },
     "stats": {
       "total": 17,
@@ -376,6 +376,25 @@
     },
     "coverage": 82.5,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T15:24:59.000Z",
+      "message": "feat: implementar lógica para eliminar horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 18,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 86.05,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }
