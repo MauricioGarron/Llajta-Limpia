@@ -502,9 +502,15 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "daa2efcac34c8656879595645bc39edc91eb6f0e",
     "commitName": "feat: ver rutas por zona",
     "commitTimestamp": 1776700060528,
     "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar lógica para eliminar horarios\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+    "commitTimestamp": 1776704021224,
+    "testId": 22
   }
 ]

@@ -399,12 +399,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "daa2efcac34c8656879595645bc39edc91eb6f0e",
     "author": "Griz-8",
     "commit": {
       "date": "2026-04-20T15:47:39.000Z",
       "message": "feat: ver rutas por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/daa2efcac34c8656879595645bc39edc91eb6f0e"
     },
     "stats": {
       "total": 8,
@@ -414,6 +414,25 @@
     },
     "coverage": 83.72,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T16:53:41.000Z",
+      "message": "feat: implementar lógica para eliminar horarios\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 18,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 86.96,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }
