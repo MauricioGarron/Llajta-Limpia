@@ -33,3 +33,39 @@ describe("HU6 - Crear ruta por zona", () => {
   });
 
 });
+
+describe("HU7 - Ver ruta por zona", () => {
+
+  beforeEach(() => {
+    resetRutas();
+  });
+
+  test("debería devolver rutas de una zona existente", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const rutas = obtenerRutasPorZona("norte");
+
+    expect(rutas.length).toBe(1);
+  });
+
+  test("debería lanzar error si la zona es inválida", () => {
+    expect(() => obtenerRutasPorZona("   ")).toThrow();
+  });
+
+  test("debería ignorar mayúsculas/minúsculas en la zona", () => {
+    crearRuta("Norte", "Ruta 1");
+
+    const rutas = obtenerRutasPorZona("norte");
+
+    expect(rutas.length).toBe(1);
+  });
+
+  test("debería ignorar espacios en la zona al buscar", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const rutas = obtenerRutasPorZona(" norte ");
+
+    expect(rutas.length).toBe(1);
+  });
+
+});

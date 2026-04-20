@@ -25,5 +25,11 @@ export function obtenerZonas() {
 }
 
 export function obtenerRutasPorZona(zona) {
-  return rutas.filter(r => r.zona === zona);
+   if (!zona || !zona.trim()) {
+    throw new Error("Zona inválida");
+  }
+
+  const zonaLimpia = zona.trim().toLowerCase();
+  
+  return rutas.filter(r => r.zona.toLowerCase() === zonaLimpia);
 }
