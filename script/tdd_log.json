@@ -550,9 +550,47 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "627b4b1a581f0b35e6a25e325db4d8324632d643",
     "commitName": "feat: implementar eliminación básica de horarios",
     "commitTimestamp": 1776699903937,
     "testId": 21
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1776700109248,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1776700223286,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1776700434648,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1776700584532,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: requerir confirmación explícita para eliminar horarios",
+    "commitTimestamp": 1776700629794,
+    "testId": 22
   }
 ]
