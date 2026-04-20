@@ -437,17 +437,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "60785281484ae9d0e79030e9a4ae96c72fe191ee",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T16:08:08.000Z",
       "message": "feat: implementacion del presenter",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/60785281484ae9d0e79030e9a4ae96c72fe191ee"
     },
     "stats": {
       "total": 28,
       "additions": 24,
       "deletions": 4,
+      "date": "2026-04-20"
+    },
+    "coverage": 88.64,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T16:15:04.000Z",
+      "message": "feat: implementacion del presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2026-04-20"
     },
     "coverage": 88.64,

@@ -594,9 +594,23 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "60785281484ae9d0e79030e9a4ae96c72fe191ee",
     "commitName": "feat: implementacion del presenter",
     "commitTimestamp": 1776701289116,
     "testId": 23
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1776701325712,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion del presenter",
+    "commitTimestamp": 1776701704649,
+    "testId": 24
   }
 ]
