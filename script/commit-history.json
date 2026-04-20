@@ -418,17 +418,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "67611f45ebf29209a335493a91a872ece17f36df",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T15:57:09.000Z",
       "message": "feat: requerir confirmación explícita para eliminar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/67611f45ebf29209a335493a91a872ece17f36df"
     },
     "stats": {
       "total": 16,
       "additions": 13,
       "deletions": 3,
+      "date": "2026-04-20"
+    },
+    "coverage": 88.64,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T16:08:08.000Z",
+      "message": "feat: implementacion del presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 24,
+      "deletions": 4,
       "date": "2026-04-20"
     },
     "coverage": 88.64,

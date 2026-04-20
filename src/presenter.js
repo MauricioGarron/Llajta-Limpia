@@ -13,7 +13,8 @@ import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
 
 import {
   crearHorario,
-  obtenerHorariosPorRuta
+  obtenerHorariosPorRuta,
+  eliminarHorario
 } from "./horarios.js";
 
 // --------------------
@@ -117,7 +118,11 @@ const btnBuscar = document.querySelector("#btn-buscar");
 
 btnBuscar.addEventListener("click", function () {
   const ruta = document.querySelector("#buscar-ruta").value;
+  renderHorariosUI(ruta);
+});
 
+// Render horarios
+function renderHorariosUI(ruta) {
   const horarios = obtenerHorariosPorRuta(ruta);
 
   horariosDiv.innerHTML = "";
@@ -128,9 +133,24 @@ btnBuscar.addEventListener("click", function () {
   }
 
   horarios.forEach(h => {
-    horariosDiv.innerHTML += `<p>${h.dia} - ${h.hora}</p>`;
+    horariosDiv.innerHTML += `
+      <p>
+        ${h.dia} - ${h.hora}
+        <button onclick="eliminarHorarioUI('${h.ruta}', '${h.dia}', '${h.hora}')">
+          Eliminar
+        </button>
+      </p>
+    `;
   });
-});
+}
+
+// Eliminar horario
+window.eliminarHorarioUI = function (ruta, dia, hora) {
+  if (confirm("¿Estás seguro de eliminar este horario?")) {
+    eliminarHorario(ruta, dia, hora, true);
+    renderHorariosUI(ruta);
+  }
+};
 
 // --------------------
 // REPORTES

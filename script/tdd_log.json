@@ -588,9 +588,15 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "67611f45ebf29209a335493a91a872ece17f36df",
     "commitName": "feat: requerir confirmación explícita para eliminar horarios",
     "commitTimestamp": 1776700629794,
     "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementacion del presenter",
+    "commitTimestamp": 1776701289116,
+    "testId": 23
   }
 ]
