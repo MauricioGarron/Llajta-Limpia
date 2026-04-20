@@ -508,9 +508,21 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98",
     "commitName": "feat: implementar lógica para eliminar horarios\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1776704021224,
     "testId": 22
+  },
+  {
+    "commitId": "8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98",
+    "commitName": "feat: implementar eliminación básica de horarios",
+    "commitTimestamp": 1776704203097,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar eliminación básica de horarios",
+    "commitTimestamp": 1776704336026,
+    "testId": 24
   }
 ]

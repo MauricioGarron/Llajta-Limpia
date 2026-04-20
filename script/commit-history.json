@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-20T16:53:41.000Z",
       "message": "feat: implementar lógica para eliminar horarios\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98"
     },
     "stats": {
       "total": 19,
@@ -433,6 +433,44 @@
     },
     "coverage": 86.96,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T16:56:42.000Z",
+      "message": "feat: implementar eliminación básica de horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/8318f8ed6aedd5c09a3fe4a8d88c51bdb3510b98"
+    },
+    "stats": {
+      "total": 26,
+      "additions": 12,
+      "deletions": 14,
+      "date": "2026-04-20"
+    },
+    "coverage": 86.67,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-20T16:58:55.000Z",
+      "message": "feat: implementar eliminación básica de horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 20,
+      "deletions": 12,
+      "date": "2026-04-20"
+    },
+    "coverage": 89.36,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }
