@@ -380,12 +380,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "56eed922a2a850a1afa71a6a6726dd1d40a75d6a",
     "author": "Griz-8",
     "commit": {
       "date": "2026-04-20T15:42:02.000Z",
       "message": "test: HU7 ver rutas por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/56eed922a2a850a1afa71a6a6726dd1d40a75d6a"
     },
     "stats": {
       "total": 36,
@@ -397,5 +397,24 @@
     "test_count": 15,
     "failed_tests": 3,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Griz-8",
+    "commit": {
+      "date": "2026-04-20T15:47:39.000Z",
+      "message": "feat: ver rutas por zona",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
+      "date": "2026-04-20"
+    },
+    "coverage": 83.72,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

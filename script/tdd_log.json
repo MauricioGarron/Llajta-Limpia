@@ -488,9 +488,23 @@
     "testId": 20
   },
   {
-    "commitId": "HEAD",
+    "commitId": "56eed922a2a850a1afa71a6a6726dd1d40a75d6a",
     "commitName": "test: HU7 ver rutas por zona",
     "commitTimestamp": 1776699724296,
     "testId": 20
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1776700000569,
+    "success": true,
+    "testId": 21
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ver rutas por zona",
+    "commitTimestamp": 1776700060528,
+    "testId": 21
   }
 ]
