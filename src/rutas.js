@@ -33,3 +33,10 @@ export function obtenerRutasPorZona(zona) {
   
   return rutas.filter(r => r.zona.toLowerCase() === zonaLimpia);
 }
+
+export function editarRuta(zona, nombreViejo, nombreNuevo) {
+  const rutaEncontrada = rutas.find(r => r.zona === zona && r.ruta === nombreViejo);
+  if (rutaEncontrada) {
+    rutaEncontrada.ruta = nombreNuevo;
+  }
+}

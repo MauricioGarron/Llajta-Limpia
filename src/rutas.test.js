@@ -3,7 +3,8 @@ import {
   eliminarRuta,
   obtenerZonas,
   obtenerRutasPorZona,
-  resetRutas
+  resetRutas,
+  editarRuta
 } from "./rutas.js";
 
 describe("HU6 - Crear ruta por zona", () => {
@@ -67,5 +68,12 @@ describe("HU7 - Ver ruta por zona", () => {
 
     expect(rutas.length).toBe(1);
   });
+
+  test("debería editar el nombre de una ruta existente", () => {
+    crearRuta("norte", "Ruta Antigua");
+    editarRuta("norte", "Ruta Antigua", "Ruta Nueva");
+    const rutas = obtenerRutasPorZona("norte");
+    expect(rutas[0].ruta).toBe("Ruta Nueva");
+});
 
 });

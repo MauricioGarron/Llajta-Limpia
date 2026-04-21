@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b90edc91fdc6ab323faae364efa0f7fb3052f40",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T00:27:20.000Z",
       "message": "feat: requerir confirmación para eliminar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/9b90edc91fdc6ab323faae364efa0f7fb3052f40"
     },
     "stats": {
       "total": 14,
@@ -490,6 +490,25 @@
     },
     "coverage": 88.89,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:22:49.000Z",
+      "message": "feat: implementar edición básica de nombre de ruta",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 89.66,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }
