@@ -828,9 +828,23 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "939024889c625117f436fd0e9e319e8d9937b68e",
     "commitName": "feat: validar campos obligatorios al editar horario",
     "commitTimestamp": 1776735716878,
     "testId": 30
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1776735837996,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: verificar integridad tras edición de horario",
+    "commitTimestamp": 1776735864659,
+    "testId": 31
   }
 ]
