@@ -8,6 +8,7 @@
   <body>
 
     <h1>Llajta Limpia</h1>
+    
     <h2>Crear Ruta por Zona</h2>
 
     <form id="ruta-form">
@@ -21,6 +22,7 @@
     </form>
 
     <h2>Ver rutas</h2>
+    <p><small>Pista: Puedes editar o eliminar rutas directamente en la lista.</small></p>
 
     <select id="filtro-zona">
       <option value="">Selecciona zona</option>
@@ -58,34 +60,35 @@
       <option value="">Selecciona zona</option>
     </select>
     <div id="horarios-zona-div"></div>
-  <hr />
+    
+    <hr />
 
-<h2>Crear reporte de basura</h2>
+    <h2>Crear reporte de basura</h2>
 
-<form id="reporte-form">
-  <label>Zona:</label>
-  <input type="text" id="reporte-zona" required />
+    <form id="reporte-form">
+      <label>Zona:</label>
+      <input type="text" id="reporte-zona" required />
 
-  <label>Dirección:</label>
-  <input type="text" id="reporte-direccion" required />
+      <label>Dirección:</label>
+      <input type="text" id="reporte-direccion" required />
 
-  <label>Descripción:</label>
-  <input type="text" id="reporte-descripcion" required />
+      <label>Descripción:</label>
+      <input type="text" id="reporte-descripcion" required />
 
-  <button type="submit">Enviar reporte</button>
-</form>
+      <button type="submit">Enviar reporte</button>
+    </form>
 
-<div id="mensaje-reporte"></div>
+    <div id="mensaje-reporte"></div>
 
-<hr />
+    <hr />
 
-<h2>Ver reportes de basura</h2>
+    <h2>Ver reportes de basura</h2>
 
-<button id="ver-reportes">Mostrar reportes</button>
+    <button id="ver-reportes">Mostrar reportes</button>
 
-<div id="mensaje-lista-reportes"></div>
+    <div id="mensaje-lista-reportes"></div>
 
-<ul id="lista-reportes"></ul>
+    <ul id="lista-reportes"></ul>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

@@ -710,9 +710,155 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9b90edc91fdc6ab323faae364efa0f7fb3052f40",
     "commitName": "feat: requerir confirmación para eliminar horarios",
     "commitTimestamp": 1776731240821,
     "testId": 25
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1776734499440,
+    "success": false,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1776734535845,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "80e20434938ff8ab171c80055d39dbccb7410675",
+    "commitName": "feat: implementar edición básica de nombre de ruta",
+    "commitTimestamp": 1776734569989,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1776734606778,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1776734633603,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "5ea81f15ee2b6d035ab54e69bebf933058bb8051",
+    "commitName": "feat: validar que el nuevo nombre de ruta no sea vacío",
+    "commitTimestamp": 1776734698458,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1776734735875,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "7ca80bfba8aaa9551ecd581337d6f31094d9dbd7",
+    "commitName": "feat: los cambios se reflejan en la lista",
+    "commitTimestamp": 1776734784890,
+    "testId": 28
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1776735248303,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1776735277569,
+    "success": true,
+    "testId": 29
+  },
+  {
+    "commitId": "1c6f16f55304bd67411b94000899e57d66276339",
+    "commitName": "feat: implementar edición básica de datos de horario",
+    "commitTimestamp": 1776735355643,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1776735361738,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1776735413501,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1776735485434,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1776735682734,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "939024889c625117f436fd0e9e319e8d9937b68e",
+    "commitName": "feat: validar campos obligatorios al editar horario",
+    "commitTimestamp": 1776735716878,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1776735837996,
+    "success": true,
+    "testId": 31
+  },
+  {
+    "commitId": "b2ea805f4913868283ac8bb0a108dd9de34fab2f",
+    "commitName": "test: verificar integridad tras edición de horario",
+    "commitTimestamp": 1776735864659,
+    "testId": 31
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1776737963337,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar funciones de editar y eliminar en la interfaz",
+    "commitTimestamp": 1776739269441,
+    "testId": 32
   }
 ]

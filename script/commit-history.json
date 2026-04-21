@@ -475,12 +475,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9b90edc91fdc6ab323faae364efa0f7fb3052f40",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T00:27:20.000Z",
       "message": "feat: requerir confirmación para eliminar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/9b90edc91fdc6ab323faae364efa0f7fb3052f40"
     },
     "stats": {
       "total": 14,
@@ -490,6 +490,139 @@
     },
     "coverage": 88.89,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "80e20434938ff8ab171c80055d39dbccb7410675",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:22:49.000Z",
+      "message": "feat: implementar edición básica de nombre de ruta",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/80e20434938ff8ab171c80055d39dbccb7410675"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 89.66,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5ea81f15ee2b6d035ab54e69bebf933058bb8051",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:24:58.000Z",
+      "message": "feat: validar que el nuevo nombre de ruta no sea vacío",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/5ea81f15ee2b6d035ab54e69bebf933058bb8051"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 90,
+    "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7ca80bfba8aaa9551ecd581337d6f31094d9dbd7",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:26:24.000Z",
+      "message": "feat: los cambios se reflejan en la lista",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/7ca80bfba8aaa9551ecd581337d6f31094d9dbd7"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-04-21"
+    },
+    "coverage": 90,
+    "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1c6f16f55304bd67411b94000899e57d66276339",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:35:55.000Z",
+      "message": "feat: implementar edición básica de datos de horario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/1c6f16f55304bd67411b94000899e57d66276339"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 24,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "939024889c625117f436fd0e9e319e8d9937b68e",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:41:56.000Z",
+      "message": "feat: validar campos obligatorios al editar horario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/939024889c625117f436fd0e9e319e8d9937b68e"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 14,
+      "deletions": 6,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 24,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b2ea805f4913868283ac8bb0a108dd9de34fab2f",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:44:24.000Z",
+      "message": "test: verificar integridad tras edición de horario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b2ea805f4913868283ac8bb0a108dd9de34fab2f"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
+      "deletions": 0,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T02:41:09.000Z",
+      "message": "feat: agregar funciones de editar y eliminar en la interfaz",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 97,
+      "additions": 76,
+      "deletions": 21,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
   }
