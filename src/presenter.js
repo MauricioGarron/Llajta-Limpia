@@ -2,7 +2,8 @@ import {
   crearRuta,
   eliminarRuta,
   obtenerZonas,
-  obtenerRutasPorZona
+  obtenerRutasPorZona,
+  editarRuta
 } from "./rutas.js";
 
 import {
@@ -14,7 +15,9 @@ import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
 import {
   crearHorario,
   obtenerHorariosPorRuta,
-  obtenerHorariosPorZona
+  obtenerHorariosPorZona,
+  eliminarHorario,
+  editarHorario
 } from "./horarios.js";
 
 // --------------------
@@ -77,6 +80,9 @@ function renderRutas(zona) {
     resultadoDiv.innerHTML += `
       <p>
         ${r.ruta}
+        <button onclick="editarRutaUI('${r.zona}', '${r.ruta}')">
+          Editar
+        </button>
         <button onclick="eliminarRutaUI('${r.zona}', '${r.ruta}')">
           Eliminar
         </button>
@@ -90,6 +96,19 @@ window.eliminarRutaUI = function (zona, ruta) {
   if (confirm("¿Seguro que deseas eliminar esta ruta?")) {
     eliminarRuta(zona, ruta);
     renderRutas(zona);
+  }
+};
+
+// Editar ruta
+window.editarRutaUI = function (zona, nombreViejo) {
+  const nuevoNombre = prompt("Nuevo nombre para la ruta:", nombreViejo);
+  if (nuevoNombre) {
+    try {
+      editarRuta(zona, nombreViejo, nuevoNombre);
+      renderRutas(zona);
+    } catch (error) {
+      alert(error.message);
+    }
   }
 };
 
@@ -132,7 +151,10 @@ btnBuscar.addEventListener("click", function () {
   }
 
   horarios.forEach(h => {
-    horariosDiv.innerHTML += `<p>${h.dia} - ${h.hora}</p>`;
+    horariosDiv.innerHTML += `<p>${h.dia} - ${h.hora}
+    <button onclick="editarHorarioUI('${h.ruta}', '${h.dia}', '${h.hora}')">Editar</button>
+    <button onclick="eliminarHorarioUI('${h.ruta}', '${h.dia}', '${h.hora}')">Eliminar</button>
+    </p>`;
   });
 });
 
@@ -158,9 +180,39 @@ selectZonaHorarios.addEventListener("change", function () {
   }
 
   horarios.forEach(h => {
-    horariosZonaDiv.innerHTML += `<p>${h.ruta} - ${h.dia} - ${h.hora}</p>`;
+    horariosZonaDiv.innerHTML += `<p>${h.ruta} - ${h.dia} - ${h.hora}
+    <button onclick="editarHorarioUI('${h.ruta}', '${h.dia}', '${h.hora}')">Editar</button>
+    <button onclick="eliminarHorarioUI('${h.ruta}', '${h.dia}', '${h.hora}')">Eliminar</button>
+    
+    </p>`;
   });
 });
+
+// Eliminar horario
+window.eliminarHorarioUI = function (ruta, dia, hora) {
+  if (confirm(`¿Deseas eliminar el horario de ${dia} a las ${hora}?`)) {
+    eliminarHorario(ruta, dia, hora, true);
+    alert("Horario eliminado. Busque de nuevo para refrescar.");
+  }
+};
+
+// Editar horario
+window.editarHorarioUI = function (ruta, dia, hora) {
+  const nuevoDia = prompt("Nuevo día:", dia);
+  const nuevaHora = prompt("Nueva hora:", hora);
+
+  if (nuevoDia && nuevaHora) {
+    try {
+      const viejo = { ruta, dia, hora };
+      const nuevo = { ruta, dia: nuevoDia, hora: nuevaHora };
+      editarHorario(viejo, nuevo);
+      alert("Horario editado. Busque de nuevo para refrescar.");
+    } catch (error) {
+      alert(error.message);
+    }
+  }
+};
+
 
 // --------------------
 // REPORTES

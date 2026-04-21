@@ -589,17 +589,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b2ea805f4913868283ac8bb0a108dd9de34fab2f",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T01:44:24.000Z",
       "message": "test: verificar integridad tras edición de horario",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b2ea805f4913868283ac8bb0a108dd9de34fab2f"
     },
     "stats": {
       "total": 11,
       "additions": 11,
       "deletions": 0,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T02:41:09.000Z",
+      "message": "feat: agregar funciones de editar y eliminar en la interfaz",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 97,
+      "additions": 76,
+      "deletions": 21,
       "date": "2026-04-21"
     },
     "coverage": 90.91,

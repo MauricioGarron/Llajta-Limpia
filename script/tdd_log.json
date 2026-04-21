@@ -842,9 +842,23 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b2ea805f4913868283ac8bb0a108dd9de34fab2f",
     "commitName": "test: verificar integridad tras edición de horario",
     "commitTimestamp": 1776735864659,
     "testId": 31
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1776737963337,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar funciones de editar y eliminar en la interfaz",
+    "commitTimestamp": 1776739269441,
+    "testId": 32
   }
 ]
