@@ -856,9 +856,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "429d1e3a0eec800b0d279f48a525ae6e673cbbb9",
     "commitName": "feat: agregar funciones de editar y eliminar en la interfaz",
     "commitTimestamp": 1776739269441,
     "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: implementacion de css para la interfaz visual",
+    "commitTimestamp": 1776741933163,
+    "testId": 33
   }
 ]

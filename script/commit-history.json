@@ -608,17 +608,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "429d1e3a0eec800b0d279f48a525ae6e673cbbb9",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T02:41:09.000Z",
       "message": "feat: agregar funciones de editar y eliminar en la interfaz",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/429d1e3a0eec800b0d279f48a525ae6e673cbbb9"
     },
     "stats": {
       "total": 97,
       "additions": 76,
       "deletions": 21,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-04-21T03:25:32.000Z",
+      "message": "style: implementacion de css para la interfaz visual",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 63,
+      "deletions": 2,
       "date": "2026-04-21"
     },
     "coverage": 90.91,
