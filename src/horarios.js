@@ -38,3 +38,9 @@ export function obtenerHorariosPorZona(zona) {
 
   return horarios.filter(h => nombresRutas.includes(h.ruta));
 }
+export function eliminarHorario(ruta, dia, hora) {
+    horarios = horarios.filter(h => 
+        !(h.ruta === ruta && h.dia === dia && h.hora === hora)
+    );
+}
+
