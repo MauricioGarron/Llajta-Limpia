@@ -1,7 +1,9 @@
 import {
   crearHorario,
   obtenerHorariosPorZona,
-  resetHorarios
+  resetHorarios,
+  eliminarHorario,
+  obtenerHorariosPorRuta
 } from "./horarios.js";
 
 import {
@@ -48,6 +50,20 @@ describe("HU8 - Ver horarios por zona", () => {
     const horarios = obtenerHorariosPorZona("sur");
 
     expect(horarios).toEqual([]);
+  });
+
+  test("debería borrar un horario existente de la lista", () => {
+    crearHorario("Ruta 1", "Sábado", "18:00");
+    eliminarHorario("Ruta 1", "Sábado", "18:00", true); 
+    const lista = obtenerHorariosPorRuta("Ruta 1");
+    expect(lista).toHaveLength(0);
+  });
+
+  test("no debería eliminar el horario si no se pasa la confirmación", () => {
+    crearHorario("Ruta 1", "Sábado", "18:00");
+    eliminarHorario("Ruta 1", "Sábado", "18:00", false); 
+    const lista = obtenerHorariosPorRuta("Ruta 1");
+    expect(lista).toHaveLength(1); 
   });
 
 });

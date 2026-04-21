@@ -437,12 +437,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ec88c13c585144ab798ae656d602540aa599eb90",
     "author": "Griz-8",
     "commit": {
       "date": "2026-04-20T17:15:58.000Z",
       "message": "feat: ver horarios por zona index-presenter",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/ec88c13c585144ab798ae656d602540aa599eb90"
     },
     "stats": {
       "total": 39,
@@ -452,6 +452,44 @@
     },
     "coverage": 84,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "09495df3ec1567f1f8a0427c4fd4497cfedab297",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T00:19:57.000Z",
+      "message": "feat: implementar lógica básica para eliminar horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/09495df3ec1567f1f8a0427c4fd4497cfedab297"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 18,
+      "deletions": 2,
+      "date": "2026-04-21"
+    },
+    "coverage": 86.54,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T00:27:20.000Z",
+      "message": "feat: requerir confirmación para eliminar horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 10,
+      "deletions": 4,
+      "date": "2026-04-21"
+    },
+    "coverage": 88.89,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

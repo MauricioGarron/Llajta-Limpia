@@ -570,9 +570,149 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ec88c13c585144ab798ae656d602540aa599eb90",
     "commitName": "feat: ver horarios por zona index-presenter",
     "commitTimestamp": 1776705359789,
     "testId": 23
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776729335585,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776729537115,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776729610403,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776729631920,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776729679064,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1776730161707,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730214968,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730319818,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730437514,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730628209,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730657197,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 1,
+    "numTotalTests": 18,
+    "timestamp": 1776730753191,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1776730786036,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "09495df3ec1567f1f8a0427c4fd4497cfedab297",
+    "commitName": "feat: implementar lógica básica para eliminar horarios",
+    "commitTimestamp": 1776730797644,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776730850893,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1776730878441,
+    "success": false,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1776731210298,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: requerir confirmación para eliminar horarios",
+    "commitTimestamp": 1776731240821,
+    "testId": 25
   }
 ]
