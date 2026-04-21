@@ -35,6 +35,9 @@ export function obtenerRutasPorZona(zona) {
 }
 
 export function editarRuta(zona, nombreViejo, nombreNuevo) {
+  if (!nombreNuevo) {
+    throw new Error("Datos incompletos");
+  }
   const rutaEncontrada = rutas.find(r => r.zona === zona && r.ruta === nombreViejo);
   if (rutaEncontrada) {
     rutaEncontrada.ruta = nombreNuevo;

@@ -732,9 +732,31 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "80e20434938ff8ab171c80055d39dbccb7410675",
     "commitName": "feat: implementar edición básica de nombre de ruta",
     "commitTimestamp": 1776734569989,
     "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1776734606778,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1776734633603,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar que el nuevo nombre de ruta no sea vacío",
+    "commitTimestamp": 1776734698458,
+    "testId": 27
   }
 ]

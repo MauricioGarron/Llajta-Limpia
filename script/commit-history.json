@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "80e20434938ff8ab171c80055d39dbccb7410675",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T01:22:49.000Z",
       "message": "feat: implementar edición básica de nombre de ruta",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/80e20434938ff8ab171c80055d39dbccb7410675"
     },
     "stats": {
       "total": 17,
@@ -509,6 +509,25 @@
     },
     "coverage": 89.66,
     "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:24:58.000Z",
+      "message": "feat: validar que el nuevo nombre de ruta no sea vacío",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 90,
+    "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
   }

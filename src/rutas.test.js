@@ -74,6 +74,15 @@ describe("HU7 - Ver ruta por zona", () => {
     editarRuta("norte", "Ruta Antigua", "Ruta Nueva");
     const rutas = obtenerRutasPorZona("norte");
     expect(rutas[0].ruta).toBe("Ruta Nueva");
-});
+  });
+
+  test("debería lanzar error si el nuevo nombre de ruta está vacío", () => {
+    crearRuta("norte", "Ruta 1");
+
+    expect(() => {
+        editarRuta("norte", "Ruta 1", "");
+    }).toThrow("Datos incompletos");
+  });
+
 
 });
