@@ -754,9 +754,23 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5ea81f15ee2b6d035ab54e69bebf933058bb8051",
     "commitName": "feat: validar que el nuevo nombre de ruta no sea vacío",
     "commitTimestamp": 1776734698458,
     "testId": 27
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 0,
+    "numTotalTests": 22,
+    "timestamp": 1776734735875,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: los cambios se reflejan en la lista",
+    "commitTimestamp": 1776734784890,
+    "testId": 28
   }
 ]

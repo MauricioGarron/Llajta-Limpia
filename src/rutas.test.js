@@ -85,4 +85,14 @@ describe("HU7 - Ver ruta por zona", () => {
   });
 
 
+  test("la ruta antigua no debe existir después de la edición", () => {
+    crearRuta("norte", "Ruta A");
+    editarRuta("norte", "Ruta A", "Ruta B");
+
+    const rutas = obtenerRutasPorZona("norte");
+    const existeVieja = rutas.some(r => r.ruta === "Ruta A");
+    
+    expect(existeVieja).toBe(false);
+  });
+
 });
