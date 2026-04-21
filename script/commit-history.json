@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1c6f16f55304bd67411b94000899e57d66276339",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T01:35:55.000Z",
       "message": "feat: implementar edición básica de datos de horario",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/1c6f16f55304bd67411b94000899e57d66276339"
     },
     "stats": {
       "total": 25,
@@ -566,6 +566,25 @@
     },
     "coverage": 90.91,
     "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:41:56.000Z",
+      "message": "feat: validar campos obligatorios al editar horario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 14,
+      "deletions": 6,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 24,
     "failed_tests": 0,
     "conclusion": "success"
   }

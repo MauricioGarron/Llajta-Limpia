@@ -46,14 +46,13 @@ export function eliminarHorario(ruta, dia, hora, confirmado = false) {
 }
 
 export function editarHorario(datosViejos, datosNuevos) {
+  if (!datosNuevos.ruta || !datosNuevos.dia || !datosNuevos.hora) {
+    throw new Error("Datos incompletos");
+  }
   const horario = horarios.find(h => 
-    h.ruta === datosViejos.ruta && 
-    h.dia === datosViejos.dia && 
-    h.hora === datosViejos.hora
+    h.ruta === datosViejos.ruta && h.dia === datosViejos.dia && h.hora === datosViejos.hora
   );
   if (horario) {
-    horario.ruta = datosNuevos.ruta;
-    horario.dia = datosNuevos.dia;
-    horario.hora = datosNuevos.hora;
+    Object.assign(horario, datosNuevos);
   }
 }

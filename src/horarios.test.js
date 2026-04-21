@@ -76,4 +76,13 @@ describe("HU8 - Ver horarios por zona", () => {
     expect(lista[0].hora).toBe("10:00");
   });
 
+  test("debería lanzar error si el nuevo horario tiene campos vacíos", () => {
+    crearHorario("Ruta 1", "Lunes", "08:00");
+    const viejo = { ruta: "Ruta 1", dia: "Lunes", hora: "08:00" };
+    const nuevo = { ruta: "Ruta 1", dia: "", hora: "" };
+
+    expect(() => editarHorario(viejo, nuevo)).toThrow("Datos incompletos");
+  });
+
+
 });

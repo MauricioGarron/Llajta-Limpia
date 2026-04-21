@@ -790,9 +790,47 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1c6f16f55304bd67411b94000899e57d66276339",
     "commitName": "feat: implementar edición básica de datos de horario",
     "commitTimestamp": 1776735355643,
     "testId": 29
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1776735361738,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1776735413501,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 1,
+    "numTotalTests": 24,
+    "timestamp": 1776735485434,
+    "success": false,
+    "testId": 30
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 0,
+    "numTotalTests": 24,
+    "timestamp": 1776735682734,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar campos obligatorios al editar horario",
+    "commitTimestamp": 1776735716878,
+    "testId": 30
   }
 ]
