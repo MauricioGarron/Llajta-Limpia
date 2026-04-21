@@ -768,9 +768,31 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7ca80bfba8aaa9551ecd581337d6f31094d9dbd7",
     "commitName": "feat: los cambios se reflejan en la lista",
     "commitTimestamp": 1776734784890,
     "testId": 28
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1776735248303,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1776735277569,
+    "success": true,
+    "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar edición básica de datos de horario",
+    "commitTimestamp": 1776735355643,
+    "testId": 29
   }
 ]

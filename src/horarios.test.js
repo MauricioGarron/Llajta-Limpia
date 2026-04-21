@@ -3,7 +3,8 @@ import {
   obtenerHorariosPorZona,
   resetHorarios,
   eliminarHorario,
-  obtenerHorariosPorRuta
+  obtenerHorariosPorRuta,
+  editarHorario
 } from "./horarios.js";
 
 import {
@@ -64,6 +65,15 @@ describe("HU8 - Ver horarios por zona", () => {
     eliminarHorario("Ruta 1", "Sábado", "18:00", false); 
     const lista = obtenerHorariosPorRuta("Ruta 1");
     expect(lista).toHaveLength(1); 
+  });
+
+  test("debería editar la hora de un horario existente", () => {
+    crearHorario("Ruta 1", "Lunes", "08:00");
+    const viejo = { ruta: "Ruta 1", dia: "Lunes", hora: "08:00" };
+    const nuevo = { ruta: "Ruta 1", dia: "Lunes", hora: "10:00" };
+    editarHorario(viejo, nuevo);
+    const lista = obtenerHorariosPorRuta("Ruta 1");
+    expect(lista[0].hora).toBe("10:00");
   });
 
 });

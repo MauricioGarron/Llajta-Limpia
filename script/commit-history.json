@@ -532,12 +532,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7ca80bfba8aaa9551ecd581337d6f31094d9dbd7",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-04-21T01:26:24.000Z",
       "message": "feat: los cambios se reflejan en la lista",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/7ca80bfba8aaa9551ecd581337d6f31094d9dbd7"
     },
     "stats": {
       "total": 10,
@@ -547,6 +547,25 @@
     },
     "coverage": 90,
     "test_count": 22,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-04-21T01:35:55.000Z",
+      "message": "feat: implementar edición básica de datos de horario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 24,
+      "deletions": 1,
+      "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
   }
