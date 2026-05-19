@@ -862,9 +862,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ff1263471e00e22a58d6dec6dfc0f39d55c5be8d",
     "commitName": "style: implementacion de css para la interfaz visual",
     "commitTimestamp": 1776741933163,
     "testId": 33
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: convertir rutas a clase",
+    "commitTimestamp": 1779200322070,
+    "testId": 34
   }
 ]

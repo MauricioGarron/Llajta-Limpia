@@ -627,18 +627,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff1263471e00e22a58d6dec6dfc0f39d55c5be8d",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-21T03:25:32.000Z",
       "message": "style: implementacion de css para la interfaz visual",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/ff1263471e00e22a58d6dec6dfc0f39d55c5be8d"
     },
     "stats": {
       "total": 65,
       "additions": 63,
       "deletions": 2,
       "date": "2026-04-21"
+    },
+    "coverage": 90.91,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-19T14:18:41.000Z",
+      "message": "refactor: convertir rutas a clase",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 99,
+      "additions": 72,
+      "deletions": 27,
+      "date": "2026-05-19"
     },
     "coverage": 90.91,
     "test_count": 25,

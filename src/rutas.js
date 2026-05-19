@@ -1,45 +1,90 @@
-let rutas = [];
+class Ruta {
+  constructor(zona, ruta) {
+    this.zona = zona;
+    this.ruta = ruta;
+  }
+}
+
+class RutaService {
+  constructor() {
+    this.rutas = [];
+  }
+
+  reset() {
+    this.rutas = [];
+  }
+
+  crear(zona, ruta) {
+    if (!zona || !ruta) {
+      throw new Error("Datos incompletos");
+    }
+
+    const nuevaRuta = new Ruta(zona, ruta);
+    this.rutas.push(nuevaRuta);
+    return nuevaRuta;
+  }
+
+  eliminar(zona, ruta) {
+    if (!zona || !ruta) {
+      throw new Error("Datos incompletos");
+    }
+
+    this.rutas = this.rutas.filter(r => !(r.zona === zona && r.ruta === ruta));
+  }
+
+  obtenerZonas() {
+    return [...new Set(this.rutas.map(r => r.zona))];
+  }
+
+  obtenerPorZona(zona) {
+    if (!zona || !zona.trim()) {
+      throw new Error("Zona inválida");
+    }
+
+    const zonaLimpia = zona.trim().toLowerCase();
+
+    return this.rutas.filter(r => r.zona.toLowerCase() === zonaLimpia);
+  }
+
+  editar(zona, nombreViejo, nombreNuevo) {
+    if (!nombreNuevo) {
+      throw new Error("Datos incompletos");
+    }
+
+    const rutaEncontrada = this.rutas.find(
+      r => r.zona === zona && r.ruta === nombreViejo
+    );
+
+    if (rutaEncontrada) {
+      rutaEncontrada.ruta = nombreNuevo;
+    }
+  }
+}
+
+const rutaService = new RutaService();
+
+export { Ruta, RutaService, rutaService };
 
 export function resetRutas() {
-  rutas = [];
+  rutaService.reset();
 }
 
 export function crearRuta(zona, ruta) {
-  if (!zona || !ruta) {
-    throw new Error("Datos incompletos");
-  }
-
-  rutas.push({ zona, ruta });
+  return rutaService.crear(zona, ruta);
 }
 
 export function eliminarRuta(zona, ruta) {
-  if (!zona || !ruta) {
-    throw new Error("Datos incompletos");
-  }
-
-  rutas = rutas.filter(r => !(r.zona === zona && r.ruta === ruta));
+  rutaService.eliminar(zona, ruta);
 }
 
 export function obtenerZonas() {
-  return [...new Set(rutas.map(r => r.zona))];
+  return rutaService.obtenerZonas();
 }
 
 export function obtenerRutasPorZona(zona) {
-   if (!zona || !zona.trim()) {
-    throw new Error("Zona inválida");
-  }
-
-  const zonaLimpia = zona.trim().toLowerCase();
-  
-  return rutas.filter(r => r.zona.toLowerCase() === zonaLimpia);
+  return rutaService.obtenerPorZona(zona);
 }
 
 export function editarRuta(zona, nombreViejo, nombreNuevo) {
-  if (!nombreNuevo) {
-    throw new Error("Datos incompletos");
-  }
-  const rutaEncontrada = rutas.find(r => r.zona === zona && r.ruta === nombreViejo);
-  if (rutaEncontrada) {
-    rutaEncontrada.ruta = nombreNuevo;
-  }
+  rutaService.editar(zona, nombreViejo, nombreNuevo);
 }
