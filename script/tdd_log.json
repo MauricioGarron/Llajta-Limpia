@@ -868,9 +868,15 @@
     "testId": 33
   },
   {
-    "commitId": "HEAD",
+    "commitId": "33209fdabdd57db407483bac40875fc80d28c156",
     "commitName": "refactor: convertir rutas a clase",
     "commitTimestamp": 1779200322070,
     "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: convertir horarios a clase",
+    "commitTimestamp": 1779200390110,
+    "testId": 35
   }
 ]

@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "33209fdabdd57db407483bac40875fc80d28c156",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-19T14:18:41.000Z",
       "message": "refactor: convertir rutas a clase",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/33209fdabdd57db407483bac40875fc80d28c156"
     },
     "stats": {
       "total": 99,
@@ -660,6 +660,25 @@
       "date": "2026-05-19"
     },
     "coverage": 90.91,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-19T14:19:49.000Z",
+      "message": "refactor: convertir horarios a clase",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 123,
+      "additions": 86,
+      "deletions": 37,
+      "date": "2026-05-19"
+    },
+    "coverage": 93.18,
     "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
