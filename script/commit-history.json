@@ -684,12 +684,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "666a24ae8a21eafa85346f243d71d425a3dd4310",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-19T14:26:18.000Z",
       "message": "refactor: convertir reportes a clase",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/666a24ae8a21eafa85346f243d71d425a3dd4310"
     },
     "stats": {
       "total": 392,
@@ -701,5 +701,24 @@
     "test_count": 25,
     "failed_tests": 5,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-19T14:36:04.000Z",
+      "message": "fix: arreglo de imports y exports",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 17,
+      "deletions": 2,
+      "date": "2026-05-19"
+    },
+    "coverage": 86.11,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

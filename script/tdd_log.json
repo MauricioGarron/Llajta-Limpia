@@ -880,9 +880,23 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "666a24ae8a21eafa85346f243d71d425a3dd4310",
     "commitName": "refactor: convertir reportes a clase",
     "commitTimestamp": 1779200778459,
     "testId": 36
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1779201332749,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: arreglo de imports y exports",
+    "commitTimestamp": 1779201364670,
+    "testId": 37
   }
 ]
