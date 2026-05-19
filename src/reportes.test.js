@@ -1,0 +1,134 @@
+import {
+  crearReporte,
+  obtenerReportes,
+  resetReportes,
+  verReportes,
+  darLikeReporte
+} from "./reportes.js";
+
+beforeEach(() => {
+  resetReportes();
+});
+
+describe("HU - Crear reporte de basura", () => {
+  test("debería enviar el reporte cuando el formulario está completo", () => {
+    const reporte = crearReporte(
+      "norte",
+      "Av. América y Beijing",
+      "Basura acumulada"
+    );
+
+    expect(reporte.zona).toBe("norte");
+    expect(reporte.direccion).toBe("Av. América y Beijing");
+    expect(reporte.descripcion).toBe("Basura acumulada");
+    expect(reporte.estado).toBe("enviado");
+  });
+
+  test("debería pedir completar la información si faltan datos", () => {
+    expect(() => crearReporte("", "Av. América", "Basura")).toThrow();
+
+    expect(() =>
+      crearReporte("norte", "", "Basura")
+    ).toThrow();
+
+    expect(() =>
+      crearReporte("norte", "Av. América", "")
+    ).toThrow();
+  });
+
+  test("debería guardar el reporte enviado", () => {
+    crearReporte(
+      "sur",
+      "Av. Panamericana",
+      "Contenedor lleno"
+    );
+
+    const reportes = obtenerReportes();
+
+    expect(reportes.length).toBe(1);
+    expect(reportes[0].zona).toBe("sur");
+  });
+});
+
+describe("HU - Ver reportes", () => {
+  test("debería mostrar una lista de reportes existentes", () => {
+    crearReporte(
+      "norte",
+      "Av. América",
+      "Basura en la esquina"
+    );
+
+    crearReporte(
+      "sur",
+      "Av. Panamericana",
+      "Contenedor lleno"
+    );
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes.length).toBe(2);
+
+    expect(resultado.reportes[0].zona).toBe("norte");
+
+    expect(resultado.reportes[1].zona).toBe("sur");
+  });
+
+  test("debería mostrar mensaje informativo si no hay reportes", () => {
+    const resultado = verReportes();
+
+    expect(resultado.mensaje).toBe(
+      "No hay reportes registrados."
+    );
+
+    expect(resultado.reportes.length).toBe(0);
+  });
+
+  test("cada reporte debería mostrar información básica", () => {
+    crearReporte(
+      "norte",
+      "Av. América",
+      "Basura en la esquina"
+    );
+
+    const resultado = verReportes();
+
+    const reporte = resultado.reportes[0];
+
+    expect(reporte.zona).toBe("norte");
+
+    expect(reporte.direccion).toBe("Av. América");
+
+    expect(reporte.descripcion).toBe(
+      "Basura en la esquina"
+    );
+  });
+
+  test('debería permitir dar "like" a un reporte', () => {
+    crearReporte(
+      "norte",
+      "Av. América",
+      "Basura en la esquina"
+    );
+
+    darLikeReporte(0);
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes[0].likes).toBe(1);
+  });
+
+  test('debería visualizar la cantidad de "likes" de un reporte', () => {
+    crearReporte(
+      "norte",
+      "Av. América",
+      "Basura en la esquina"
+    );
+
+    darLikeReporte(0);
+    darLikeReporte(0);
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes[0].likes).toBe(2);
+  });
+});

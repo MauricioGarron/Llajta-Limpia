@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "81a4a87d9f26c7a331e9072eb6b7976c6f13afdd",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-19T14:19:49.000Z",
       "message": "refactor: convertir horarios a clase",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/81a4a87d9f26c7a331e9072eb6b7976c6f13afdd"
     },
     "stats": {
       "total": 123,
@@ -682,5 +682,24 @@
     "test_count": 25,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-19T14:26:18.000Z",
+      "message": "refactor: convertir reportes a clase",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 392,
+      "additions": 249,
+      "deletions": 143,
+      "date": "2026-05-19"
+    },
+    "coverage": 85.58,
+    "test_count": 25,
+    "failed_tests": 5,
+    "conclusion": "failure"
   }
 ]

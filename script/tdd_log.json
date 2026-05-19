@@ -874,9 +874,15 @@
     "testId": 34
   },
   {
-    "commitId": "HEAD",
+    "commitId": "81a4a87d9f26c7a331e9072eb6b7976c6f13afdd",
     "commitName": "refactor: convertir horarios a clase",
     "commitTimestamp": 1779200390110,
     "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: convertir reportes a clase",
+    "commitTimestamp": 1779200778459,
+    "testId": 36
   }
 ]
