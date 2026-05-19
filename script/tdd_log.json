@@ -884,9 +884,23 @@
     "testId": 34
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cf06401f8112fb1089ee8ee71a8b48d4ddf70732",
     "commitName": "feat: ver reportes por zona",
     "commitTimestamp": 1779200240627,
     "testId": 34
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779200314915,
+    "success": true,
+    "testId": 35
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: ver reportes por zona",
+    "commitTimestamp": 1779200336953,
+    "testId": 35
   }
 ]
