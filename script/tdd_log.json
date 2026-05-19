@@ -862,9 +862,31 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ff1263471e00e22a58d6dec6dfc0f39d55c5be8d",
     "commitName": "style: implementacion de css para la interfaz visual",
     "commitTimestamp": 1776741933163,
     "testId": 33
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 6,
+    "numTotalTests": 31,
+    "timestamp": 1779199469837,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779199504740,
+    "success": true,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ver reportes por zona",
+    "commitTimestamp": 1779200240627,
+    "testId": 34
   }
 ]
