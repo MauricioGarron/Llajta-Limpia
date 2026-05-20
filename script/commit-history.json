@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3c0d9cc95072cbf64f418f475837532a8382e13b",
     "author": "FullMaury",
     "commit": {
       "date": "2026-05-19T14:18:55.000Z",
       "message": "refact: ver reportes por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/3c0d9cc95072cbf64f418f475837532a8382e13b"
     },
     "stats": {
       "total": 90,
@@ -680,6 +680,63 @@
     },
     "coverage": 85.86,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cbaad9b86deb1960a3d69077e40fe0f766b3aba0",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T07:12:17.000Z",
+      "message": "refactoring: convertir a clase rutas",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/cbaad9b86deb1960a3d69077e40fe0f766b3aba0"
+    },
+    "stats": {
+      "total": 103,
+      "additions": 76,
+      "deletions": 27,
+      "date": "2026-05-20"
+    },
+    "coverage": 86.36,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "845201b24a2f448d71791db7359fb0c3e724a514",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T07:13:12.000Z",
+      "message": "refactoring: convertir a clase horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/845201b24a2f448d71791db7359fb0c3e724a514"
+    },
+    "stats": {
+      "total": 126,
+      "additions": 89,
+      "deletions": 37,
+      "date": "2026-05-20"
+    },
+    "coverage": 88.43,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T07:50:22.000Z",
+      "message": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 668,
+      "additions": 346,
+      "deletions": 322,
+      "date": "2026-05-20"
+    },
+    "coverage": 93.43,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
