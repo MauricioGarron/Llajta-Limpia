@@ -4,7 +4,8 @@ import {
   resetReportes,
   verReportes,
   darLikeReporte,
-  VerReportesPorZona
+  VerReportesPorZona,
+  cambiarEstadoReporte
 } from "./reportes.js";
 
 beforeEach(() => {
@@ -22,7 +23,7 @@ describe("HU - Crear reporte de basura", () => {
     expect(reporte.zona).toBe("norte");
     expect(reporte.direccion).toBe("Av. América y Beijing");
     expect(reporte.descripcion).toBe("Basura acumulada");
-    expect(reporte.estado).toBe("enviado");
+    expect(reporte.estado).toBe("pendiente");
   });
 
   test("debería pedir completar la información si faltan datos", () => {
@@ -147,5 +148,62 @@ describe("HU - Ver reportes por zona", () => {
 
     expect(resumen[0].zona).toBe("norte");
     expect(resumen[0].cantidad).toBe(2);
+  });
+});
+describe("SP2-06 - Cambiar estado de reporte", () => {
+  test("EMSA puede seleccionar un reporte y cambiar su estado", () => {
+    crearReporte("norte", "Av. América", "Basura acumulada");
+
+    const resultado = cambiarEstadoReporte(0, "resuelto");
+
+    expect(resultado.mensaje).toBe("Estado actualizado correctamente.");
+    expect(resultado.reporte.estado).toBe("resuelto");
+  });
+
+  test("cuando el estado se actualiza, el sistema guarda el cambio correctamente", () => {
+    crearReporte("norte", "Av. América", "Basura acumulada");
+
+    cambiarEstadoReporte(0, "resuelto");
+
+    const reportes = obtenerReportes();
+
+    expect(reportes[0].estado).toBe("resuelto");
+  });
+
+  test("el nuevo estado se refleja inmediatamente en la lista de reportes", () => {
+    crearReporte("sur", "Av. Panamericana", "Contenedor lleno");
+
+    cambiarEstadoReporte(0, "resuelto");
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes[0].estado).toBe("resuelto");
+  });
+
+  test("si ocurre un error al actualizar, el sistema muestra un mensaje informativo", () => {
+    crearReporte("norte", "Av. América", "Basura acumulada");
+
+    const resultado = cambiarEstadoReporte(10, "resuelto");
+
+    expect(resultado.mensaje).toBe("No se pudo actualizar el estado del reporte.");
+    expect(resultado.reporte).toBeNull();
+  });
+
+  test("el sistema permite identificar visualmente si un reporte está pendiente o resuelto", () => {
+    crearReporte("norte", "Av. América", "Basura acumulada");
+
+    const resultado = cambiarEstadoReporte(0, "resuelto");
+
+    expect(resultado.reporte.estado).toBe("resuelto");
+    expect(resultado.reporte.obtenerClaseEstado()).toBe("estado-resuelto");
+  });
+
+  test("no debería permitir un estado inválido", () => {
+    crearReporte("norte", "Av. América", "Basura acumulada");
+
+    const resultado = cambiarEstadoReporte(0, "cancelado");
+
+    expect(resultado.mensaje).toBe("Estado inválido.");
+    expect(resultado.reporte).toBeNull();
   });
 });

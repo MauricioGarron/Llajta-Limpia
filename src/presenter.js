@@ -7,12 +7,12 @@ import {
 } from "./rutas.js";
 
 import {
-  crearReporte
+  crearReporte,
+  verReportes,
+  darLikeReporte,
+  cambiarEstadoReporte,
+  VerReportesPorZona
 } from "./reportes.js";
-
-import { verReportes, darLikeReporte } from "./reportes.js";
-
-import { VerReportesPorZona } from "./reportes.js";
 
 import {
   crearHorario,
@@ -293,6 +293,7 @@ formReporte.addEventListener("submit", function (e) {
 const botonVerReportes = document.querySelector("#ver-reportes");
 const listaReportes = document.querySelector("#lista-reportes");
 const mensajeListaReportes = document.querySelector("#mensaje-lista-reportes");
+const mensajeCambiarEstado = document.querySelector("#mensaje-cambiar-estado");
 
 function renderReportes() {
   const resultado = verReportes();
@@ -302,22 +303,66 @@ function renderReportes() {
 
   resultado.reportes.forEach((reporte, indice) => {
     const item = document.createElement("li");
+
     item.innerHTML = `
       <strong>Zona:</strong> ${reporte.zona} <br>
       <strong>Dirección:</strong> ${reporte.direccion} <br>
       <strong>Descripción:</strong> ${reporte.descripcion} <br>
+      <strong>Estado:</strong> 
+      <span class="estado-reporte ${reporte.obtenerClaseEstado()}">
+        ${reporte.estado}
+      </span>
+      <br>
+
+      <label>Cambiar estado:</label>
+      <select id="estado-reporte-${indice}">
+        <option value="pendiente" ${reporte.estado === "pendiente" ? "selected" : ""}>
+          Pendiente
+        </option>
+        <option value="resuelto" ${reporte.estado === "resuelto" ? "selected" : ""}>
+          Resuelto
+        </option>
+      </select>
+
+      <button class="cambiar-estado-btn" data-indice="${indice}">
+        Actualizar estado
+      </button>
+      <br>
+
       <strong>Likes:</strong> <span id="likes-${indice}">${reporte.likes}</span>
       <button class="like-btn" data-indice="${indice}">Like</button>
     `;
+
     listaReportes.appendChild(item);
   });
 
   const botonesLike = document.querySelectorAll(".like-btn");
+
   botonesLike.forEach((boton) => {
     boton.addEventListener("click", () => {
       const indice = boton.dataset.indice;
       darLikeReporte(indice);
       renderReportes();
+    });
+  });
+
+  const botonesCambiarEstado = document.querySelectorAll(".cambiar-estado-btn");
+
+  botonesCambiarEstado.forEach((boton) => {
+    boton.addEventListener("click", () => {
+      const indice = boton.dataset.indice;
+      const nuevoEstado = document.querySelector(`#estado-reporte-${indice}`).value;
+
+      const resultado = cambiarEstadoReporte(indice, nuevoEstado);
+
+      mensajeCambiarEstado.textContent = resultado.mensaje;
+
+      renderReportes();
+      renderResumenReportesPorZona();
+
+      if (selectReportesZona.value) {
+        renderReportesPorZona();
+      }
     });
   });
 }
@@ -360,7 +405,10 @@ function renderReportesPorZona() {
       <strong>Zona:</strong> ${reporte.zona} <br>
       <strong>Ubicación:</strong> ${reporte.ubicacion} <br>
       <strong>Descripción:</strong> ${reporte.descripcion} <br>
-      <strong>Estado:</strong> ${reporte.estado} <br>
+      <strong>Estado:</strong> 
+      <span class="estado-reporte ${reporte.claseEstado}">
+        ${reporte.estado}
+      </span> <br>
       <strong>Fecha:</strong> ${reporte.fecha}
     `;
 

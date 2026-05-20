@@ -1030,9 +1030,73 @@
     "testId": 41
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b311406061457dc6af965355af7af51ba518cadd",
     "commitName": "refact: asignar horarios",
     "commitTimestamp": 1779312069924,
     "testId": 41
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 7,
+    "numTotalTests": 42,
+    "timestamp": 1779316939779,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 7,
+    "numTotalTests": 42,
+    "timestamp": 1779317090826,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317210445,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "commitId": "a4f9a5b00aa61354300d07b233c0fd755dc744a3",
+    "commitName": "feat: TDD cambiar estado de reporte",
+    "commitTimestamp": 1779317526393,
+    "testId": 42
+  },
+  {
+    "commitId": "f3b6f13824dd34e98a75d684c4506fa7fc108cd0",
+    "commitName": "feat: presenter",
+    "commitTimestamp": 1779317619300,
+    "testId": 43
+  },
+  {
+    "commitId": "2fe701aa447fb2cea2fc7cecadcc7ce77da11f19",
+    "commitName": "styles: estilos css y cambios en html para estado de reporte",
+    "commitTimestamp": 1779317691013,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317701120,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317724687,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: reportes.js refactorizado en clases",
+    "commitTimestamp": 1779317748938,
+    "testId": 45
   }
 ]

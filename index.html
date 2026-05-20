@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <title>Rutas y Horarios</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+  .estado-reporte {
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+
+  .estado-pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+
+  .estado-resuelto {
+    background-color: #d4edda;
+    color: #155724;
+  }
+</style>
   </head>
 
   <body>
@@ -98,6 +115,8 @@
     <button id="ver-reportes">Mostrar reportes</button>
 
     <div id="mensaje-lista-reportes"></div>
+
+    <div id="mensaje-cambiar-estado"></div>
 
     <ul id="lista-reportes"></ul>
 

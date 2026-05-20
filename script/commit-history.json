@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b311406061457dc6af965355af7af51ba518cadd",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T21:21:09.000Z",
       "message": "refact: asignar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b311406061457dc6af965355af7af51ba518cadd"
     },
     "stats": {
       "total": 205,
@@ -794,6 +794,82 @@
     },
     "coverage": 95.78,
     "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a4f9a5b00aa61354300d07b233c0fd755dc744a3",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:52:05.000Z",
+      "message": "feat: TDD cambiar estado de reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/a4f9a5b00aa61354300d07b233c0fd755dc744a3"
+    },
+    "stats": {
+      "total": 116,
+      "additions": 104,
+      "deletions": 12,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f3b6f13824dd34e98a75d684c4506fa7fc108cd0",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:53:38.000Z",
+      "message": "feat: presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/f3b6f13824dd34e98a75d684c4506fa7fc108cd0"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 54,
+      "deletions": 6,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2fe701aa447fb2cea2fc7cecadcc7ce77da11f19",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:54:50.000Z",
+      "message": "styles: estilos css y cambios en html para estado de reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/2fe701aa447fb2cea2fc7cecadcc7ce77da11f19"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:55:48.000Z",
+      "message": "refact: reportes.js refactorizado en clases",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 114,
+      "additions": 69,
+      "deletions": 45,
+      "date": "2026-05-20"
+    },
+    "coverage": 97.31,
+    "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"
   }
