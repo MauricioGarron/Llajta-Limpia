@@ -16,8 +16,11 @@ import { VerReportesPorZona } from "./reportes.js";
 
 import {
   crearHorario,
+  asignarHorario,
   obtenerHorariosPorRuta,
   obtenerHorariosPorZona,
+  obtenerProgramacion,
+  obtenerRutasDisponibles,
   eliminarHorario,
   editarHorario
 } from "./horarios.js";
@@ -52,13 +55,14 @@ function actualizarZonas() {
   const zonas = obtenerZonas();
 
   selectZona.innerHTML = '<option value="">Selecciona zona</option>';
-  
   selectZonaHorarios.innerHTML = '<option value="">Selecciona zona</option>';
 
   zonas.forEach(z => {
     selectZona.innerHTML += `<option value="${z}">${z}</option>`;
     selectZonaHorarios.innerHTML += `<option value="${z}">${z}</option>`;
   });
+
+  actualizarRutasDisponiblesParaHorarios();
 }
 
 // Cambiar zona
@@ -120,22 +124,64 @@ window.editarRutaUI = function (zona, nombreViejo) {
 
 const formHorario = document.querySelector("#horario-form");
 const horariosDiv = document.querySelector("#horarios-div");
+const selectHorarioRuta = document.querySelector("#horario-ruta");
+const mensajeAsignarHorario = document.querySelector("#mensaje-asignar-horario");
+const programacionHorariosDiv = document.querySelector("#programacion-horarios-div");
 
 // Crear horario
 formHorario.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const ruta = document.querySelector("#horario-ruta").value;
+  const ruta = selectHorarioRuta.value;
   const dia = document.querySelector("#dia").value;
   const hora = document.querySelector("#hora").value;
 
-  try {
-    crearHorario(ruta, dia, hora);
-    alert("Horario creado");
-  } catch (error) {
-    alert(error.message);
+  const resultado = asignarHorario(ruta, dia, hora);
+
+  mensajeAsignarHorario.textContent = resultado.mensaje;
+
+  if (resultado.horario) {
+    formHorario.reset();
+    renderProgramacionHorarios();
   }
 });
+
+// --------------------
+// FUNCIONES DE ASIGNAR HORARIOS
+// --------------------
+
+function actualizarRutasDisponiblesParaHorarios() {
+  const rutas = obtenerRutasDisponibles();
+
+  selectHorarioRuta.innerHTML = '<option value="">Selecciona una ruta</option>';
+
+  rutas.forEach(ruta => {
+    selectHorarioRuta.innerHTML += `
+      <option value="${ruta.ruta}">${ruta.ruta}</option>
+    `;
+  });
+}
+
+function renderProgramacionHorarios() {
+  const programacion = obtenerProgramacion();
+
+  programacionHorariosDiv.innerHTML = "";
+
+  if (programacion.length === 0) {
+    programacionHorariosDiv.innerHTML = "<p>No hay horarios asignados.</p>";
+    return;
+  }
+
+  programacion.forEach(horario => {
+    programacionHorariosDiv.innerHTML += `
+      <p>
+        <strong>Ruta:</strong> ${horario.ruta} |
+        <strong>Día:</strong> ${horario.dia} |
+        <strong>Hora:</strong> ${horario.hora}
+      </p>
+    `;
+  });
+}
 
 // Buscar horarios
 const btnBuscar = document.querySelector("#btn-buscar");
@@ -347,3 +393,5 @@ selectReportesZona.addEventListener("change", renderReportesPorZona);
 
 actualizarZonasReportes();
 renderResumenReportesPorZona();
+actualizarRutasDisponiblesParaHorarios();
+renderProgramacionHorarios();

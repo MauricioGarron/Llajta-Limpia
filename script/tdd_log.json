@@ -1008,9 +1008,31 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69d2f5cf452a5f757dc20334a7527b59867f3ab9",
     "commitName": "html asignar horario de recoleccion",
     "commitTimestamp": 1779311182668,
     "testId": 40
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779311643573,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779312036091,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: asignar horarios",
+    "commitTimestamp": 1779312069924,
+    "testId": 41
   }
 ]

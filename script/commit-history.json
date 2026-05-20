@@ -760,12 +760,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69d2f5cf452a5f757dc20334a7527b59867f3ab9",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T21:06:22.000Z",
       "message": "html asignar horario de recoleccion",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/69d2f5cf452a5f757dc20334a7527b59867f3ab9"
     },
     "stats": {
       "total": 28,
@@ -774,6 +774,25 @@
       "date": "2026-05-20"
     },
     "coverage": 96.13,
+    "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T21:21:09.000Z",
+      "message": "refact: asignar horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 205,
+      "additions": 141,
+      "deletions": 64,
+      "date": "2026-05-20"
+    },
+    "coverage": 95.78,
     "test_count": 36,
     "failed_tests": 0,
     "conclusion": "success"
