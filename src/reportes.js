@@ -7,7 +7,7 @@ class Reporte {
     this.zona = zona;
     this.direccion = direccion;
     this.descripcion = descripcion;
-    this.estado = "enviado";
+    this.estado = "pendiente";
     this.likes = 0;
   }
 
@@ -17,6 +17,10 @@ class Reporte {
 
   cambiarEstado(nuevoEstado) {
     this.estado = nuevoEstado;
+  }
+
+  obtenerClaseEstado() {
+    return `estado-${this.estado}`;
   }
 }
 
@@ -64,6 +68,32 @@ class ReporteService {
 
     this.reportes[indice].darLike();
   }
+  cambiarEstado(indice, nuevoEstado) {
+  const estadosPermitidos = ["pendiente", "resuelto"];
+
+  if (!estadosPermitidos.includes(nuevoEstado)) {
+    return {
+      mensaje: "Estado inválido.",
+      reporte: null
+    };
+  }
+
+  const reporte = this.reportes[indice];
+
+  if (!reporte) {
+    return {
+      mensaje: "No se pudo actualizar el estado del reporte.",
+      reporte: null
+    };
+  }
+
+  reporte.cambiarEstado(nuevoEstado);
+
+  return {
+    mensaje: "Estado actualizado correctamente.",
+    reporte
+  };
+}
 
   obtenerPorZona(zona) {
     const zonaBuscada = this.normalizarTexto(zona);
@@ -125,15 +155,16 @@ class ReporteService {
   }
 
   formatearReporte(reporte) {
-    return {
-      zona: reporte.zona,
-      descripcion: reporte.descripcion,
-      estado: reporte.estado,
-      ubicacion: reporte.direccion,
-      fecha: reporte.fecha || FECHA_NO_REGISTRADA,
-      likes: reporte.likes
-    };
-  }
+  return {
+    zona: reporte.zona,
+    descripcion: reporte.descripcion,
+    estado: reporte.estado,
+    claseEstado: reporte.obtenerClaseEstado(),
+    ubicacion: reporte.direccion,
+    fecha: reporte.fecha || FECHA_NO_REGISTRADA,
+    likes: reporte.likes
+  };
+}
 
   crearRespuesta(mensaje, reportes) {
     return { mensaje, reportes };
@@ -189,4 +220,7 @@ export function verReportes() {
 
 export function darLikeReporte(indice) {
   reporteService.darLike(indice);
+}
+export function cambiarEstadoReporte(indice, nuevoEstado) {
+  return reporteService.cambiarEstado(indice, nuevoEstado);
 }

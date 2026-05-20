@@ -1030,9 +1030,39 @@
     "testId": 41
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b311406061457dc6af965355af7af51ba518cadd",
     "commitName": "refact: asignar horarios",
     "commitTimestamp": 1779312069924,
     "testId": 41
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 7,
+    "numTotalTests": 42,
+    "timestamp": 1779316939779,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 35,
+    "failedTests": 7,
+    "numTotalTests": 42,
+    "timestamp": 1779317090826,
+    "success": false,
+    "testId": 42
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317210445,
+    "success": true,
+    "testId": 42
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: TDD cambiar estado de reporte",
+    "commitTimestamp": 1779317526393,
+    "testId": 42
   }
 ]

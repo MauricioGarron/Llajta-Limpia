@@ -779,12 +779,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b311406061457dc6af965355af7af51ba518cadd",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T21:21:09.000Z",
       "message": "refact: asignar horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b311406061457dc6af965355af7af51ba518cadd"
     },
     "stats": {
       "total": 205,
@@ -794,6 +794,25 @@
     },
     "coverage": 95.78,
     "test_count": 36,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:52:05.000Z",
+      "message": "feat: TDD cambiar estado de reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 116,
+      "additions": 104,
+      "deletions": 12,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"
   }
