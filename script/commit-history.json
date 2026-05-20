@@ -722,17 +722,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0b108ebfbcda6b4e90b6036f6323d275b781db07",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-20T07:50:22.000Z",
       "message": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/0b108ebfbcda6b4e90b6036f6323d275b781db07"
     },
     "stats": {
       "total": 668,
       "additions": 346,
       "deletions": 322,
+      "date": "2026-05-20"
+    },
+    "coverage": 93.43,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T20:20:09.000Z",
+      "message": "fix: fix de script",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2026-05-20"
     },
     "coverage": 93.43,

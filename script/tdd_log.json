@@ -964,9 +964,23 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0b108ebfbcda6b4e90b6036f6323d275b781db07",
     "commitName": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
     "commitTimestamp": 1779263422811,
     "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1779289270901,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: fix de script",
+    "commitTimestamp": 1779308409811,
+    "testId": 39
   }
 ]
