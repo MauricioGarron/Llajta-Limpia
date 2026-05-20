@@ -8,11 +8,11 @@ import {
 
 import {
   crearReporte
-} from "./crear-reporte/crear-reporte.js";
+} from "./reportes.js";
 
-import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
+import { verReportes, darLikeReporte } from "./reportes.js";
 
-import { VerReportesPorZona } from "./ver-reportes-por-zona/verReportesPorZona.js";
+import { VerReportesPorZona } from "./reportes.js";
 
 import {
   crearHorario,

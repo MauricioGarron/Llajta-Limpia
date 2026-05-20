@@ -703,12 +703,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "845201b24a2f448d71791db7359fb0c3e724a514",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-20T07:13:12.000Z",
       "message": "refactoring: convertir a clase horarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/845201b24a2f448d71791db7359fb0c3e724a514"
     },
     "stats": {
       "total": 126,
@@ -718,6 +718,25 @@
     },
     "coverage": 88.43,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T07:50:22.000Z",
+      "message": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 668,
+      "additions": 346,
+      "deletions": 322,
+      "date": "2026-05-20"
+    },
+    "coverage": 93.43,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

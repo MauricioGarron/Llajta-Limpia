@@ -934,9 +934,39 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "845201b24a2f448d71791db7359fb0c3e724a514",
     "commitName": "refactoring: convertir a clase horarios",
     "commitTimestamp": 1779261192113,
     "testId": 37
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779261258003,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779262181689,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1779263282224,
+    "success": true,
+    "testId": 38
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
+    "commitTimestamp": 1779263422811,
+    "testId": 38
   }
 ]
