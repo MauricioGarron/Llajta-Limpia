@@ -898,9 +898,31 @@
     "testId": 35
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3c0d9cc95072cbf64f418f475837532a8382e13b",
     "commitName": "refact: ver reportes por zona",
     "commitTimestamp": 1779200336953,
     "testId": 35
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779260275726,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779261092849,
+    "success": true,
+    "testId": 36
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactoring: convertir a clase rutas",
+    "commitTimestamp": 1779261137700,
+    "testId": 36
   }
 ]

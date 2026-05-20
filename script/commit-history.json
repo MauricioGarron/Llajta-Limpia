@@ -665,12 +665,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3c0d9cc95072cbf64f418f475837532a8382e13b",
     "author": "FullMaury",
     "commit": {
       "date": "2026-05-19T14:18:55.000Z",
       "message": "refact: ver reportes por zona",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/3c0d9cc95072cbf64f418f475837532a8382e13b"
     },
     "stats": {
       "total": 90,
@@ -679,6 +679,25 @@
       "date": "2026-05-19"
     },
     "coverage": 85.86,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T07:12:17.000Z",
+      "message": "refactoring: convertir a clase rutas",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 103,
+      "additions": 76,
+      "deletions": 27,
+      "date": "2026-05-20"
+    },
+    "coverage": 86.36,
     "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
