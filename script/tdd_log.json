@@ -1002,9 +1002,15 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "428cce20aa08dc68dd9f90a23d77343a749c802f",
     "commitName": "feat: asignar horarios como emsa",
     "commitTimestamp": 1779311144266,
     "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "html asignar horario de recoleccion",
+    "commitTimestamp": 1779311182668,
+    "testId": 40
   }
 ]

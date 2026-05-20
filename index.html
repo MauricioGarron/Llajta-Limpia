@@ -33,20 +33,28 @@
 
     <hr />
 
-    <h2>Crear Horario</h2>
+    <h2>Asignar horario de recolección</h2>
 
-    <form id="horario-form">
-      <label>Ruta:</label>
-      <input type="text" id="horario-ruta" required />
+<form id="horario-form">
+  <label>Ruta disponible:</label>
+  <select id="horario-ruta" required>
+    <option value="">Selecciona una ruta</option>
+  </select>
 
-      <label>Día:</label>
-      <input type="text" id="dia" required />
+  <label>Día:</label>
+  <input type="text" id="dia" required />
 
-      <label>Hora:</label>
-      <input type="text" id="hora" required />
+  <label>Hora:</label>
+  <input type="text" id="hora" required />
 
-      <button type="submit">Guardar Horario</button>
-    </form>
+  <button type="submit">Asignar horario</button>
+</form>
+
+<div id="mensaje-asignar-horario"></div>
+
+<h3>Lista de programación</h3>
+
+<div id="programacion-horarios-div"></div>
 
     <h2>Ver horarios por ruta</h2>
 
