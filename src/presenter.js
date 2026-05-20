@@ -12,6 +12,8 @@ import {
 
 import { verReportes, darLikeReporte } from "./ver-reportes/ver-reportes.js";
 
+import { VerReportesPorZona } from "./ver-reportes-por-zona/verReportesPorZona.js";
+
 import {
   crearHorario,
   obtenerHorariosPorRuta,
@@ -220,6 +222,7 @@ window.editarHorarioUI = function (ruta, dia, hora) {
 
 const formReporte = document.querySelector("#reporte-form");
 const mensajeReporte = document.querySelector("#mensaje-reporte");
+const verReportesPorZonaService = new VerReportesPorZona();
 
 formReporte.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -229,12 +232,15 @@ formReporte.addEventListener("submit", function (e) {
   const descripcion = document.querySelector("#reporte-descripcion").value;
 
   try {
-    crearReporte(zona, direccion, descripcion);
-    mensajeReporte.textContent = "Reporte enviado exitosamente.";
-    formReporte.reset();
-  } catch (error) {
-    mensajeReporte.textContent = error.message;
-  }
+  crearReporte(zona, direccion, descripcion);
+  mensajeReporte.textContent = "Reporte enviado exitosamente.";
+  formReporte.reset();
+
+  actualizarZonasReportes();
+  renderResumenReportesPorZona();
+} catch (error) {
+  mensajeReporte.textContent = error.message;
+}
 });
 
 
@@ -273,3 +279,71 @@ function renderReportes() {
 botonVerReportes.addEventListener("click", () => {
   renderReportes();
 });
+// --------------------
+// VER REPORTES POR ZONA
+// --------------------
+
+const selectReportesZona = document.querySelector("#filtro-reportes-zona");
+const botonVerReportesZona = document.querySelector("#btn-ver-reportes-zona");
+const mensajeReportesZona = document.querySelector("#mensaje-reportes-zona");
+const listaReportesZona = document.querySelector("#lista-reportes-zona");
+const resumenReportesZona = document.querySelector("#resumen-reportes-zona");
+
+function actualizarZonasReportes() {
+  const zonas = verReportesPorZonaService.obtenerZonasConReportes();
+
+  selectReportesZona.innerHTML = '<option value="">Selecciona zona</option>';
+
+  zonas.forEach(zona => {
+    selectReportesZona.innerHTML += `<option value="${zona}">${zona}</option>`;
+  });
+}
+
+function renderReportesPorZona() {
+  const zona = selectReportesZona.value;
+
+  const resultado = verReportesPorZonaService.obtenerReportesPorZona(zona);
+
+  listaReportesZona.innerHTML = "";
+  mensajeReportesZona.textContent = resultado.mensaje;
+
+  resultado.reportes.forEach(reporte => {
+    const item = document.createElement("li");
+
+    item.innerHTML = `
+      <strong>Zona:</strong> ${reporte.zona} <br>
+      <strong>Ubicación:</strong> ${reporte.ubicacion} <br>
+      <strong>Descripción:</strong> ${reporte.descripcion} <br>
+      <strong>Estado:</strong> ${reporte.estado} <br>
+      <strong>Fecha:</strong> ${reporte.fecha}
+    `;
+
+    listaReportesZona.appendChild(item);
+  });
+}
+
+function renderResumenReportesPorZona() {
+  const resumen = verReportesPorZonaService.obtenerResumenPorZona();
+
+  resumenReportesZona.innerHTML = "";
+
+  if (resumen.length === 0) {
+    resumenReportesZona.innerHTML = "<p>No hay incidencias registradas por zona.</p>";
+    return;
+  }
+
+  resumen.forEach(item => {
+    resumenReportesZona.innerHTML += `
+      <p>
+        <strong>${item.zona}</strong>: ${item.cantidad} incidencia(s)
+      </p>
+    `;
+  });
+}
+
+botonVerReportesZona.addEventListener("click", renderReportesPorZona);
+
+selectReportesZona.addEventListener("change", renderReportesPorZona);
+
+actualizarZonasReportes();
+renderResumenReportesPorZona();

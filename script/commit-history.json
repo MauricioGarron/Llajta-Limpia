@@ -627,12 +627,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff1263471e00e22a58d6dec6dfc0f39d55c5be8d",
     "author": "Mauricio",
     "commit": {
       "date": "2026-04-21T03:25:32.000Z",
       "message": "style: implementacion de css para la interfaz visual",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/ff1263471e00e22a58d6dec6dfc0f39d55c5be8d"
     },
     "stats": {
       "total": 65,
@@ -642,6 +642,44 @@
     },
     "coverage": 90.91,
     "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cf06401f8112fb1089ee8ee71a8b48d4ddf70732",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-05-19T14:17:18.000Z",
+      "message": "feat: ver reportes por zona",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/cf06401f8112fb1089ee8ee71a8b48d4ddf70732"
+    },
+    "stats": {
+      "total": 254,
+      "additions": 248,
+      "deletions": 6,
+      "date": "2026-05-19"
+    },
+    "coverage": 88.51,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-05-19T14:18:55.000Z",
+      "message": "refact: ver reportes por zona",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 90,
+      "additions": 60,
+      "deletions": 30,
+      "date": "2026-05-19"
+    },
+    "coverage": 85.86,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }
