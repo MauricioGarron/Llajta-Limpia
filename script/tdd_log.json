@@ -964,9 +964,75 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bbd421196ac2708588e10bc52b21a87852519567",
     "commitName": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
     "commitTimestamp": 1779263422811,
     "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1779309662173,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 6,
+    "numTotalTests": 36,
+    "timestamp": 1779310849415,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 6,
+    "numTotalTests": 36,
+    "timestamp": 1779310875381,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779311033740,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "428cce20aa08dc68dd9f90a23d77343a749c802f",
+    "commitName": "feat: asignar horarios como emsa",
+    "commitTimestamp": 1779311144266,
+    "testId": 39
+  },
+  {
+    "commitId": "69d2f5cf452a5f757dc20334a7527b59867f3ab9",
+    "commitName": "html asignar horario de recoleccion",
+    "commitTimestamp": 1779311182668,
+    "testId": 40
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779311643573,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779312036091,
+    "success": true,
+    "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: asignar horarios",
+    "commitTimestamp": 1779312069924,
+    "testId": 41
   }
 ]
