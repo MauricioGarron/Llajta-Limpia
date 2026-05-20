@@ -703,18 +703,37 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "c8b79200ae9f13b8f6c2c7b1cc456ac97c60c977",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-19T14:36:04.000Z",
       "message": "fix: arreglo de imports y exports",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/c8b79200ae9f13b8f6c2c7b1cc456ac97c60c977"
     },
     "stats": {
       "total": 19,
       "additions": 17,
       "deletions": 2,
       "date": "2026-05-19"
+    },
+    "coverage": 86.11,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-20T06:55:16.000Z",
+      "message": "fix: correcion de error rara",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-05-20"
     },
     "coverage": 86.11,
     "test_count": 25,
