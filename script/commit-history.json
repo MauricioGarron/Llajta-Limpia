@@ -798,17 +798,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a4f9a5b00aa61354300d07b233c0fd755dc744a3",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T22:52:05.000Z",
       "message": "feat: TDD cambiar estado de reporte",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/a4f9a5b00aa61354300d07b233c0fd755dc744a3"
     },
     "stats": {
       "total": 116,
       "additions": 104,
       "deletions": 12,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:53:38.000Z",
+      "message": "feat: presenter",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 54,
+      "deletions": 6,
       "date": "2026-05-20"
     },
     "coverage": 96.59,
