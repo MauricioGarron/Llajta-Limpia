@@ -920,9 +920,23 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cbaad9b86deb1960a3d69077e40fe0f766b3aba0",
     "commitName": "refactoring: convertir a clase rutas",
     "commitTimestamp": 1779261137700,
     "testId": 36
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1779261168019,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactoring: convertir a clase horarios",
+    "commitTimestamp": 1779261192113,
+    "testId": 37
   }
 ]
