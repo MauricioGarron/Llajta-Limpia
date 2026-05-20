@@ -817,17 +817,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f3b6f13824dd34e98a75d684c4506fa7fc108cd0",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T22:53:38.000Z",
       "message": "feat: presenter",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/f3b6f13824dd34e98a75d684c4506fa7fc108cd0"
     },
     "stats": {
       "total": 60,
       "additions": 54,
       "deletions": 6,
+      "date": "2026-05-20"
+    },
+    "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:54:50.000Z",
+      "message": "styles: estilos css y cambios en html para estado de reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
       "date": "2026-05-20"
     },
     "coverage": 96.59,

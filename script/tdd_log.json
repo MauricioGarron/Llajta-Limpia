@@ -1066,9 +1066,15 @@
     "testId": 42
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f3b6f13824dd34e98a75d684c4506fa7fc108cd0",
     "commitName": "feat: presenter",
     "commitTimestamp": 1779317619300,
     "testId": 43
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "styles: estilos css y cambios en html para estado de reporte",
+    "commitTimestamp": 1779317691013,
+    "testId": 44
   }
 ]
