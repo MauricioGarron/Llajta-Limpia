@@ -1,4 +1,7 @@
-import { obtenerRutasPorZona } from "./rutas.js";
+import {
+  obtenerRutasPorZona,
+  obtenerZonas
+} from "./rutas.js";
 
 class Horario {
   constructor(ruta, dia, hora) {
@@ -79,6 +82,48 @@ class HorarioService {
       throw new Error("Datos incompletos");
     }
   }
+  asignar(ruta, dia, hora) {
+  if (!ruta || !dia || !hora) {
+    return {
+      mensaje: "Completa todos los datos obligatorios.",
+      horario: null
+    };
+  }
+
+  const existe = this.horarios.find(
+    h => h.ruta === ruta && h.dia === dia && h.hora === hora
+  );
+
+  if (existe) {
+    return {
+      mensaje: "El horario seleccionado ya está ocupado.",
+      horario: null
+    };
+  }
+
+  const nuevoHorario = new Horario(ruta, dia, hora);
+  this.horarios.push(nuevoHorario);
+
+  return {
+    mensaje: "Horario asignado correctamente.",
+    horario: nuevoHorario
+  };
+}   
+
+obtenerProgramacion() {
+  return this.horarios;
+}
+
+obtenerRutasDisponibles() {
+  let rutasDisponibles = [];
+
+  obtenerZonas().forEach(zona => {
+    const rutas = this.obtenerRutasPorZona(zona);
+    rutasDisponibles = rutasDisponibles.concat(rutas);
+  });
+
+  return rutasDisponibles;
+}
 }
 
 const horarioService = new HorarioService(obtenerRutasPorZona);
@@ -107,4 +152,16 @@ export function eliminarHorario(ruta, dia, hora, confirmado = false) {
 
 export function editarHorario(datosViejos, datosNuevos) {
   horarioService.editar(datosViejos, datosNuevos);
+}
+
+export function asignarHorario(ruta, dia, hora) {
+  return horarioService.asignar(ruta, dia, hora);
+}
+
+export function obtenerProgramacion() {
+  return horarioService.obtenerProgramacion();
+}
+
+export function obtenerRutasDisponibles() {
+  return horarioService.obtenerRutasDisponibles();
 }

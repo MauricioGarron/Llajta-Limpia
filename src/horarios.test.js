@@ -4,7 +4,10 @@ import {
   resetHorarios,
   eliminarHorario,
   obtenerHorariosPorRuta,
-  editarHorario
+  editarHorario,
+  asignarHorario,
+  obtenerProgramacion,
+  obtenerRutasDisponibles
 } from "./horarios.js";
 
 import {
@@ -95,5 +98,79 @@ describe("HU8 - Ver horarios por zona", () => {
     const lista = obtenerHorariosPorRuta("Ruta 1");
     expect(lista).toHaveLength(1);
   });
+});
 
+describe("SP2-05 - Asignar horarios", () => {
+  beforeEach(() => {
+    resetHorarios();
+    resetRutas();
+  });
+
+  test("cuando EMSA selecciona una ruta y un horario válido, el sistema guarda la asignación correctamente", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = asignarHorario("Ruta 1", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("Horario asignado correctamente.");
+    expect(resultado.horario.ruta).toBe("Ruta 1");
+    expect(resultado.horario.dia).toBe("Lunes");
+    expect(resultado.horario.hora).toBe("08:00");
+  });
+
+  test("si faltan datos obligatorios, el sistema muestra un mensaje solicitando completar la información", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = asignarHorario("", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("Completa todos los datos obligatorios.");
+    expect(resultado.horario).toBeNull();
+  });
+
+  test("si el horario seleccionado ya está ocupado, el sistema muestra una alerta", () => {
+    crearRuta("norte", "Ruta 1");
+
+    asignarHorario("Ruta 1", "Lunes", "08:00");
+
+    const resultado = asignarHorario("Ruta 1", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("El horario seleccionado ya está ocupado.");
+    expect(resultado.horario).toBeNull();
+  });
+
+  test("el horario asignado aparece en la lista de programación", () => {
+    crearRuta("norte", "Ruta 1");
+
+    asignarHorario("Ruta 1", "Lunes", "08:00");
+
+    const programacion = obtenerProgramacion();
+
+    expect(programacion.length).toBe(1);
+    expect(programacion[0].ruta).toBe("Ruta 1");
+    expect(programacion[0].dia).toBe("Lunes");
+    expect(programacion[0].hora).toBe("08:00");
+  });
+
+  test("EMSA puede visualizar la ruta con su horario correspondiente", () => {
+    crearRuta("norte", "Ruta 1");
+
+    asignarHorario("Ruta 1", "Lunes", "08:00");
+
+    const horarios = obtenerHorariosPorRuta("Ruta 1");
+
+    expect(horarios.length).toBe(1);
+    expect(horarios[0].ruta).toBe("Ruta 1");
+    expect(horarios[0].dia).toBe("Lunes");
+    expect(horarios[0].hora).toBe("08:00");
+  });
+
+  test("EMSA puede visualizar las rutas disponibles para asignar horarios", () => {
+    crearRuta("norte", "Ruta 1");
+    crearRuta("sur", "Ruta 2");
+
+    const rutasDisponibles = obtenerRutasDisponibles();
+
+    expect(rutasDisponibles.length).toBe(2);
+    expect(rutasDisponibles[0].ruta).toBe("Ruta 1");
+    expect(rutasDisponibles[1].ruta).toBe("Ruta 2");
+  });
 });

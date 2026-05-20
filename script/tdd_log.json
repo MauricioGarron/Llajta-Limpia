@@ -964,9 +964,47 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bbd421196ac2708588e10bc52b21a87852519567",
     "commitName": "refactor: agregamos el archivo reportes.js y llevamos toda la logica ahi usando clase, ademas de reestructuras todo lo que apuntaba a sus antiguos archivos",
     "commitTimestamp": 1779263422811,
     "testId": 38
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1779309662173,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 6,
+    "numTotalTests": 36,
+    "timestamp": 1779310849415,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 6,
+    "numTotalTests": 36,
+    "timestamp": 1779310875381,
+    "success": false,
+    "testId": 39
+  },
+  {
+    "numPassedTests": 36,
+    "failedTests": 0,
+    "numTotalTests": 36,
+    "timestamp": 1779311033740,
+    "success": true,
+    "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: asignar horarios como emsa",
+    "commitTimestamp": 1779311144266,
+    "testId": 39
   }
 ]
