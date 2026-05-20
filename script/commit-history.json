@@ -836,12 +836,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2fe701aa447fb2cea2fc7cecadcc7ce77da11f19",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T22:54:50.000Z",
       "message": "styles: estilos css y cambios en html para estado de reporte",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/2fe701aa447fb2cea2fc7cecadcc7ce77da11f19"
     },
     "stats": {
       "total": 19,
@@ -850,6 +850,25 @@
       "date": "2026-05-20"
     },
     "coverage": 96.59,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Mauricio",
+    "commit": {
+      "date": "2026-05-20T22:55:48.000Z",
+      "message": "refact: reportes.js refactorizado en clases",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 114,
+      "additions": 69,
+      "deletions": 45,
+      "date": "2026-05-20"
+    },
+    "coverage": 97.31,
     "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"

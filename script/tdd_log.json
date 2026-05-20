@@ -1072,9 +1072,31 @@
     "testId": 43
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2fe701aa447fb2cea2fc7cecadcc7ce77da11f19",
     "commitName": "styles: estilos css y cambios en html para estado de reporte",
     "commitTimestamp": 1779317691013,
     "testId": 44
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317701120,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1779317724687,
+    "success": true,
+    "testId": 45
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refact: reportes.js refactorizado en clases",
+    "commitTimestamp": 1779317748938,
+    "testId": 45
   }
 ]

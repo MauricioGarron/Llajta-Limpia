@@ -2,12 +2,19 @@ const MENSAJE_SIN_ZONA = "Selecciona una zona.";
 const MENSAJE_SIN_REPORTES = "No existen reportes en la zona seleccionada.";
 const FECHA_NO_REGISTRADA = "Sin fecha";
 
+const ESTADO_PENDIENTE = "pendiente";
+const ESTADO_RESUELTO = "resuelto";
+
+const MENSAJE_ESTADO_ACTUALIZADO = "Estado actualizado correctamente.";
+const MENSAJE_ERROR_CAMBIO_ESTADO = "No se pudo actualizar el estado del reporte.";
+const MENSAJE_ESTADO_INVALIDO = "Estado inválido.";
+
 class Reporte {
   constructor(zona, direccion, descripcion) {
     this.zona = zona;
     this.direccion = direccion;
     this.descripcion = descripcion;
-    this.estado = "pendiente";
+    this.estado = ESTADO_PENDIENTE;
     this.likes = 0;
   }
 
@@ -49,51 +56,42 @@ class ReporteService {
 
   verTodos() {
     if (this.reportes.length === 0) {
-      return {
-        mensaje: "No hay reportes registrados.",
-        reportes: []
-      };
+      return this.crearRespuesta("No hay reportes registrados.", []);
     }
 
-    return {
-      mensaje: "",
-      reportes: this.reportes
-    };
+    return this.crearRespuesta("", this.reportes);
   }
 
   darLike(indice) {
-    if (!this.reportes[indice]) {
-      throw new Error("Reporte no encontrado");
+    const reporte = this.obtenerReportePorIndice(indice);
+
+    reporte.darLike();
+  }
+
+  cambiarEstado(indice, nuevoEstado) {
+    if (!this.estadoValido(nuevoEstado)) {
+      return this.crearRespuestaCambioEstado(
+        MENSAJE_ESTADO_INVALIDO,
+        null
+      );
     }
 
-    this.reportes[indice].darLike();
+    try {
+      const reporte = this.obtenerReportePorIndice(indice);
+
+      reporte.cambiarEstado(nuevoEstado);
+
+      return this.crearRespuestaCambioEstado(
+        MENSAJE_ESTADO_ACTUALIZADO,
+        reporte
+      );
+    } catch (error) {
+      return this.crearRespuestaCambioEstado(
+        MENSAJE_ERROR_CAMBIO_ESTADO,
+        null
+      );
+    }
   }
-  cambiarEstado(indice, nuevoEstado) {
-  const estadosPermitidos = ["pendiente", "resuelto"];
-
-  if (!estadosPermitidos.includes(nuevoEstado)) {
-    return {
-      mensaje: "Estado inválido.",
-      reporte: null
-    };
-  }
-
-  const reporte = this.reportes[indice];
-
-  if (!reporte) {
-    return {
-      mensaje: "No se pudo actualizar el estado del reporte.",
-      reporte: null
-    };
-  }
-
-  reporte.cambiarEstado(nuevoEstado);
-
-  return {
-    mensaje: "Estado actualizado correctamente.",
-    reporte
-  };
-}
 
   obtenerPorZona(zona) {
     const zonaBuscada = this.normalizarTexto(zona);
@@ -150,24 +148,49 @@ class ReporteService {
     );
   }
 
+  obtenerReportePorIndice(indice) {
+    const indiceNumerico = Number(indice);
+    const reporte = this.reportes[indiceNumerico];
+
+    if (!reporte) {
+      throw new Error("Reporte no encontrado");
+    }
+
+    return reporte;
+  }
+
+  estadoValido(estado) {
+    return [ESTADO_PENDIENTE, ESTADO_RESUELTO].includes(estado);
+  }
+
   perteneceAZona(reporte, zonaBuscada) {
     return this.normalizarTexto(reporte.zona) === zonaBuscada;
   }
 
   formatearReporte(reporte) {
-  return {
-    zona: reporte.zona,
-    descripcion: reporte.descripcion,
-    estado: reporte.estado,
-    claseEstado: reporte.obtenerClaseEstado(),
-    ubicacion: reporte.direccion,
-    fecha: reporte.fecha || FECHA_NO_REGISTRADA,
-    likes: reporte.likes
-  };
-}
+    return {
+      zona: reporte.zona,
+      descripcion: reporte.descripcion,
+      estado: reporte.estado,
+      claseEstado: reporte.obtenerClaseEstado(),
+      ubicacion: reporte.direccion,
+      fecha: reporte.fecha || FECHA_NO_REGISTRADA,
+      likes: reporte.likes
+    };
+  }
 
   crearRespuesta(mensaje, reportes) {
-    return { mensaje, reportes };
+    return {
+      mensaje,
+      reportes
+    };
+  }
+
+  crearRespuestaCambioEstado(mensaje, reporte) {
+    return {
+      mensaje,
+      reporte
+    };
   }
 
   normalizarTexto(texto) {
@@ -221,6 +244,7 @@ export function verReportes() {
 export function darLikeReporte(indice) {
   reporteService.darLike(indice);
 }
+
 export function cambiarEstadoReporte(indice, nuevoEstado) {
   return reporteService.cambiarEstado(indice, nuevoEstado);
 }
