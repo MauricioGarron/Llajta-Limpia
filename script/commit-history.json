@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "06818ff4da713bfcd9ee13001da4daace79e580b",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-05-21T13:09:22.000Z",
       "message": "feat(login-emsa): validar campos obligatorios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/06818ff4da713bfcd9ee13001da4daace79e580b"
     },
     "stats": {
       "total": 39,
@@ -1117,6 +1117,25 @@
     },
     "coverage": 97.82,
     "test_count": 62,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-05-21T13:10:00.000Z",
+      "message": "feat(login-emsa): bloquear acceso tras múltiples intentos fallidos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 58,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.9,
+    "test_count": 63,
     "failed_tests": 0,
     "conclusion": "success"
   }

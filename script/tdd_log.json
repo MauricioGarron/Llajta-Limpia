@@ -1420,9 +1420,31 @@
     "testId": 58
   },
   {
-    "commitId": "HEAD",
+    "commitId": "06818ff4da713bfcd9ee13001da4daace79e580b",
     "commitName": "feat(login-emsa): validar campos obligatorios",
     "commitTimestamp": 1779368962540,
     "testId": 58
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 1,
+    "numTotalTests": 63,
+    "timestamp": 1779368976215,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779368988738,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): bloquear acceso tras múltiples intentos fallidos",
+    "commitTimestamp": 1779369000909,
+    "testId": 59
   }
 ]

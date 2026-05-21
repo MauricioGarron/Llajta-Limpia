@@ -66,4 +66,34 @@ describe("Login EMSA", () => {
 
   });
 
+  test("bloquea login despues de 3 intentos fallidos", () => {
+
+    loginService.iniciarSesion(
+      "admin",
+      "1"
+    );
+
+    loginService.iniciarSesion(
+      "admin",
+      "2"
+    );
+
+    loginService.iniciarSesion(
+      "admin",
+      "3"
+    );
+
+    const resultado = loginService.iniciarSesion(
+      "admin",
+      "123456"
+    );
+
+    expect(resultado.exito).toBe(false);
+
+    expect(resultado.mensaje).toBe(
+      "Usuario bloqueado temporalmente"
+    );
+
+  });
+
 });
