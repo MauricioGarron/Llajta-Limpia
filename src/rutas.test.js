@@ -4,7 +4,9 @@ import {
   obtenerZonas,
   obtenerRutasPorZona,
   resetRutas,
-  editarRuta
+  editarRuta,
+  obtenerTodasRutas,
+  existeRuta
 } from "./rutas.js";
 
 describe("HU6 - Crear ruta por zona", () => {
@@ -95,4 +97,44 @@ describe("HU7 - Ver ruta por zona", () => {
     expect(existeVieja).toBe(false);
   });
 
+});
+describe("SP2-04 - Soporte para enlazar rutas y horarios", () => {
+  beforeEach(() => {
+    resetRutas();
+  });
+
+  test("debería obtener todas las rutas disponibles para programación", () => {
+    crearRuta("norte", "Ruta 1");
+    crearRuta("sur", "Ruta 2");
+
+    const rutas = obtenerTodasRutas();
+
+    expect(rutas.length).toBe(2);
+    expect(rutas[0].ruta).toBe("Ruta 1");
+    expect(rutas[1].ruta).toBe("Ruta 2");
+  });
+
+  test("debería verificar si una ruta existe", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = existeRuta("Ruta 1");
+
+    expect(resultado).toBe(true);
+  });
+
+  test("debería devolver falso si la ruta no existe", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = existeRuta("Ruta 99");
+
+    expect(resultado).toBe(false);
+  });
+
+  test("debería verificar la ruta ignorando mayúsculas, minúsculas y espacios", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = existeRuta("  ruta 1  ");
+
+    expect(resultado).toBe(true);
+  });
 });
