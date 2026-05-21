@@ -270,4 +270,21 @@ describe("SP2-03 - Editar reporte de basura", () => {
     expect(reportes[0].descripcion).toBe("Basura acumulada");
   });
 
+
+  test("cuando la edicion finaliza, la informacion actualizada se refleja en la lista de reportes", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    editarReporte(0, {
+        zona: "sur",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes[0].zona).toBe("sur");
+    expect(resultado.reportes[0].direccion).toBe("Av. Panamericana");
+    expect(resultado.reportes[0].descripcion).toBe("Contenedor lleno");
+  });
+
 });

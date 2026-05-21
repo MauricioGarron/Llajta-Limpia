@@ -1244,9 +1244,23 @@
     "testId": 50
   },
   {
-    "commitId": "HEAD",
+    "commitId": "db4aa1796730c71d85605c7083859455813b0fa8",
     "commitName": "feat: valida datos obligatorios al editar reporte",
     "commitTimestamp": 1779337167410,
     "testId": 50
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1779337224388,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: refleja edición en lista de reportes",
+    "commitTimestamp": 1779337232472,
+    "testId": 51
   }
 ]
