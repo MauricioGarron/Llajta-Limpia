@@ -1280,9 +1280,23 @@
     "testId": 52
   },
   {
-    "commitId": "HEAD",
+    "commitId": "394e470dcb066252405b488d72270ddeb9d12876",
     "commitName": "feat: impide editar reportes resueltos",
     "commitTimestamp": 1779337358691,
     "testId": 52
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1779337790856,
+    "success": true,
+    "testId": 53
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: integra edición de reportes en interfaz",
+    "commitTimestamp": 1779337800921,
+    "testId": 53
   }
 ]
