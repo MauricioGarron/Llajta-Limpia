@@ -96,6 +96,17 @@ class ReporteService {
 
 
   editar(indice, datosActualizados) {
+    if (
+        !datosActualizados.zona ||
+        !datosActualizados.direccion ||
+        !datosActualizados.descripcion
+    ) {
+        return {
+        mensaje: "Faltan datos obligatorios.",
+        reporte: null
+        };
+    }
+
     const reporte = this.obtenerReportePorIndice(indice);
 
     reporte.zona = datosActualizados.zona;

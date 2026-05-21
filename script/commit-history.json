@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c753df4941b971cdad40b9e1f3c88c46f5f6c52",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-21T04:17:39.000Z",
       "message": "feat: permite editar un reporte de basura",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/4c753df4941b971cdad40b9e1f3c88c46f5f6c52"
     },
     "stats": {
       "total": 37,
@@ -946,6 +946,25 @@
     },
     "coverage": 97.71,
     "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:19:27.000Z",
+      "message": "feat: valida datos obligatorios al editar reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 31,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.73,
+    "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"
   }

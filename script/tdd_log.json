@@ -1222,9 +1222,31 @@
     "testId": 49
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c753df4941b971cdad40b9e1f3c88c46f5f6c52",
     "commitName": "feat: permite editar un reporte de basura",
     "commitTimestamp": 1779337059816,
     "testId": 49
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 1,
+    "numTotalTests": 56,
+    "timestamp": 1779337110641,
+    "success": false,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779337158898,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: valida datos obligatorios al editar reporte",
+    "commitTimestamp": 1779337167410,
+    "testId": 50
   }
 ]

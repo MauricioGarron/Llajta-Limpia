@@ -250,4 +250,24 @@ describe("SP2-03 - Editar reporte de basura", () => {
     expect(resultado.reporte.direccion).toBe("Av. Panamericana");
     expect(resultado.reporte.descripcion).toBe("Contenedor lleno");
   });
+
+  test("si faltan datos obligatorios, el sistema solicita completarlos", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    const resultado = editarReporte(0, {
+        zona: "",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("Faltan datos obligatorios.");
+    expect(resultado.reporte).toBeNull();
+
+    const reportes = obtenerReportes();
+
+    expect(reportes[0].zona).toBe("norte");
+    expect(reportes[0].direccion).toBe("Av. America");
+    expect(reportes[0].descripcion).toBe("Basura acumulada");
+  });
+
 });
