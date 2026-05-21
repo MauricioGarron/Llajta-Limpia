@@ -42,7 +42,7 @@ class ReporteService {
   }
 
   crear(zona, direccion, descripcion) {
-   if (!zona || !zona.trim()) {
+    if (!zona || !zona.trim()) {
     throw new Error("La zona es obligatoria.");
   }
 

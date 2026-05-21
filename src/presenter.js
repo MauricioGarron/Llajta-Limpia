@@ -15,11 +15,10 @@ import {
 } from "./reportes.js";
 
 import {
-  crearHorario,
-  asignarHorario,
+  enlazarRutaHorario,
   obtenerHorariosPorRuta,
   obtenerHorariosPorZona,
-  obtenerProgramacion,
+  obtenerRutasProgramadas,
   obtenerRutasDisponibles,
   eliminarHorario,
   editarHorario
@@ -125,8 +124,8 @@ window.editarRutaUI = function (zona, nombreViejo) {
 const formHorario = document.querySelector("#horario-form");
 const horariosDiv = document.querySelector("#horarios-div");
 const selectHorarioRuta = document.querySelector("#horario-ruta");
-const mensajeAsignarHorario = document.querySelector("#mensaje-asignar-horario");
-const programacionHorariosDiv = document.querySelector("#programacion-horarios-div");
+const mensajeEnlaceRutaHorario = document.querySelector("#mensaje-enlace-ruta-horario");
+const rutasProgramadasDiv = document.querySelector("#rutas-programadas-div");
 
 // Crear horario
 formHorario.addEventListener("submit", function (e) {
@@ -136,14 +135,14 @@ formHorario.addEventListener("submit", function (e) {
   const dia = document.querySelector("#dia").value;
   const hora = document.querySelector("#hora").value;
 
-  const resultado = asignarHorario(ruta, dia, hora);
+  const resultado = enlazarRutaHorario(ruta, dia, hora);
 
-  mensajeAsignarHorario.textContent = resultado.mensaje;
+mensajeEnlaceRutaHorario.textContent = resultado.mensaje;
 
-  if (resultado.horario) {
-    formHorario.reset();
-    renderProgramacionHorarios();
-  }
+if (resultado.enlace) {
+  formHorario.reset();
+  renderRutasProgramadas();
+}
 });
 
 // --------------------
@@ -162,22 +161,22 @@ function actualizarRutasDisponiblesParaHorarios() {
   });
 }
 
-function renderProgramacionHorarios() {
-  const programacion = obtenerProgramacion();
+function renderRutasProgramadas() {
+  const rutasProgramadas = obtenerRutasProgramadas();
 
-  programacionHorariosDiv.innerHTML = "";
+  rutasProgramadasDiv.innerHTML = "";
 
-  if (programacion.length === 0) {
-    programacionHorariosDiv.innerHTML = "<p>No hay horarios asignados.</p>";
+  if (rutasProgramadas.length === 0) {
+    rutasProgramadasDiv.innerHTML = "<p>No hay rutas programadas.</p>";
     return;
   }
 
-  programacion.forEach(horario => {
-    programacionHorariosDiv.innerHTML += `
+  rutasProgramadas.forEach(enlace => {
+    rutasProgramadasDiv.innerHTML += `
       <p>
-        <strong>Ruta:</strong> ${horario.ruta} |
-        <strong>Día:</strong> ${horario.dia} |
-        <strong>Hora:</strong> ${horario.hora}
+        <strong>Ruta:</strong> ${enlace.ruta} |
+        <strong>Día:</strong> ${enlace.dia} |
+        <strong>Hora:</strong> ${enlace.hora}
       </p>
     `;
   });
@@ -442,4 +441,4 @@ selectReportesZona.addEventListener("change", renderReportesPorZona);
 actualizarZonasReportes();
 renderResumenReportesPorZona();
 actualizarRutasDisponiblesParaHorarios();
-renderProgramacionHorarios();
+renderRutasProgramadas();

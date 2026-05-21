@@ -1124,31 +1124,115 @@
     "testId": 46
   },
   {
-    "commitId": "9cd6058c68f33c9f8f896f7d10c4339012c28e1a",
+    "commitId": "22fe94edc05e477586808b69b08dad7d795c5a39",
     "commitName": "feat: mostrar reportes de acumulaciones ordenados por likes",
     "commitTimestamp": 1779321656114,
     "testId": 46
   },
   {
     "numPassedTests": 44,
-    "failedTests": 2,
-    "numTotalTests": 46,
-    "timestamp": 1779323278043,
+    "failedTests": 4,
+    "numTotalTests": 48,
+    "timestamp": 1779327901530,
     "success": false,
     "testId": 47
   },
   {
-    "numPassedTests": 46,
+    "numPassedTests": 45,
+    "failedTests": 3,
+    "numTotalTests": 48,
+    "timestamp": 1779328000587,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 21,
     "failedTests": 0,
-    "numTotalTests": 46,
-    "timestamp": 1779335474949,
+    "numTotalTests": 21,
+    "timestamp": 1779328123841,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1779328358823,
     "success": true,
     "testId": 47
   },
   {
+    "numPassedTests": 48,
+    "failedTests": 6,
+    "numTotalTests": 54,
+    "timestamp": 1779329089621,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1779329703480,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "aa5f839197dc11795b70de3eb753ee25ce052db4",
+    "commitName": "feat: enlazar rutas y horarios",
+    "commitTimestamp": 1779329790772,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1779330115266,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1779331275756,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "24ec68c766412d048659f3da9a811d84bd6e8c89",
+    "commitName": "feat: enlazar rutas y horarios estilo html",
+    "commitTimestamp": 1779331312907,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779336313945,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 2,
+    "numTotalTests": 56,
+    "timestamp": 1779336325955,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779336373225,
+    "success": true,
+    "testId": 49
+  },
+  {
     "commitId": "HEAD",
     "commitName": "feat: validacion de formulario",
-    "commitTimestamp": 1779335685114,
-    "testId": 47
+    "commitTimestamp": 1779336478338,
+    "testId": 49
   }
 ]

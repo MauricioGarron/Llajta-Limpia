@@ -38,6 +38,22 @@ class RutaService {
     return [...new Set(this.rutas.map(r => r.zona))];
   }
 
+  obtenerTodas() {
+  return this.rutas;
+}
+
+existeRuta(nombreRuta) {
+  const rutaBuscada = this.normalizarTexto(nombreRuta);
+
+  return this.rutas.some(
+    ruta => this.normalizarTexto(ruta.ruta) === rutaBuscada
+  );
+}
+
+normalizarTexto(texto) {
+  return String(texto || "").trim().toLowerCase();
+}
+
   obtenerPorZona(zona) {
     if (!zona || !zona.trim()) {
       throw new Error("Zona inválida");
@@ -91,4 +107,11 @@ export function obtenerRutasPorZona(zona) {
 
 export function editarRuta(zona, nombreViejo, nombreNuevo) {
   rutaService.editar(zona, nombreViejo, nombreNuevo);
+}
+export function obtenerTodasRutas() {
+  return rutaService.obtenerTodas();
+}
+
+export function existeRuta(nombreRuta) {
+  return rutaService.existeRuta(nombreRuta);
 }

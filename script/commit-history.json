@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "9cd6058c68f33c9f8f896f7d10c4339012c28e1a",
+    "sha": "22fe94edc05e477586808b69b08dad7d795c5a39",
     "author": "Griz-8",
     "commit": {
       "date": "2026-05-21T00:00:54.000Z",
       "message": "feat: mostrar reportes de acumulaciones ordenados por likes",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/9cd6058c68f33c9f8f896f7d10c4339012c28e1a"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/22fe94edc05e477586808b69b08dad7d795c5a39"
     },
     "stats": {
       "total": 30,
@@ -893,21 +893,59 @@
     "conclusion": "success"
   },
   {
+    "sha": "aa5f839197dc11795b70de3eb753ee25ce052db4",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-05-21T02:16:27.000Z",
+      "message": "feat: enlazar rutas y horarios",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/aa5f839197dc11795b70de3eb753ee25ce052db4"
+    },
+    "stats": {
+      "total": 183,
+      "additions": 180,
+      "deletions": 3,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.64,
+    "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "24ec68c766412d048659f3da9a811d84bd6e8c89",
+    "author": "FullMaury",
+    "commit": {
+      "date": "2026-05-21T02:41:49.000Z",
+      "message": "feat: enlazar rutas y horarios estilo html",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/24ec68c766412d048659f3da9a811d84bd6e8c89"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 28,
+      "deletions": 25,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.64,
+    "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
     "sha": "HEAD",
     "author": "Griz-8",
     "commit": {
-      "date": "2026-05-21T03:54:43.000Z",
+      "date": "2026-05-21T04:07:57.000Z",
       "message": "feat: validacion de formulario",
       "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
     },
     "stats": {
-      "total": 32,
-      "additions": 27,
-      "deletions": 5,
+      "total": 238,
+      "additions": 209,
+      "deletions": 29,
       "date": "2026-05-21"
     },
-    "coverage": 97.41,
-    "test_count": 46,
+    "coverage": 97.69,
+    "test_count": 56,
     "failed_tests": 0,
     "conclusion": "success"
   }
