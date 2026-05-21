@@ -94,6 +94,20 @@ class ReporteService {
     }
   }
 
+
+  editar(indice, datosActualizados) {
+    const reporte = this.obtenerReportePorIndice(indice);
+
+    reporte.zona = datosActualizados.zona;
+    reporte.direccion = datosActualizados.direccion;
+    reporte.descripcion = datosActualizados.descripcion;
+
+    return {
+        mensaje: "Reporte editado correctamente.",
+        reporte
+    };
+  }
+
   obtenerPorZona(zona) {
     const zonaBuscada = this.normalizarTexto(zona);
 
@@ -249,4 +263,7 @@ export function darLikeReporte(indice) {
 
 export function cambiarEstadoReporte(indice, nuevoEstado) {
   return reporteService.cambiarEstado(indice, nuevoEstado);
+}
+export function editarReporte(indice, datosActualizados) {
+  return reporteService.editar(indice, datosActualizados);
 }

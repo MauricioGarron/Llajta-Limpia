@@ -1200,9 +1200,31 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c8627c3982725260708d7416e288af1d8b6ac71",
     "commitName": "feat: enlazar rutas y horarios estilo html",
     "commitTimestamp": 1779331312907,
     "testId": 48
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1779336948855,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1779337050094,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: permite editar un reporte de basura",
+    "commitTimestamp": 1779337059816,
+    "testId": 49
   }
 ]

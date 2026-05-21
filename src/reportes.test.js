@@ -5,7 +5,8 @@ import {
   verReportes,
   darLikeReporte,
   VerReportesPorZona,
-  cambiarEstadoReporte
+  cambiarEstadoReporte,
+  editarReporte
 } from "./reportes.js";
 
 beforeEach(() => {
@@ -232,4 +233,21 @@ describe("SP2-06 - Cambiar estado de reporte", () => {
   expect(resultado.reportes[0].ubicacion).toBe("Av. Beijing");
   }); 
   
+});
+
+describe("SP2-03 - Editar reporte de basura", () => {
+  test("cuando el usuario modifica la informacion correctamente, los cambios se guardan", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    const resultado = editarReporte(0, {
+      zona: "sur",
+      direccion: "Av. Panamericana",
+      descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("Reporte editado correctamente.");
+    expect(resultado.reporte.zona).toBe("sur");
+    expect(resultado.reporte.direccion).toBe("Av. Panamericana");
+    expect(resultado.reporte.descripcion).toBe("Contenedor lleno");
+  });
 });
