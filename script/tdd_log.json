@@ -1316,9 +1316,39 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4aa45b99015240aeb703aca7a1bd52d3647245b9",
     "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
     "commitTimestamp": 1779368409207,
     "testId": 54
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368445792,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368452364,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368461430,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
+    "commitTimestamp": 1779368538640,
+    "testId": 55
   }
 ]
