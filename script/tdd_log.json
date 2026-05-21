@@ -1258,9 +1258,31 @@
     "testId": 51
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7818cec827debee9662a28b6395787bfb05013b0",
     "commitName": "feat: refleja edición en lista de reportes",
     "commitTimestamp": 1779337232472,
     "testId": 51
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 1,
+    "numTotalTests": 58,
+    "timestamp": 1779337261350,
+    "success": false,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1779337349450,
+    "success": true,
+    "testId": 52
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: impide editar reportes resueltos",
+    "commitTimestamp": 1779337358691,
+    "testId": 52
   }
 ]

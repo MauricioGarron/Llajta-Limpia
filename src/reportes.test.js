@@ -287,4 +287,25 @@ describe("SP2-03 - Editar reporte de basura", () => {
     expect(resultado.reportes[0].descripcion).toBe("Contenedor lleno");
   });
 
+  test("si el reporte ya fue marcado como resuelto, el sistema impide editarlo", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    cambiarEstadoReporte(0, "resuelto");
+
+    const resultado = editarReporte(0, {
+        zona: "sur",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("No se puede editar un reporte resuelto.");
+    expect(resultado.reporte).toBeNull();
+
+    const reportes = obtenerReportes();
+
+    expect(reportes[0].zona).toBe("norte");
+    expect(reportes[0].direccion).toBe("Av. America");
+    expect(reportes[0].descripcion).toBe("Basura acumulada");
+  });
+
 });

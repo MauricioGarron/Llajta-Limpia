@@ -109,6 +109,13 @@ class ReporteService {
 
     const reporte = this.obtenerReportePorIndice(indice);
 
+    if (reporte.estado === ESTADO_RESUELTO) {
+        return {
+            mensaje: "No se puede editar un reporte resuelto.",
+            reporte: null
+        };
+    }
+
     reporte.zona = datosActualizados.zona;
     reporte.direccion = datosActualizados.direccion;
     reporte.descripcion = datosActualizados.descripcion;
