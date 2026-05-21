@@ -42,10 +42,17 @@ class ReporteService {
   }
 
   crear(zona, direccion, descripcion) {
-    if (!zona || !direccion || !descripcion) {
-      throw new Error("Faltan datos obligatorios");
-    }
+    if (!zona || !zona.trim()) {
+    throw new Error("La zona es obligatoria.");
+  }
 
+  if (!direccion || !direccion.trim()) {
+    throw new Error("La dirección es obligatoria.");
+  }
+
+  if (!descripcion || !descripcion.trim()) {
+    throw new Error("La descripción es obligatoria.");
+  }
     const reporte = new Reporte(zona, direccion, descripcion);
     this.reportes.push(reporte);
     return reporte;

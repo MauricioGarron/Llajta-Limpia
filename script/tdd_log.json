@@ -1200,9 +1200,39 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "24ec68c766412d048659f3da9a811d84bd6e8c89",
     "commitName": "feat: enlazar rutas y horarios estilo html",
     "commitTimestamp": 1779331312907,
     "testId": 48
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779336313945,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 2,
+    "numTotalTests": 56,
+    "timestamp": 1779336325955,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779336373225,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validacion de formulario",
+    "commitTimestamp": 1779336478338,
+    "testId": 49
   }
 ]

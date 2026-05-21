@@ -206,7 +206,7 @@ describe("SP2-06 - Cambiar estado de reporte", () => {
     expect(resultado.mensaje).toBe("Estado inválido.");
     expect(resultado.reporte).toBeNull();
   });
-
+//
   test("verTodos ordena reportes por likes de mayor a menor", () => {
   crearReporte("norte", "Av. América", "Basura");
   crearReporte("sur", "Av. Panamericana", "Contenedor");
@@ -231,5 +231,20 @@ describe("SP2-06 - Cambiar estado de reporte", () => {
 
   expect(resultado.reportes[0].ubicacion).toBe("Av. Beijing");
   }); 
-  
+//  
+  describe("SP2-07 - Validar formulario de reporte", () => {
+
+    beforeEach(() => resetReportes());
+
+    test("zona con solo espacios lanza error específico", () => {
+      expect(() => crearReporte("   ", "Av. América", "Basura acumulada en la esquina"))
+        .toThrow("La zona es obligatoria.");
+    });
+
+    test("dirección con solo espacios lanza error específico", () => {
+      expect(() => crearReporte("norte", "   ", "Basura acumulada en la esquina"))
+        .toThrow("La dirección es obligatoria.");
+    });
+
+  });
 });
