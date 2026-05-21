@@ -1,8 +1,11 @@
 class LoginEMSAService {
 
   constructor() {
+
     this.usuarioCorrecto = "admin";
+
     this.passwordCorrecto = "123456";
+
   }
 
   iniciarSesion(usuario, password) {
@@ -11,16 +14,18 @@ class LoginEMSAService {
       usuario === this.usuarioCorrecto &&
       password === this.passwordCorrecto
     ) {
+
       return {
-        exito: true,
-        mensaje: "Login correcto"
+        exito: true
       };
+
     }
 
     return {
       exito: false,
       mensaje: "Credenciales incorrectas"
     };
+
   }
 
 }
