@@ -36,4 +36,34 @@ describe("Login EMSA", () => {
 
   });
 
+  test("falla si usuario está vacío", () => {
+
+    const resultado = loginService.iniciarSesion(
+      "",
+      "123456"
+    );
+
+    expect(resultado.exito).toBe(false);
+
+    expect(resultado.mensaje).toBe(
+      "Complete todos los campos"
+    );
+
+  });
+
+  test("falla si password está vacío", () => {
+
+    const resultado = loginService.iniciarSesion(
+      "admin",
+      ""
+    );
+
+    expect(resultado.exito).toBe(false);
+
+    expect(resultado.mensaje).toBe(
+      "Complete todos los campos"
+    );
+
+  });
+
 });

@@ -10,6 +10,15 @@ class LoginEMSAService {
 
   iniciarSesion(usuario, password) {
 
+    if (!usuario || !password) {
+
+      return {
+        exito: false,
+        mensaje: "Complete todos los campos"
+      };
+
+    }
+
     if (
       usuario === this.usuarioCorrecto &&
       password === this.passwordCorrecto

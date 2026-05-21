@@ -1398,9 +1398,31 @@
     "testId": 57
   },
   {
-    "commitId": "HEAD",
+    "commitId": "38df318e130d2f9b2ca12779af6b25350ebe291e",
     "commitName": "feat(login-emsa): validar credenciales incorrectas",
     "commitTimestamp": 1779368920050,
     "testId": 57
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 2,
+    "numTotalTests": 62,
+    "timestamp": 1779368935474,
+    "success": false,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 0,
+    "numTotalTests": 62,
+    "timestamp": 1779368950580,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): validar campos obligatorios",
+    "commitTimestamp": 1779368962540,
+    "testId": 58
   }
 ]
