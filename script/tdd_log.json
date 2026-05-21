@@ -1124,9 +1124,31 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9cd6058c68f33c9f8f896f7d10c4339012c28e1a",
     "commitName": "feat: mostrar reportes de acumulaciones ordenados por likes",
     "commitTimestamp": 1779321656114,
     "testId": 46
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 2,
+    "numTotalTests": 46,
+    "timestamp": 1779323278043,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1779335474949,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validacion de formulario",
+    "commitTimestamp": 1779335685114,
+    "testId": 47
   }
 ]

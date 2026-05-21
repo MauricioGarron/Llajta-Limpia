@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9cd6058c68f33c9f8f896f7d10c4339012c28e1a",
     "author": "Griz-8",
     "commit": {
       "date": "2026-05-21T00:00:54.000Z",
       "message": "feat: mostrar reportes de acumulaciones ordenados por likes",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/9cd6058c68f33c9f8f896f7d10c4339012c28e1a"
     },
     "stats": {
       "total": 30,
@@ -889,6 +889,25 @@
     },
     "coverage": 97.35,
     "test_count": 44,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Griz-8",
+    "commit": {
+      "date": "2026-05-21T03:54:43.000Z",
+      "message": "feat: validacion de formulario",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 27,
+      "deletions": 5,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.41,
+    "test_count": 46,
     "failed_tests": 0,
     "conclusion": "success"
   }
