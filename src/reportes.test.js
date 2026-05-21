@@ -206,4 +206,30 @@ describe("SP2-06 - Cambiar estado de reporte", () => {
     expect(resultado.mensaje).toBe("Estado inválido.");
     expect(resultado.reporte).toBeNull();
   });
+
+  test("verTodos ordena reportes por likes de mayor a menor", () => {
+  crearReporte("norte", "Av. América", "Basura");
+  crearReporte("sur", "Av. Panamericana", "Contenedor");
+
+  darLikeReporte(1);
+  darLikeReporte(1); 
+  darLikeReporte(0); 
+  const resultado = verReportes();
+
+  expect(resultado.reportes[0].zona).toBe("sur");
+  expect(resultado.reportes[1].zona).toBe("norte");
+  });
+
+  test("obtenerPorZona ordena reportes por likes de mayor a menor", () => {
+  crearReporte("norte", "Av. América", "Basura");
+  crearReporte("norte", "Av. Beijing", "Escombros");
+
+  darLikeReporte(1); 
+
+  const servicio = new VerReportesPorZona();
+  const resultado = servicio.obtenerReportesPorZona("norte");
+
+  expect(resultado.reportes[0].ubicacion).toBe("Av. Beijing");
+  }); 
+  
 });

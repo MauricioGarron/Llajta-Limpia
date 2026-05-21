@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "35e7e77d2ddeeeb28fdd61febc10be5c0830f6f7",
     "author": "Mauricio",
     "commit": {
       "date": "2026-05-20T22:55:48.000Z",
       "message": "refact: reportes.js refactorizado en clases",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/35e7e77d2ddeeeb28fdd61febc10be5c0830f6f7"
     },
     "stats": {
       "total": 114,
@@ -870,6 +870,25 @@
     },
     "coverage": 97.31,
     "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Griz-8",
+    "commit": {
+      "date": "2026-05-21T00:00:54.000Z",
+      "message": "feat: mostrar reportes de acumulaciones ordenados por likes",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 29,
+      "deletions": 1,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.35,
+    "test_count": 44,
     "failed_tests": 0,
     "conclusion": "success"
   }

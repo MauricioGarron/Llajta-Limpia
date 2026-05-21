@@ -1094,9 +1094,39 @@
     "testId": 45
   },
   {
-    "commitId": "HEAD",
+    "commitId": "35e7e77d2ddeeeb28fdd61febc10be5c0830f6f7",
     "commitName": "refact: reportes.js refactorizado en clases",
     "commitTimestamp": 1779317748938,
     "testId": 45
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 1,
+    "numTotalTests": 43,
+    "timestamp": 1779320152608,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 2,
+    "numTotalTests": 44,
+    "timestamp": 1779320356955,
+    "success": false,
+    "testId": 46
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 0,
+    "numTotalTests": 44,
+    "timestamp": 1779320691090,
+    "success": true,
+    "testId": 46
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar reportes de acumulaciones ordenados por likes",
+    "commitTimestamp": 1779321656114,
+    "testId": 46
   }
 ]

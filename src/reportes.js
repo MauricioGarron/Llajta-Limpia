@@ -16,6 +16,7 @@ class Reporte {
     this.descripcion = descripcion;
     this.estado = ESTADO_PENDIENTE;
     this.likes = 0;
+    this.fecha = new Date().toISOString();
   }
 
   darLike() {
@@ -59,7 +60,7 @@ class ReporteService {
       return this.crearRespuesta("No hay reportes registrados.", []);
     }
 
-    return this.crearRespuesta("", this.reportes);
+   return this.crearRespuesta("", [...this.reportes].sort((a, b) => b.likes - a.likes));
   }
 
   darLike(indice) {
@@ -102,6 +103,7 @@ class ReporteService {
 
     const reportesFiltrados = this.reportes
       .filter(reporte => this.perteneceAZona(reporte, zonaBuscada))
+      .sort((a, b) => b.likes - a.likes)
       .map(reporte => this.formatearReporte(reporte));
 
     if (reportesFiltrados.length === 0) {
