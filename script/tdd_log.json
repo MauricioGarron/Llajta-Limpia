@@ -1124,9 +1124,63 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22fe94edc05e477586808b69b08dad7d795c5a39",
     "commitName": "feat: mostrar reportes de acumulaciones ordenados por likes",
     "commitTimestamp": 1779321656114,
     "testId": 46
+  },
+  {
+    "numPassedTests": 44,
+    "failedTests": 4,
+    "numTotalTests": 48,
+    "timestamp": 1779327901530,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 45,
+    "failedTests": 3,
+    "numTotalTests": 48,
+    "timestamp": 1779328000587,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1779328123841,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 0,
+    "numTotalTests": 48,
+    "timestamp": 1779328358823,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 48,
+    "failedTests": 6,
+    "numTotalTests": 54,
+    "timestamp": 1779329089621,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 0,
+    "numTotalTests": 54,
+    "timestamp": 1779329703480,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: enlazar rutas y horarios",
+    "commitTimestamp": 1779329790772,
+    "testId": 47
   }
 ]

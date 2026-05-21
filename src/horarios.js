@@ -7,6 +7,9 @@ const MENSAJE_DATOS_INCOMPLETOS = "Completa todos los datos obligatorios.";
 const MENSAJE_HORARIO_OCUPADO = "El horario seleccionado ya está ocupado.";
 const MENSAJE_RUTA_NO_DISPONIBLE = "La ruta seleccionada no está disponible.";
 const MENSAJE_HORARIO_ASIGNADO = "Horario asignado correctamente.";
+const MENSAJE_ENLACE_CORRECTO = "Ruta y horario enlazados correctamente.";
+const MENSAJE_DATOS_ENLACE_INCOMPLETOS = "Completa los datos obligatorios antes de guardar.";
+const MENSAJE_CONFLICTO_ENLACE = "La ruta ya tiene un horario asignado en el mismo rango.";
 
 class Horario {
   constructor(ruta, dia, hora) {
@@ -60,6 +63,24 @@ class HorarioService {
 
     return this.crearRespuesta(MENSAJE_HORARIO_ASIGNADO, horario);
   }
+  enlazarRutaHorario(ruta, dia, hora) {
+  if (this.tieneDatosIncompletos(ruta, dia, hora)) {
+    return this.crearRespuestaEnlace(MENSAJE_DATOS_ENLACE_INCOMPLETOS, null);
+  }
+
+  if (!this.rutaDisponible(ruta)) {
+    return this.crearRespuestaEnlace(MENSAJE_RUTA_NO_DISPONIBLE, null);
+  }
+
+  if (this.existeConflicto(ruta, dia, hora)) {
+    return this.crearRespuestaEnlace(MENSAJE_CONFLICTO_ENLACE, null);
+  }
+
+  const enlace = new Horario(ruta, dia, hora);
+  this.horarios.push(enlace);
+
+  return this.crearRespuestaEnlace(MENSAJE_ENLACE_CORRECTO, enlace);
+}
 
   obtenerPorRuta(ruta) {
     return this.horarios.filter(h => h.ruta === ruta);
@@ -76,6 +97,9 @@ class HorarioService {
 
   obtenerProgramacion() {
     return [...this.horarios];
+  }
+  obtenerRutasProgramadas() {
+  return [...this.horarios];
   }
 
   obtenerRutasDisponibles() {
@@ -150,6 +174,13 @@ class HorarioService {
     };
   }
 
+  crearRespuestaEnlace(mensaje, enlace) {
+  return {
+    mensaje,
+    enlace
+  };
+}
+
   normalizarTexto(texto) {
     return String(texto || "").trim().toLowerCase();
   }
@@ -193,4 +224,12 @@ export function eliminarHorario(ruta, dia, hora, confirmado = false) {
 
 export function editarHorario(datosViejos, datosNuevos) {
   horarioService.editar(datosViejos, datosNuevos);
+}
+
+export function enlazarRutaHorario(ruta, dia, hora) {
+  return horarioService.enlazarRutaHorario(ruta, dia, hora);
+}
+
+export function obtenerRutasProgramadas() {
+  return horarioService.obtenerRutasProgramadas();
 }

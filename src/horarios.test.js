@@ -7,7 +7,9 @@ import {
   editarHorario,
   asignarHorario,
   obtenerProgramacion,
-  obtenerRutasDisponibles
+  obtenerRutasDisponibles,
+  enlazarRutaHorario,
+  obtenerRutasProgramadas
 } from "./horarios.js";
 
 import {
@@ -172,5 +174,76 @@ describe("SP2-05 - Asignar horarios", () => {
     expect(rutasDisponibles.length).toBe(2);
     expect(rutasDisponibles[0].ruta).toBe("Ruta 1");
     expect(rutasDisponibles[1].ruta).toBe("Ruta 2");
+  });
+});
+
+describe("SP2-04 - Enlazar rutas y horarios", () => {
+  beforeEach(() => {
+    resetHorarios();
+    resetRutas();
+  });
+
+  test("cuando EMSA selecciona una ruta y un horario válidos, el sistema guarda el enlace correctamente", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = enlazarRutaHorario("Ruta 1", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("Ruta y horario enlazados correctamente.");
+    expect(resultado.enlace.ruta).toBe("Ruta 1");
+    expect(resultado.enlace.dia).toBe("Lunes");
+    expect(resultado.enlace.hora).toBe("08:00");
+  });
+
+  test("la ruta enlazada aparece en la lista de rutas programadas", () => {
+    crearRuta("norte", "Ruta 1");
+
+    enlazarRutaHorario("Ruta 1", "Lunes", "08:00");
+
+    const rutasProgramadas = obtenerRutasProgramadas();
+
+    expect(rutasProgramadas.length).toBe(1);
+    expect(rutasProgramadas[0].ruta).toBe("Ruta 1");
+    expect(rutasProgramadas[0].dia).toBe("Lunes");
+    expect(rutasProgramadas[0].hora).toBe("08:00");
+  });
+
+  test("si una ruta ya tiene un horario asignado en el mismo rango, el sistema muestra un mensaje de conflicto", () => {
+    crearRuta("norte", "Ruta 1");
+
+    enlazarRutaHorario("Ruta 1", "Lunes", "08:00");
+
+    const resultado = enlazarRutaHorario("Ruta 1", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("La ruta ya tiene un horario asignado en el mismo rango.");
+    expect(resultado.enlace).toBeNull();
+  });
+
+  test("si faltan datos obligatorios, el sistema solicita completarlos antes de guardar", () => {
+    crearRuta("norte", "Ruta 1");
+
+    const resultado = enlazarRutaHorario("", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("Completa los datos obligatorios antes de guardar.");
+    expect(resultado.enlace).toBeNull();
+  });
+
+  test("los cambios realizados se reflejan inmediatamente en el sistema", () => {
+    crearRuta("norte", "Ruta 1");
+
+    enlazarRutaHorario("Ruta 1", "Lunes", "08:00");
+
+    const horariosRuta = obtenerHorariosPorRuta("Ruta 1");
+
+    expect(horariosRuta.length).toBe(1);
+    expect(horariosRuta[0].ruta).toBe("Ruta 1");
+    expect(horariosRuta[0].dia).toBe("Lunes");
+    expect(horariosRuta[0].hora).toBe("08:00");
+  });
+
+  test("no debería enlazar una ruta que no existe", () => {
+    const resultado = enlazarRutaHorario("Ruta inexistente", "Lunes", "08:00");
+
+    expect(resultado.mensaje).toBe("La ruta seleccionada no está disponible.");
+    expect(resultado.enlace).toBeNull();
   });
 });
