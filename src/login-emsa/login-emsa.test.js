@@ -16,6 +16,20 @@ describe("Login EMSA", () => {
     );
 
     expect(resultado.exito).toBe(true);
+    test("muestra error si las credenciales son incorrectas", () => {
+
+  const resultado = loginService.iniciarSesion(
+    "admin",
+    "999999"
+  );
+
+  expect(resultado.exito).toBe(false);
+
+  expect(resultado.mensaje).toBe(
+    "Credenciales incorrectas"
+  );
+
+});
   });
 
 });

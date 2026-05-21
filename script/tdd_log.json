@@ -1346,9 +1346,23 @@
     "testId": 55
   },
   {
-    "commitId": "HEAD",
+    "commitId": "55ae31ec7bf935b96299ed0faffebfbb7c3d05cc",
     "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
     "commitTimestamp": 1779368538640,
     "testId": 55
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368656121,
+    "success": false,
+    "testId": 56
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): validar credenciales incorrectas",
+    "commitTimestamp": 1779368682032,
+    "testId": 56
   }
 ]
