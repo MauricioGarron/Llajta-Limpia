@@ -11,6 +11,7 @@ import {
   verReportes,
   darLikeReporte,
   cambiarEstadoReporte,
+  editarReporte,
   VerReportesPorZona
 } from "./reportes.js";
 
@@ -330,6 +331,7 @@ function renderReportes() {
 
       <strong>Likes:</strong> <span id="likes-${indice}">${reporte.likes}</span>
       <button class="like-btn" data-indice="${indice}">Like</button>
+      <button class="editar-reporte-btn" data-indice="${indice}">Editar</button>
     `;
 
     listaReportes.appendChild(item);
@@ -364,6 +366,35 @@ function renderReportes() {
       }
     });
   });
+
+  const botonesEditarReporte = document.querySelectorAll(".editar-reporte-btn");
+
+  botonesEditarReporte.forEach((boton) => {
+    boton.addEventListener("click", () => {
+      const indice = boton.dataset.indice;
+
+      const nuevaZona = prompt("Nueva zona:");
+      const nuevaDireccion = prompt("Nueva direccion:");
+      const nuevaDescripcion = prompt("Nueva descripcion:");
+
+      const resultado = editarReporte(indice, {
+        zona: nuevaZona,
+        direccion: nuevaDireccion,
+        descripcion: nuevaDescripcion,
+      });
+
+      mensajeListaReportes.textContent = resultado.mensaje;
+
+      renderReportes();
+      actualizarZonasReportes();
+      renderResumenReportesPorZona();
+
+      if (selectReportesZona.value) {
+        renderReportesPorZona();
+      }
+    });
+  });
+
 }
 
 botonVerReportes.addEventListener("click", () => {

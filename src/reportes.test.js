@@ -5,7 +5,8 @@ import {
   verReportes,
   darLikeReporte,
   VerReportesPorZona,
-  cambiarEstadoReporte
+  cambiarEstadoReporte,
+  editarReporte
 } from "./reportes.js";
 
 beforeEach(() => {
@@ -232,4 +233,79 @@ describe("SP2-06 - Cambiar estado de reporte", () => {
   expect(resultado.reportes[0].ubicacion).toBe("Av. Beijing");
   }); 
   
+});
+
+describe("SP2-03 - Editar reporte de basura", () => {
+  test("cuando el usuario modifica la informacion correctamente, los cambios se guardan", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    const resultado = editarReporte(0, {
+      zona: "sur",
+      direccion: "Av. Panamericana",
+      descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("Reporte editado correctamente.");
+    expect(resultado.reporte.zona).toBe("sur");
+    expect(resultado.reporte.direccion).toBe("Av. Panamericana");
+    expect(resultado.reporte.descripcion).toBe("Contenedor lleno");
+  });
+
+  test("si faltan datos obligatorios, el sistema solicita completarlos", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    const resultado = editarReporte(0, {
+        zona: "",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("Faltan datos obligatorios.");
+    expect(resultado.reporte).toBeNull();
+
+    const reportes = obtenerReportes();
+
+    expect(reportes[0].zona).toBe("norte");
+    expect(reportes[0].direccion).toBe("Av. America");
+    expect(reportes[0].descripcion).toBe("Basura acumulada");
+  });
+
+
+  test("cuando la edicion finaliza, la informacion actualizada se refleja en la lista de reportes", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    editarReporte(0, {
+        zona: "sur",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    const resultado = verReportes();
+
+    expect(resultado.reportes[0].zona).toBe("sur");
+    expect(resultado.reportes[0].direccion).toBe("Av. Panamericana");
+    expect(resultado.reportes[0].descripcion).toBe("Contenedor lleno");
+  });
+
+  test("si el reporte ya fue marcado como resuelto, el sistema impide editarlo", () => {
+    crearReporte("norte", "Av. America", "Basura acumulada");
+
+    cambiarEstadoReporte(0, "resuelto");
+
+    const resultado = editarReporte(0, {
+        zona: "sur",
+        direccion: "Av. Panamericana",
+        descripcion: "Contenedor lleno",
+    });
+
+    expect(resultado.mensaje).toBe("No se puede editar un reporte resuelto.");
+    expect(resultado.reporte).toBeNull();
+
+    const reportes = obtenerReportes();
+
+    expect(reportes[0].zona).toBe("norte");
+    expect(reportes[0].direccion).toBe("Av. America");
+    expect(reportes[0].descripcion).toBe("Basura acumulada");
+  });
+
 });

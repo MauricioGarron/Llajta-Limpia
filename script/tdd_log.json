@@ -1200,9 +1200,103 @@
     "testId": 48
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4c8627c3982725260708d7416e288af1d8b6ac71",
     "commitName": "feat: enlazar rutas y horarios estilo html",
     "commitTimestamp": 1779331312907,
     "testId": 48
+  },
+  {
+    "numPassedTests": 54,
+    "failedTests": 1,
+    "numTotalTests": 55,
+    "timestamp": 1779336948855,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1779337050094,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "commitId": "4c753df4941b971cdad40b9e1f3c88c46f5f6c52",
+    "commitName": "feat: permite editar un reporte de basura",
+    "commitTimestamp": 1779337059816,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 1,
+    "numTotalTests": 56,
+    "timestamp": 1779337110641,
+    "success": false,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 56,
+    "failedTests": 0,
+    "numTotalTests": 56,
+    "timestamp": 1779337158898,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "db4aa1796730c71d85605c7083859455813b0fa8",
+    "commitName": "feat: valida datos obligatorios al editar reporte",
+    "commitTimestamp": 1779337167410,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 0,
+    "numTotalTests": 57,
+    "timestamp": 1779337224388,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "7818cec827debee9662a28b6395787bfb05013b0",
+    "commitName": "feat: refleja edición en lista de reportes",
+    "commitTimestamp": 1779337232472,
+    "testId": 51
+  },
+  {
+    "numPassedTests": 57,
+    "failedTests": 1,
+    "numTotalTests": 58,
+    "timestamp": 1779337261350,
+    "success": false,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1779337349450,
+    "success": true,
+    "testId": 52
+  },
+  {
+    "commitId": "394e470dcb066252405b488d72270ddeb9d12876",
+    "commitName": "feat: impide editar reportes resueltos",
+    "commitTimestamp": 1779337358691,
+    "testId": 52
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1779337790856,
+    "success": true,
+    "testId": 53
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: integra edición de reportes en interfaz",
+    "commitTimestamp": 1779337800921,
+    "testId": 53
   }
 ]

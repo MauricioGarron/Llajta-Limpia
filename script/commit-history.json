@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c8627c3982725260708d7416e288af1d8b6ac71",
     "author": "FullMaury",
     "commit": {
       "date": "2026-05-21T02:41:49.000Z",
       "message": "feat: enlazar rutas y horarios estilo html",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/4c8627c3982725260708d7416e288af1d8b6ac71"
     },
     "stats": {
       "total": 53,
@@ -927,6 +927,101 @@
     },
     "coverage": 97.64,
     "test_count": 54,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4c753df4941b971cdad40b9e1f3c88c46f5f6c52",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:17:39.000Z",
+      "message": "feat: permite editar un reporte de basura",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/4c753df4941b971cdad40b9e1f3c88c46f5f6c52"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 36,
+      "deletions": 1,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.71,
+    "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "db4aa1796730c71d85605c7083859455813b0fa8",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:19:27.000Z",
+      "message": "feat: valida datos obligatorios al editar reporte",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/db4aa1796730c71d85605c7083859455813b0fa8"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 31,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.73,
+    "test_count": 56,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7818cec827debee9662a28b6395787bfb05013b0",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:20:32.000Z",
+      "message": "feat: refleja edición en lista de reportes",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/7818cec827debee9662a28b6395787bfb05013b0"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.73,
+    "test_count": 57,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "394e470dcb066252405b488d72270ddeb9d12876",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:22:38.000Z",
+      "message": "feat: impide editar reportes resueltos",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/394e470dcb066252405b488d72270ddeb9d12876"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.75,
+    "test_count": 58,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Gabriel Claros",
+    "commit": {
+      "date": "2026-05-21T04:30:00.000Z",
+      "message": "feat: integra edición de reportes en interfaz",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 31,
+      "deletions": 0,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.75,
+    "test_count": 58,
     "failed_tests": 0,
     "conclusion": "success"
   }
