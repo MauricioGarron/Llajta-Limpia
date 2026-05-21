@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b700e945fa4084552778be17b57ceb049f421cd2",
     "author": "Gabriel Claros",
     "commit": {
       "date": "2026-05-21T04:30:00.000Z",
       "message": "feat: integra edición de reportes en interfaz",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/b700e945fa4084552778be17b57ceb049f421cd2"
     },
     "stats": {
       "total": 31,
@@ -1022,6 +1022,25 @@
     },
     "coverage": 97.75,
     "test_count": 58,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-05-21T13:00:07.000Z",
+      "message": "feat(login-emsa): permitir acceso con credenciales correctas",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 403,
+      "additions": 239,
+      "deletions": 164,
+      "date": "2026-05-21"
+    },
+    "coverage": 97.36,
+    "test_count": 59,
     "failed_tests": 0,
     "conclusion": "success"
   }

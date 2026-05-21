@@ -1294,9 +1294,31 @@
     "testId": 53
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b700e945fa4084552778be17b57ceb049f421cd2",
     "commitName": "feat: integra edición de reportes en interfaz",
     "commitTimestamp": 1779337800921,
     "testId": 53
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368374728,
+    "success": false,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368391999,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
+    "commitTimestamp": 1779368409207,
+    "testId": 54
   }
 ]
