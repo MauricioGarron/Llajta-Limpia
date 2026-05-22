@@ -1472,9 +1472,55 @@
     "testId": 60
   },
   {
-    "commitId": "HEAD",
+    "commitId": "abb2b95e6eccf66c4752b18f2a3850395c54fe83",
     "commitName": "feat(auth): agregar paginas de login y registro de usuarios",
     "commitTimestamp": 1779415834836,
     "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779415845942,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416475161,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416489993,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416508397,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 0,
+    "numTotalTests": 64,
+    "timestamp": 1779416616930,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(auth): validar recuperacion de usuario por correo",
+    "commitTimestamp": 1779416674975,
+    "testId": 61
   }
 ]

@@ -1140,12 +1140,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "abb2b95e6eccf66c4752b18f2a3850395c54fe83",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-05-22T02:10:34.000Z",
       "message": "feat(auth): agregar paginas de login y registro de usuarios",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/abb2b95e6eccf66c4752b18f2a3850395c54fe83"
     },
     "stats": {
       "total": 681,
@@ -1155,6 +1155,25 @@
     },
     "coverage": 97.92,
     "test_count": 63,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-05-22T02:24:34.000Z",
+      "message": "test(auth): validar recuperacion de usuario por correo",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 60,
+      "additions": 60,
+      "deletions": 0,
+      "date": "2026-05-22"
+    },
+    "coverage": 97.55,
+    "test_count": 64,
     "failed_tests": 0,
     "conclusion": "success"
   }

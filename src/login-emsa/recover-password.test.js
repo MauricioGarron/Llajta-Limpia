@@ -1,0 +1,32 @@
+import { recuperarPassword } from "../recover-password";
+
+describe("Recuperar contraseña", () => {
+
+  let usuarios;
+
+  beforeEach(() => {
+
+    usuarios = [
+      {
+        nombre: "Alex",
+        correo: "alex@gmail.com",
+        password: "123456"
+      }
+    ];
+
+  });
+
+  test("encuentra usuario por correo", () => {
+
+    const resultado =
+      recuperarPassword(
+        usuarios,
+        "alex@gmail.com"
+      );
+
+    expect(resultado.exito)
+      .toBe(true);
+
+  });
+
+});
