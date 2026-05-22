@@ -5,8 +5,8 @@
   "default": "index.html",
   "type": "module",
  "scripts": {
-  "start": "parcel index.html home.html register.html",
-  "build": "parcel build index.html home.html register.html",
+  "start": "parcel index.html home.html register.html recover-password.html",
+  "build": "parcel build index.html home.html register.html recover-password.html",
   "test": "node ./script/tddScript.js",
   "cypress": "cypress open",
   "cypress-run": "cypress run",

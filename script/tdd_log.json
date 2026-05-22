@@ -1562,9 +1562,47 @@
     "testId": 63
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5caa7a360030a600867048be6f31f762a7a61b99",
     "commitName": "feat(auth): permitir actualizacion de contraseña",
     "commitTimestamp": 1779416775696,
     "testId": 63
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416934626,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779417191351,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 3,
+    "numTotalTests": 66,
+    "timestamp": 1779417260024,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1779417344744,
+    "success": true,
+    "testId": 64
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar flujo de login, registro y recuperación de contraseña",
+    "commitTimestamp": 1779417588822,
+    "testId": 64
   }
 ]

@@ -1197,12 +1197,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5caa7a360030a600867048be6f31f762a7a61b99",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-05-22T02:26:15.000Z",
       "message": "feat(auth): permitir actualizacion de contraseña",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/5caa7a360030a600867048be6f31f762a7a61b99"
     },
     "stats": {
       "total": 32,
@@ -1211,6 +1211,25 @@
       "date": "2026-05-22"
     },
     "coverage": 97.98,
+    "test_count": 66,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-05-22T02:39:48.000Z",
+      "message": "feat: agregar flujo de login, registro y recuperación de contraseña",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 361,
+      "additions": 278,
+      "deletions": 83,
+      "date": "2026-05-22"
+    },
+    "coverage": 98,
     "test_count": 66,
     "failed_tests": 0,
     "conclusion": "success"
