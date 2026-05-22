@@ -1442,9 +1442,39 @@
     "testId": 59
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3aacdcc9a1a78c56fd89b1622a66bda8d0b58d88",
     "commitName": "feat(login-emsa): bloquear acceso tras múltiples intentos fallidos",
     "commitTimestamp": 1779369000909,
     "testId": 59
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779414027955,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779414923789,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779415756829,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(auth): agregar paginas de login y registro de usuarios",
+    "commitTimestamp": 1779415834836,
+    "testId": 60
   }
 ]

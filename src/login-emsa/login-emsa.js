@@ -3,18 +3,22 @@ class LoginEMSAService {
   constructor() {
 
     this.usuarioCorrecto = "admin";
-
     this.passwordCorrecto = "123456";
 
     this.intentosFallidos = 0;
 
-    this.bloqueado = false;
+    this.bloqueadoHasta = null;
 
   }
 
   iniciarSesion(usuario, password) {
 
-    if (this.bloqueado) {
+    const ahora = Date.now();
+
+    if (
+      this.bloqueadoHasta &&
+      ahora < this.bloqueadoHasta
+    ) {
 
       return {
         exito: false,
@@ -39,6 +43,8 @@ class LoginEMSAService {
 
       this.intentosFallidos = 0;
 
+      this.bloqueadoHasta = null;
+
       return {
         exito: true
       };
@@ -49,7 +55,7 @@ class LoginEMSAService {
 
     if (this.intentosFallidos >= 3) {
 
-      this.bloqueado = true;
+      this.bloqueadoHasta = Date.now() + 30000;
 
       return {
         exito: false,

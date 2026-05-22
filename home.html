@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <title>Panel EMSA</title>
+
+  <script>
+
+    const usuarioActivo =
+      localStorage.getItem("usuarioActivo");
+
+    if (!usuarioActivo) {
+
+      window.location.href =
+        "index.html";
+
+    }
+
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    .estado-reporte {
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .estado-pendiente {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+
+    .estado-resuelto {
+      background-color: #d4edda;
+      color: #155724;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <button id="cerrar-sesion">
+    Cerrar sesión
+  </button>
+
+  <h1>Llajta Limpia</h1>
+
+  <h2>Crear Ruta por Zona</h2>
+
+  <form id="ruta-form">
+
+    <label>Zona:</label>
+
+    <input
+      type="text"
+      id="zona"
+      required
+    />
+
+    <label>Ruta:</label>
+
+    <input
+      type="text"
+      id="ruta"
+      required
+    />
+
+    <button type="submit">
+      Guardar Ruta
+    </button>
+
+  </form>
+
+  <h2>Ver rutas</h2>
+
+  <p>
+    <small>
+      Pista: Puedes editar o eliminar rutas directamente en la lista.
+    </small>
+  </p>
+
+  <select id="filtro-zona">
+
+    <option value="">
+      Selecciona zona
+    </option>
+
+  </select>
+
+  <div id="resultado-div"></div>
+
+  <hr />
+
+  <h2>Enlazar rutas y horarios</h2>
+
+  <form id="horario-form">
+
+    <label>Ruta disponible:</label>
+
+    <select id="horario-ruta" required>
+
+      <option value="">
+        Selecciona una ruta
+      </option>
+
+    </select>
+
+    <label>Día:</label>
+
+    <input
+      type="text"
+      id="dia"
+      required
+    />
+
+    <label>Hora:</label>
+
+    <input
+      type="text"
+      id="hora"
+      required
+    />
+
+    <button type="submit">
+      Enlazar ruta y horario
+    </button>
+
+  </form>
+
+  <div id="mensaje-enlace-ruta-horario"></div>
+
+  <h3>Rutas programadas</h3>
+
+  <div id="rutas-programadas-div"></div>
+
+  <h3>Lista de programación</h3>
+
+  <div id="programacion-horarios-div"></div>
+
+  <h2>Ver horarios por ruta</h2>
+
+  <div class="buscador-ruta">
+
+    <input
+      type="text"
+      id="buscar-ruta"
+      placeholder="Ingrese ruta"
+    />
+
+    <button id="btn-buscar">
+      Buscar
+    </button>
+
+  </div>
+
+  <div id="horarios-div"></div>
+
+  <hr />
+
+  <h2>Ver horarios por zona</h2>
+
+  <select id="filtro-zona-horarios">
+
+    <option value="">
+      Selecciona zona
+    </option>
+
+  </select>
+
+  <div id="horarios-zona-div"></div>
+
+  <hr />
+
+  <h2>Crear reporte de basura</h2>
+
+  <form id="reporte-form">
+
+    <label>Zona:</label>
+
+    <input
+      type="text"
+      id="reporte-zona"
+      required
+    />
+
+    <label>Dirección:</label>
+
+    <input
+      type="text"
+      id="reporte-direccion"
+      required
+    />
+
+    <label>Descripción:</label>
+
+    <input
+      type="text"
+      id="reporte-descripcion"
+      required
+    />
+
+    <button type="submit">
+      Enviar reporte
+    </button>
+
+  </form>
+
+  <div id="mensaje-reporte"></div>
+
+  <hr />
+
+  <h2>Ver reportes de basura</h2>
+
+  <button id="ver-reportes">
+    Mostrar reportes
+  </button>
+
+  <div id="mensaje-lista-reportes"></div>
+
+  <div id="mensaje-cambiar-estado"></div>
+
+  <ul id="lista-reportes"></ul>
+
+  <hr />
+
+  <h2>Ver reportes por zona</h2>
+
+  <p>
+    Selecciona una zona para visualizar únicamente los reportes correspondientes.
+  </p>
+
+  <select id="filtro-reportes-zona">
+
+    <option value="">
+      Selecciona zona
+    </option>
+
+  </select>
+
+  <button id="btn-ver-reportes-zona">
+    Buscar reportes por zona
+  </button>
+
+  <div id="mensaje-reportes-zona"></div>
+
+  <ul id="lista-reportes-zona"></ul>
+
+  <h3>Resumen de incidencias por zona</h3>
+
+  <div id="resumen-reportes-zona"></div>
+
+  <script>
+
+    const botonCerrarSesion =
+      document.querySelector(
+        "#cerrar-sesion"
+      );
+
+    botonCerrarSesion.addEventListener(
+      "click",
+      function () {
+
+        localStorage.removeItem(
+          "usuarioActivo"
+        );
+
+        window.location.href =
+          "index.html";
+
+      }
+    );
+
+  </script>
+
+  <script
+    type="module"
+    src="./src/presenter.js">
+  </script>
+
+</body>
+
+</html>

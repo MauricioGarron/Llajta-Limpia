@@ -4,17 +4,17 @@
   "description": "",
   "default": "index.html",
   "type": "module",
-  "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "node ./script/tddScript.js",
-    "cypress": "cypress open",
-    "cypress-run": "cypress run",
-    "lint": "eslint .",
-    "postinstall": "git init && npx husky",
-    "semantic-commits-on": "node semantic-commits.js enable",
-    "semantic-commits-off": "node semantic-commits.js disabled"
-  },
+ "scripts": {
+  "start": "parcel index.html home.html register.html",
+  "build": "parcel build index.html home.html register.html",
+  "test": "node ./script/tddScript.js",
+  "cypress": "cypress open",
+  "cypress-run": "cypress run",
+  "lint": "eslint .",
+  "postinstall": "git init && npx husky",
+  "semantic-commits-on": "node semantic-commits.js enable",
+  "semantic-commits-off": "node semantic-commits.js disabled"
+},
   "author": "Israel Antezana R.",
   "license": "ISC",
   "devDependencies": {

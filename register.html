@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login EMSA</title>
+  <title>Registro EMSA</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,9 +12,17 @@
 
   <div class="login-container">
 
-    <h1>Login EMSA</h1>
+    <h1>Registro EMSA</h1>
 
-    <form id="login-form">
+    <form id="register-form">
+
+      <label>Nombre</label>
+
+      <input
+        type="text"
+        id="nombre"
+        required
+      >
 
       <label>Correo</label>
 
@@ -33,22 +41,22 @@
       >
 
       <button type="submit">
-        Ingresar
+        Crear cuenta
       </button>
 
     </form>
 
-    <p id="mensaje-login"></p>
+    <p id="mensaje-registro"></p>
 
-    <a href="register.html">
-      Registrarse
+    <a href="index.html">
+      Volver al login
     </a>
 
   </div>
 
   <script
     type="module"
-    src="./src/login.js">
+    src="./src/register.js">
   </script>
 
 </body>
