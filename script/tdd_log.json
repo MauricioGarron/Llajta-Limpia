@@ -1442,9 +1442,167 @@
     "testId": 59
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3aacdcc9a1a78c56fd89b1622a66bda8d0b58d88",
     "commitName": "feat(login-emsa): bloquear acceso tras múltiples intentos fallidos",
     "commitTimestamp": 1779369000909,
     "testId": 59
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779414027955,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779414923789,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779415756829,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "abb2b95e6eccf66c4752b18f2a3850395c54fe83",
+    "commitName": "feat(auth): agregar paginas de login y registro de usuarios",
+    "commitTimestamp": 1779415834836,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779415845942,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416475161,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416489993,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416508397,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 0,
+    "numTotalTests": 64,
+    "timestamp": 1779416616930,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "d61d8b9476ff9bed6ee6bc7e8bed62bf16369680",
+    "commitName": "test(auth): validar recuperacion de usuario por correo",
+    "commitTimestamp": 1779416674975,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 1,
+    "numTotalTests": 65,
+    "timestamp": 1779416701184,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 0,
+    "numTotalTests": 65,
+    "timestamp": 1779416714794,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "42f5ee6324f7eb5e70c92c53588eb81f785ce8cb",
+    "commitName": "feat(auth): validar correos inexistentes en recuperacion",
+    "commitTimestamp": 1779416730104,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 1,
+    "numTotalTests": 66,
+    "timestamp": 1779416748478,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1779416760397,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "5caa7a360030a600867048be6f31f762a7a61b99",
+    "commitName": "feat(auth): permitir actualizacion de contraseña",
+    "commitTimestamp": 1779416775696,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779416934626,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779417191351,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 3,
+    "numTotalTests": 66,
+    "timestamp": 1779417260024,
+    "success": false,
+    "testId": 64
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1779417344744,
+    "success": true,
+    "testId": 64
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar flujo de login, registro y recuperación de contraseña",
+    "commitTimestamp": 1779417588822,
+    "testId": 64
   }
 ]
