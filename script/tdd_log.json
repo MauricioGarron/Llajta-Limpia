@@ -1294,9 +1294,157 @@
     "testId": 53
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b700e945fa4084552778be17b57ceb049f421cd2",
     "commitName": "feat: integra edición de reportes en interfaz",
     "commitTimestamp": 1779337800921,
     "testId": 53
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368374728,
+    "success": false,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368391999,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "4aa45b99015240aeb703aca7a1bd52d3647245b9",
+    "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
+    "commitTimestamp": 1779368409207,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368445792,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368452364,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1779368461430,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "commitId": "55ae31ec7bf935b96299ed0faffebfbb7c3d05cc",
+    "commitName": "feat(login-emsa): permitir acceso con credenciales correctas",
+    "commitTimestamp": 1779368538640,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368656121,
+    "success": false,
+    "testId": 56
+  },
+  {
+    "commitId": "6d185c93e7cca0dc358dfd0c45ad1495fd4cc55a",
+    "commitName": "feat(login-emsa): validar credenciales incorrectas",
+    "commitTimestamp": 1779368682032,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 1,
+    "numTotalTests": 59,
+    "timestamp": 1779368719983,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 58,
+    "failedTests": 0,
+    "numTotalTests": 58,
+    "timestamp": 1779368740000,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 0,
+    "numTotalTests": 60,
+    "timestamp": 1779368880079,
+    "success": true,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 0,
+    "numTotalTests": 60,
+    "timestamp": 1779368907987,
+    "success": true,
+    "testId": 57
+  },
+  {
+    "commitId": "38df318e130d2f9b2ca12779af6b25350ebe291e",
+    "commitName": "feat(login-emsa): validar credenciales incorrectas",
+    "commitTimestamp": 1779368920050,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 60,
+    "failedTests": 2,
+    "numTotalTests": 62,
+    "timestamp": 1779368935474,
+    "success": false,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 0,
+    "numTotalTests": 62,
+    "timestamp": 1779368950580,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "06818ff4da713bfcd9ee13001da4daace79e580b",
+    "commitName": "feat(login-emsa): validar campos obligatorios",
+    "commitTimestamp": 1779368962540,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 62,
+    "failedTests": 1,
+    "numTotalTests": 63,
+    "timestamp": 1779368976215,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1779368988738,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(login-emsa): bloquear acceso tras múltiples intentos fallidos",
+    "commitTimestamp": 1779369000909,
+    "testId": 59
   }
 ]
