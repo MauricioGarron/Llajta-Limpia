@@ -28,5 +28,22 @@ describe("Recuperar contraseña", () => {
       .toBe(true);
 
   });
+  test("falla si correo no existe", () => {
+
+  const resultado =
+    recuperarPassword(
+      usuarios,
+      "noexiste@gmail.com"
+    );
+
+  expect(resultado.exito)
+    .toBe(false);
+
+  expect(resultado.mensaje)
+    .toBe(
+      "Correo no encontrado"
+    );
+
+});
 
 });

@@ -1518,9 +1518,31 @@
     "testId": 61
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d61d8b9476ff9bed6ee6bc7e8bed62bf16369680",
     "commitName": "test(auth): validar recuperacion de usuario por correo",
     "commitTimestamp": 1779416674975,
     "testId": 61
+  },
+  {
+    "numPassedTests": 64,
+    "failedTests": 1,
+    "numTotalTests": 65,
+    "timestamp": 1779416701184,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 0,
+    "numTotalTests": 65,
+    "timestamp": 1779416714794,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(auth): validar correos inexistentes en recuperacion",
+    "commitTimestamp": 1779416730104,
+    "testId": 62
   }
 ]

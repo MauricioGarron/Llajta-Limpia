@@ -18,7 +18,9 @@ function recuperarPassword(
   }
 
   return {
-    exito: false
+    exito: false,
+    mensaje:
+      "Correo no encontrado"
   };
 
 }

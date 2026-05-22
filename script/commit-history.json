@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d61d8b9476ff9bed6ee6bc7e8bed62bf16369680",
     "author": "ByAlexShark",
     "commit": {
       "date": "2026-05-22T02:24:34.000Z",
       "message": "test(auth): validar recuperacion de usuario por correo",
-      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/d61d8b9476ff9bed6ee6bc7e8bed62bf16369680"
     },
     "stats": {
       "total": 60,
@@ -1174,6 +1174,25 @@
     },
     "coverage": 97.55,
     "test_count": 64,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ByAlexShark",
+    "commit": {
+      "date": "2026-05-22T02:25:29.000Z",
+      "message": "feat(auth): validar correos inexistentes en recuperacion",
+      "url": "https://github.com/MauricioGarron/Llajta-Limpia/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 20,
+      "deletions": 1,
+      "date": "2026-05-22"
+    },
+    "coverage": 97.96,
+    "test_count": 65,
     "failed_tests": 0,
     "conclusion": "success"
   }
