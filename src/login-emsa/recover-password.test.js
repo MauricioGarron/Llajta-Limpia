@@ -45,5 +45,17 @@ describe("Recuperar contraseña", () => {
     );
 
 });
+test("actualiza password correctamente", () => {
 
+  recuperarPassword(
+    usuarios,
+    "alex@gmail.com",
+    "nueva123"
+  );
+
+  expect(
+    usuarios[0].password
+  ).toBe("nueva123");
+
+});
 });

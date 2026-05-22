@@ -1,6 +1,7 @@
 function recuperarPassword(
   usuarios,
-  correo
+  correo,
+  nuevaPassword
 ) {
 
   const usuarioEncontrado =
@@ -9,18 +10,25 @@ function recuperarPassword(
         usuario.correo === correo
     );
 
-  if (usuarioEncontrado) {
+  if (!usuarioEncontrado) {
 
     return {
-      exito: true
+      exito: false,
+      mensaje:
+        "Correo no encontrado"
     };
 
   }
 
+  if (nuevaPassword) {
+
+    usuarioEncontrado.password =
+      nuevaPassword;
+
+  }
+
   return {
-    exito: false,
-    mensaje:
-      "Correo no encontrado"
+    exito: true
   };
 
 }

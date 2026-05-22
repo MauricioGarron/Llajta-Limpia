@@ -1540,9 +1540,31 @@
     "testId": 62
   },
   {
-    "commitId": "HEAD",
+    "commitId": "42f5ee6324f7eb5e70c92c53588eb81f785ce8cb",
     "commitName": "feat(auth): validar correos inexistentes en recuperacion",
     "commitTimestamp": 1779416730104,
     "testId": 62
+  },
+  {
+    "numPassedTests": 65,
+    "failedTests": 1,
+    "numTotalTests": 66,
+    "timestamp": 1779416748478,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1779416760397,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(auth): permitir actualizacion de contraseña",
+    "commitTimestamp": 1779416775696,
+    "testId": 63
   }
 ]
